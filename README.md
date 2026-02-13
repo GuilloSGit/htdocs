@@ -16,21 +16,11 @@ Portafolio personal de desarrollador Full Stack con diseño moderno y responsivo
 ```
 portfolio/
 ├── index.html              # Versión modular para desarrollo
-├── index-built.html        # Versión combinada para hosting
-├── components/             # Componentes modulares
-│   ├── header.html
-│   ├── hero.html
-│   ├── about.html
-│   ├── experience.html
-│   ├── projects.html
-│   ├── contact.html
-│   └── footer.html
 ├── assets/                 # Recursos estáticos
 │   ├── styles.css
 │   ├── main.js
 │   ├── tailwind-config.js
 │   └── profile-tiny.jpeg
-└── build.py                # Script para combinar componentes
 ```
 
 ## 🛠️ Desarrollo Local
@@ -40,9 +30,6 @@ portfolio/
    python3 -m http.server 8000
    ```
    Abre: http://localhost:8000/index.html
-
-2. **Para hosting estático:**
-   Usa `index-built.html` (generado con `python3 build.py`)
 
 ## 📱 Características
 
