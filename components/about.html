@@ -1,0 +1,274 @@
+<!-- About Section -->
+<section id="about" class="py-20 dark:bg-slate-800/30 bg-slate-300/30 relative overflow-hidden">
+    <!-- Floating Elements -->
+    <div class="floating-element top-1/3 -right-20 w-72 h-72 bg-cyan-400 animate-float"
+        style="animation: float-4 24s ease-in-out infinite 1.5s;"></div>
+    <div class="floating-element bottom-1/4 left-0 w-56 h-56 bg-indigo-400 animate-float"
+        style="animation: float-5 28s ease-in-out infinite 2.5s;"></div>
+    <div class="floating-element top-1/2 -right-20 w-77 h-77 bg-green-200 animate-float"
+        style="animation: float-4 24s ease-in-out infinite 1.5s;"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-10 items-start
+        sm:grid-cols-1
+        md:grid-cols-[1fr_2fr]
+        lg:grid-cols-[1fr_2fr]
+        xl:grid-cols-[1fr_2fr]">
+
+            <!-- Columna 1: Foto -->
+            <div class="scroll-reveal flex justify-center md:justify-end">
+                <div class="relative">
+                    <div class="w-72 h-72 md:w-80 md:h-80 rounded-2xl overflow-hidden border-4 border-primary-500/20">
+                        <img src="./assets/profile-tiny.jpeg" alt="Guille Andrada" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -top-4 -right-4 w-24 h-24 bg-accent-500 rounded-full opacity-20 animate-float"></div>
+                    <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-primary-500 rounded-full opacity-30 animate-float"
+                        style="animation-delay: 1s;"></div>
+                </div>
+            </div>
+
+            <!-- Columnas 2 y 3: Sobre mí + herramientas -->
+            <div class="scroll-reveal md:col-span-1">
+                <h2 class="text-4xl font-bold mb-6 gradient-text" data-translate="about.title">Sobre mí</h2>
+
+                <p class="text-lg text-slate-800 dark:text-slate-400 mb-6" data-translate="about.description1">
+                    Soy un Desarrollador Full Stack con amplia experiencia en la construcción de aplicaciones web,
+                    enseñanza de programación y creación de recursos de diseño interactivos. Durante los últimos
+                    años, he trabajado en proyectos que van desde servicios del mundo real para municipalidades
+                    hasta aplicaciones impulsadas por APIs, así como demos educativas utilizadas en aulas para
+                    explicar tecnologías web.
+                </p>
+
+                <p class="text-lg text-slate-800 dark:text-slate-400 mb-8" data-translate="about.description2">
+                    Mi enfoque está en entregar soluciones limpias, eficientes y escalables, mientras también hago
+                    que la tecnología sea más accesible a través de ejemplos claros y enseñanza. Me apasionan los
+                    frameworks de front-end (React, Vue, Next.js), el desarrollo back-end con Python/Django y
+                    Node.js, y las prácticas de diseño modernas (Tailwind, CSS3, layouts responsivos).
+                </p>
+
+                <!-- Cuadro de herramientas dividido en 3 columnas -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="bg-slate-200/90 dark:bg-slate-700/50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2"
+                            data-translate="about.skills.webDev.title">Desarrollo Web</h3>
+                        <p class="text-sm text-slate-800 dark:text-slate-400" data-translate="about.skills.webDev.description"></p>
+                    </div>
+
+                    <div class="bg-slate-200/90 dark:bg-slate-700/50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2" data-translate="about.skills.uiux.title">Diseño UI/UX</h3>
+                        <p class="text-sm text-slate-800 dark:text-slate-400" data-translate="about.skills.uiux.description"></p>
+                    </div>
+
+                    <div class="bg-slate-200/90 dark:bg-slate-700/50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2" data-translate="about.skills.apis.title">Backend y Arquitectura</h3>
+                        <p class="text-sm text-slate-800 dark:text-slate-400" data-translate="about.skills.apis.description">\</p>
+                    </div>
+
+                    <div class="bg-slate-200/90 dark:bg-slate-700/50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2" data-translate="about.skills.cloudAndDB.title">Cloud y DevOps</h3>
+                        <p class="text-sm text-slate-800 dark:text-slate-400" data-translate="about.skills.cloudAndDB.description"></p>
+                    </div>
+
+                    <div class="bg-slate-200/90 dark:bg-slate-700/50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2" data-translate="about.skills.education.title">Educación y Mentoría</h3>
+                        <p class="text-sm text-slate-800 dark:text-slate-400"  data-translate="about.skills.education.description"></p>
+                    </div>
+                    
+                    <div class="bg-slate-200/90 dark:bg-slate-700/50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2" data-translate="about.skills.integrations.title">AI y LLM Integrations</h3>
+                        <p class="text-sm text-slate-800 dark:text-slate-400" data-translate="about.skills.integrations.description"></p>
+                    </div>
+
+                    <div class="bg-slate-200/90 dark:bg-slate-700/50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2" data-translate="about.skills.versionControl.title"></h3>
+                        <p class="text-sm text-slate-800 dark:text-slate-400" data-translate="about.skills.versionControl.description"></p>
+                    </div>
+
+                    <div class="bg-slate-200/90 dark:bg-slate-700/50 p-4 rounded-lg lg:col-span-2">
+                        <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2" data-translate="about.skills.mcpDevelopment.title">MCP Development</h3>
+                        <p class="text-sm text-slate-800 dark:text-slate-400" data-translate="about.skills.mcpDevelopment.description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 flex flex-col md:flex-row md:space-x-12 gap-8">
+        <div class="mt-8 md:mt-0 md:w-1/4">
+            <div>
+                <h3 class="text-xl font-semibold mb-4 text-center text-slate-800 dark:text-slate-400 md:text-left"
+                    data-translate="languages.title">Idiomas</h3>
+                <ul class="space-y-2 text-center md:text-left">
+                    <li class="text-sm text-slate-800 dark:text-slate-400" data-translate="languages.spanish">🇦🇷
+                        Español</li>
+                    <li class="text-sm text-slate-800 dark:text-slate-400" data-translate="languages.english">🇺🇸
+                        Inglés</li>
+                    <li class="text-sm text-slate-800 dark:text-slate-400" data-translate="languages.portugues">🇧🇷
+                        Portugués</li>
+                </ul>
+            </div>
+            <div class="mt-8">
+                <h3 class="text-xl font-semibold mb-4 text-center text-slate-800 dark:text-slate-400 md:text-left"
+                    data-translate="methodologies.title">Metodologías Ágiles</h3>
+                <ul class="space-y-2 text-center md:text-left">
+                    <li class="text-sm text-slate-800 dark:text-slate-400">📌 Scrum, Kanban, Extreme Prog (XP)</li>
+                </ul>
+            </div>
+            <div class="mt-8">
+                <h3 class="text-xl font-semibold mb-4 text-center text-slate-800 dark:text-slate-400 md:text-left"
+                    data-translate="tools.title">Herramientas</h3>
+                <ul class="space-y-2 text-center md:text-left">
+                    <li class="text-sm text-slate-800 dark:text-slate-400">⚡ Git & repositorios (GitHub, GitLab)
+                    </li>
+                    <li class="text-sm text-slate-800 dark:text-slate-400">🐳 Docker</li>
+                    <li class="text-sm text-slate-800 dark:text-slate-400">📬 Postman</li>
+                    <li class="text-sm text-slate-800 dark:text-slate-400">🖥️ Editores: VS Code, Cursor, Windsurf
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-8">
+                <h3 class="text-xl font-semibold mb-4 text-center text-slate-800 dark:text-slate-400 md:text-left"
+                    data-translate="platforms.title">Plataformas y S.O.</h3>
+                <ul class="space-y-2 text-center md:text-left">
+                    <li class="text-sm text-slate-800 dark:text-slate-400">macOS</li>
+                    <li class="text-sm text-slate-800 dark:text-slate-400">Windows</li>
+                    <li class="text-sm text-slate-800 dark:text-slate-400">Linux</li>
+                    <li class="text-sm text-slate-800 dark:text-slate-400">iOS & Android</li>
+                </ul>
+            </div>
+        </div>
+        <div class="md:w-3/4">
+          <h3 class="text-xl font-semibold mb-4 text-center text-slate-800 dark:text-slate-400 md:text-left"
+              data-translate="about.skills.technologies.title">
+              Tecnologías y herramientas
+          </h3>
+
+          <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6 items-center justify-items-center">
+
+            <!-- Lenguajes -->
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/github/explore/main/topics/javascript/javascript.png" alt="JavaScript" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400">JavaScript</span>
+            </div>
+
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/github/explore/main/topics/typescript/typescript.png" alt="TypeScript" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400">TypeScript</span>
+            </div>
+
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/github/explore/main/topics/python/python.png" alt="Python" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400">Python</span>
+            </div>
+
+            <!-- Frontend -->
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/github/explore/main/topics/react/react.png" alt="React" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400">React</span>
+            </div>
+
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" alt="Next.js" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400">Next.js</span>
+            </div>
+
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/github/explore/main/topics/vue/vue.png" alt="Vue.js" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400">Vue.js</span>
+            </div>
+
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/github/explore/main/topics/tailwind/tailwind.png" alt="Tailwind CSS" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400">Tailwind CSS</span>
+            </div>
+
+            <!-- Backend -->
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/github/explore/main/topics/nodejs/nodejs.png" alt="Node.js" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400">Node.js</span>
+            </div>
+
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/NestJS.svg" alt="NestJS" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400">NestJS</span>
+            </div>
+
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/github/explore/main/topics/django/django.png" alt="Django" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400">Django</span>
+            </div>
+
+            <!-- Bases de datos -->
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/github/explore/main/topics/postgresql/postgresql.png" alt="PostgreSQL" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400 text-center">PostgreSQL + SQL</span>
+            </div>
+
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/github/explore/main/topics/mongodb/mongodb.png" alt="MongoDB" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400">MongoDB</span>
+            </div>
+
+            <!-- Integración e IA -->
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/512px-ChatGPT_logo.svg.png" alt="OpenAI" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400 text-center">OpenAI / MCP</span>
+            </div>
+
+            <!-- Infraestructura -->
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/github/explore/main/topics/docker/docker.png" alt="Docker" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400">Docker</span>
+            </div>
+
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/github/explore/main/topics/aws/aws.png" alt="AWS" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400 text-center">AWS + Services</span>
+            </div>
+              
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/GuilloSGit/portfolio-images/main/microservices.png" alt="Microservices" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400 text-center">Microservices</span>
+            </div>
+              
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/GuilloSGit/portfolio-images/main/github-actions.png" alt="GitHub Actions" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400 text-center">CI/CD</span>
+            </div>
+
+          </div>
+        </div>
+    </div>
+</section>

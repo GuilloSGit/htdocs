@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="hero.name">Guille Andrada - Full Stack</title>
+    <meta name="description"
+        content="Desarrollador Full Stack especializado en tecnologías web modernas. Creando soluciones digitales innovadoras.">
+    <link rel="icon" href="https://raw.githubusercontent.com/GuilloSGit/portfolio-images/main/image.ico">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Config -->
+    <script src="assets/tailwind-config.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body
+    class="bg-gray-50 dark:bg-slate-900 text-gray-900 dark:text-white overflow-x-hidden transition-colors duration-200">
+
+    <!-- Component Placeholders -->
+    <div w3-include-html="components/header.html"><!-- Navigation Component --></div>
+    <div w3-include-html="components/hero.html"><!-- Hero Component --></div>
+    <div w3-include-html="components/about.html"><!-- About Component --></div>
+    <div w3-include-html="components/experience.html"><!-- Experience Component --></div>
+    <div w3-include-html="components/projects.html"><!-- Projects Component --></div>
+    <div w3-include-html="components/contact.html"><!-- Contact Component --></div>
+    <div w3-include-html="components/footer.html"><!-- Footer Component --></div>
+
+    <!-- JavaScript -->
+    <script src="assets/main.js"></script>
+
+    <!-- Component Loader (w3-include-html approach) -->
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /* Loop through a collection of all HTML elements: */
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain attribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /* Make an HTTP request using the attribute value as the file name: */
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /* Remove the attribute, and call this function once more: */
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /* Exit the function: */
+                    return;
+                }
+            }
+            // All components loaded, now initialize functionality
+            initializeAfterComponentsLoaded();
+        }
+
+        function initializeAfterComponentsLoaded() {
+            // Re-initialize any functionality that depends on DOM elements
+            // This ensures that elements from loaded components are available
+            try {
+                // Re-apply translations if needed
+                if (typeof applyTranslations === 'function' && typeof translations !== 'undefined') {
+                    const currentLanguage = localStorage.getItem('preferred-language') || (navigator.language.startsWith('en') ? 'en' : 'es');
+                    if (translations[currentLanguage]) {
+                        applyTranslations(translations[currentLanguage]);
+                    }
+                }
+
+                // Re-initialize scroll reveal if available
+                if (typeof observer !== 'undefined' && observer) {
+                    document.querySelectorAll('.scroll-reveal').forEach(el => {
+                        observer.observe(el);
+                    });
+                }
+
+                // Re-initialize theme functionality
+                const themeToggle = document.getElementById('theme-toggle');
+                const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
+                if (themeToggle) {
+                    themeToggle.addEventListener('click', toggleTheme);
+                }
+                if (mobileThemeToggle) {
+                    mobileThemeToggle.addEventListener('click', toggleTheme);
+                }
+
+                // Initialize CV selector
+                const cvButton = document.getElementById("cv-button");
+                const cvMenu = document.getElementById("cv-menu");
+                if (cvButton && cvMenu) {
+                    cvButton.addEventListener("click", () => {
+                        cvMenu.classList.toggle("hidden");
+                    });
+
+                    document.addEventListener("click", (e) => {
+                        if (!e.target.closest("#cv-button") && !e.target.closest("#cv-menu")) {
+                            cvMenu.classList.add("hidden");
+                        }
+                    });
+                }
+
+                console.log('All components loaded and initialized successfully');
+
+            } catch (error) {
+                console.log('Component initialization completed with some optional features not available');
+            }
+        }
+
+        // Load components when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', includeHTML);
+        } else {
+            includeHTML();
+        }
+    </script>
+
+</body>
+
+</html>

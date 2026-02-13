@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="hero.name">Guille Andrada - Full Stack</title>
+    <meta name="description"
+        content="Desarrollador Full Stack especializado en tecnologías web modernas. Creando soluciones digitales innovadoras.">
+    <link rel="icon" href="https://raw.githubusercontent.com/GuilloSGit/portfolio-images/main/image.ico">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Config -->
+    <script src="assets/tailwind-config.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body
+    class="bg-gray-50 dark:bg-slate-900 text-gray-900 dark:text-white overflow-x-hidden transition-colors duration-200">
+
+    <!-- Component Placeholders -->
+    <div><!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-white dark:bg-slate-900 border-b border-gray-200 dark:border-slate-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+            <div>
+                <img src="https://raw.githubusercontent.com/GuilloSGit/portfolio-images/main/profile.jpg"
+                    alt="Guille Andrada profile picture" class="w-12 h-12 rounded-full border-2 border-primary-500/30 object-cover">
+            </div>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#home"
+                    class="text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 transition-colors"
+                    data-translate="nav.home">Inicio</a>
+                <a href="#about"
+                    class="text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 transition-colors"
+                    data-translate="nav.about">Sobre
+                    mí</a>
+                <a href="#experience"
+                    class="text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 transition-colors"
+                    data-translate="nav.experience">Experiencia</a>
+                <a href="#projects"
+                    class="text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 transition-colors"
+                    data-translate="nav.projects">Proyectos</a>
+                <a href="#contact"
+                    class="text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 transition-colors"
+                    data-translate="nav.contact">Contacto</a>
+
+                <!-- Theme Toggle Controls -->
+                <div class="flex items-center space-x-3">
+                    <button id="theme-toggle"
+                        class="p-3 rounded-full hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors text-lg">
+                        <i class="fas fa-moon text-primary-500"></i>
+                    </button>
+                </div>
+
+                <!-- Language selector -->
+               <div class="relative">
+                  <button id="language-selector" class="flex items-center space-x-1 text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 transition-colors">
+                    <img id="language-icon" src="https://flagcdn.com/es.svg" class="w-5 h-5 rounded-sm" alt="ES" />
+                    <span id="current-language">ES</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </button>
+
+                  <!-- Language options -->
+                  <div id="language-dropdown" class="absolute right-0 mt-2 w-20 dark:bg-slate-800 bg-slate-100 rounded-lg shadow-lg border border-slate-600 hidden">
+                    <button class="language-option w-full flex items-center px-3 py-2 text-left dark:hover:bg-slate-700 hover:bg-slate-300 rounded-t-lg" data-lang="es">
+                      <img src="https://flagcdn.com/es.svg" class="w-5 h-5 rounded-sm mr-2" alt="ES" /> ES
+                    </button>
+                    <button class="language-option w-full flex items-center px-3 py-2 text-left dark:hover:bg-slate-700 hover:bg-slate-300 rounded-b-lg" data-lang="en">
+                      <img src="https://flagcdn.com/gb.svg" class="w-5 h-5 rounded-sm mr-2" alt="EN" /> EN
+                    </button>
+                  </div>
+                </div>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div id="mobile-menu-overlay" class="hidden fixed inset-0 bg-black/50 z-40"></div>
+
+    <!-- Drawer -->
+    <div id="mobile-menu"
+        class="hidden md:hidden fixed top-0 left-0 h-full w-72 bg-slate-900 !bg-opacity-100 z-[60] transform -translate-x-full transition-transform duration-300"
+        style="background-color: #0f172a !important; /* slate-900 */">
+        <div class="px-6 pt-8 pb-12 flex flex-col h-full space-y-6">
+
+            <!-- Links -->
+            <nav class="flex flex-col space-y-2">
+                <a href="#home"
+                    class="px-3 py-2 rounded-lg text-slate-100 hover:bg-primary-600/20 hover:text-primary-400 transition"
+                    data-translate="nav.home">Inicio</a>
+                <a href="#about"
+                    class="px-3 py-2 rounded-lg text-slate-100 hover:bg-primary-600/20 hover:text-primary-400 transition"
+                    data-translate="nav.about">Sobre mí</a>
+                <a href="#experience"
+                    class="px-3 py-2 rounded-lg text-slate-100 hover:bg-primary-600/20 hover:text-primary-400 transition"
+                    data-translate="nav.experience">Experiencia</a>
+                <a href="#projects"
+                    class="px-3 py-2 rounded-lg text-slate-100 hover:bg-primary-600/20 hover:text-primary-400 transition"
+                    data-translate="nav.projects">Proyectos</a>
+                <a href="#contact"
+                    class="px-3 py-2 rounded-lg text-slate-100 hover:bg-primary-600/20 hover:text-primary-400 transition"
+                    data-translate="nav.contact">Contacto</a>
+            </nav>
+
+            <!-- Idiomas -->
+            <div class="border-t border-slate-700/40 pt-6">
+                <p class="text-sm font-medium text-slate-400 mb-3" data-translate="language.title">Idiomas</p>
+                <div class="flex gap-3">
+                    <button
+                        class="language-option px-4 py-1.5 rounded-full bg-slate-800/70 text-slate-200 hover:bg-primary-600/30 hover:text-primary-300 transition"
+                        data-lang="es">Español</button>
+                    <button
+                        class="language-option px-4 py-1.5 rounded-full bg-slate-800/70 text-slate-200 hover:bg-primary-600/30 hover:text-primary-300 transition"
+                        data-lang="en">English</button>
+                </div>
+            </div>
+
+            <!-- Tema -->
+            <div class="border-t border-slate-700/40 pt-6">
+                <p class="text-sm font-medium text-slate-400 mb-3" data-translate="nav.theme.toggle">Tema</p>
+                <button id="mobile-theme-toggle"
+                    class="flex items-center gap-3 px-3 py-2 rounded-lg bg-slate-800/70 hover:bg-primary-600/30 transition w-full text-left">
+                    <i class="fas fa-moon text-primary-400"></i>
+                    <span id="mobile-theme-text" class="text-slate-200" data-translate="nav.theme.toggle">Cambiar
+                        tema</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+</div>
+    <div><!-- Hero Section -->
+<section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <!-- Floating Elements -->
+    <div class="floating-element top-1/4 -left-20 w-64 h-64 bg-purple-500 animate-float"
+        style="animation: float-3 20s ease-in-out infinite 1s;"></div>
+    <div class="floating-element top-3/4 right-0 w-80 h-80 bg-blue-400 animate-float"
+        style="animation: float-1 25s ease-in-out infinite 2s;"></div>
+    <div class="floating-element top-1/2 left-1/3 w-40 h-40 bg-cyan-300 animate-float"
+        style="animation: float-2 22s ease-in-out infinite 0.5s;"></div>
+    <div class="floating-element top-1/2 -right-50 w-102 h-102 bg-green-400 animate-float"
+        style="animation: float-4 24s ease-in-out infinite 1.5s;"></div>
+    <div class="floating-element bottom-1/4 left-0 w-32 h-32 bg-yellow-400 animate-float"
+        style="animation: float-5 28s ease-in-out infinite 2.5s;"></div>
+
+    <!-- Background Animation -->
+    <div class="absolute inset-0 overflow-hidden">
+        <!-- Hero section elements -->
+        <div class="floating-element -top-40 -right-40 w-80 h-80 bg-primary-500 animate-float"
+            style="animation: float-1 15s ease-in-out infinite;"></div>
+        <div class="floating-element -bottom-40 -left-40 w-80 h-80 bg-accent-500 animate-float"
+            style="animation: float-2 18s ease-in-out infinite 2s;"></div>
+
+        <!-- Additional floating elements for different sections -->
+        <div class="floating-element top-1/4 -left-20 w-64 h-64 bg-purple-500 animate-float"
+            style="animation: float-3 20s ease-in-out infinite 1s;"></div>
+        <div class="floating-element bottom-1/3 right-1/4 w-40 h-40 bg-blue-400 animate-float"
+            style="animation: float-2 16s ease-in-out infinite 0.5s;"></div>
+
+        <!-- Elements that will be positioned in other sections -->
+        <div id="about-floating-1"
+            class="floating-element hidden md:block top-[120vh] left-1/4 w-32 h-32 bg-green-400"
+            style="animation: float-1 14s ease-in-out infinite 1s;"></div>
+        <div id="about-floating-2"
+            class="floating-element hidden md:block top-[110vh] right-1/3 w-48 h-48 bg-yellow-400"
+            style="animation: float-2 17s ease-in-out infinite 0.5s;"></div>
+
+        <div id="experience-floating-1"
+            class="floating-element hidden md:block top-[200vh] left-1/3 w-40 h-40 bg-pink-400"
+            style="animation: float-3 16s ease-in-out infinite 1s;"></div>
+        <div id="experience-floating-2"
+            class="floating-element hidden md:block top-[190vh] right-1/4 w-56 h-56 bg-indigo-400"
+            style="animation: float-1 19s ease-in-out infinite 0.7s;"></div>
+
+        <div id="projects-floating-1"
+            class="floating-element hidden md:block top-[280vh] left-1/4 w-44 h-44 bg-teal-400"
+            style="animation: float-2 18s ease-in-out infinite 1.2s;"></div>
+        <div id="projects-floating-2"
+            class="floating-element hidden md:block top-[270vh] right-1/3 w-36 h-36 bg-amber-400"
+            style="animation: float-3 15s ease-in-out infinite 0.3s;"></div>
+
+        <div id="contact-floating-1"
+            class="floating-element hidden md:block top-[360vh] left-1/3 w-52 h-52 bg-rose-400"
+            style="animation: float-1 17s ease-in-out infinite 0.8s;"></div>
+        <div id="contact-floating-2"
+            class="floating-element hidden md:block top-[350vh] right-1/4 w-44 h-44 bg-sky-400"
+            style="animation: float-2 20s ease-in-out infinite 1.5s;"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        <div class="animate-fade-in">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                <span data-translate="hero.greeting">Hola, soy</span>
+                <span class="gradient-text dark:bg-none" data-translate="hero.name">Guille Andrada</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-800 dark:text-slate-400 mb-8 max-w-3xl mx-auto"
+                data-translate="hero.subtitle">
+                Desarrollador Full Stack, apasionado creador digital
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#projects"
+                    class="text-white bg-primary-600 hover:bg-primary-700 px-8 py-3 rounded-lg font-semibold transition-all transform hover:scale-105"
+                    data-translate="hero.viewProjects">
+                    Ver Proyectos
+                </a>
+                <a href="#contact"
+                    class="border border-slate-600 hover:border-slate-400 px-8 py-3 rounded-lg font-semibold transition-all transform hover:scale-105"
+                    data-translate="hero.contact">
+                    Contactar
+                </a>
+                <div class="relative inline-block">
+                    <button
+                    	id="cv-button"
+                            class="bg-emerald-400 hover:bg-emerald-500 text-black px-8 py-3 rounded-lg font-semibold transition-all transform hover:scale-105"
+                    >
+                    Ver CV
+                  </button>
+
+                    <div
+                      id="cv-menu"
+                      class="
+                        hidden absolute right-70 mt-3 w-64
+                        rounded-xl overflow-hidden shadow-xl
+                        bg-white text-slate-900
+                        border border-slate-200
+                        dark:bg-slate-900 dark:text-slate-100
+                        dark:border-slate-700
+                      "
+                    >
+                    <a
+                      id="cv-es"
+                      href=""
+                      target="_blank"
+                      class="
+                             block px-4 py-3 text-sm
+                             hover:bg-emerald-50
+                             dark:hover:bg-slate-800
+                             transition
+                             "
+                    ></a>
+
+                    <a
+                      id="cv-en"
+                      href=""
+                      target="_blank"
+                      class="
+                            block px-4 py-3 text-sm
+                            hover:bg-emerald-50
+                            dark:hover:bg-slate-800
+                            transition
+                          "
+                    ></a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <svg class="w-6 h-6 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3">
+            </path>
+        </svg>
+    </div>
+</section>
+</div>
+    <div><!-- About Section -->
+<section id="about" class="py-20 dark:bg-slate-800/30 bg-slate-300/30 relative overflow-hidden">
+    <!-- Floating Elements -->
+    <div class="floating-element top-1/3 -right-20 w-72 h-72 bg-cyan-400 animate-float"
+        style="animation: float-4 24s ease-in-out infinite 1.5s;"></div>
+    <div class="floating-element bottom-1/4 left-0 w-56 h-56 bg-indigo-400 animate-float"
+        style="animation: float-5 28s ease-in-out infinite 2.5s;"></div>
+    <div class="floating-element top-1/2 -right-20 w-77 h-77 bg-green-200 animate-float"
+        style="animation: float-4 24s ease-in-out infinite 1.5s;"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-10 items-start
+        sm:grid-cols-1
+        md:grid-cols-[1fr_2fr]
+        lg:grid-cols-[1fr_2fr]
+        xl:grid-cols-[1fr_2fr]">
+
+            <!-- Columna 1: Foto -->
+            <div class="scroll-reveal flex justify-center md:justify-end">
+                <div class="relative">
+                    <div class="w-72 h-72 md:w-80 md:h-80 rounded-2xl overflow-hidden border-4 border-primary-500/20">
+                        <img src="./assets/profile-tiny.jpeg" alt="Guille Andrada" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -top-4 -right-4 w-24 h-24 bg-accent-500 rounded-full opacity-20 animate-float"></div>
+                    <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-primary-500 rounded-full opacity-30 animate-float"
+                        style="animation-delay: 1s;"></div>
+                </div>
+            </div>
+
+            <!-- Columnas 2 y 3: Sobre mí + herramientas -->
+            <div class="scroll-reveal md:col-span-1">
+                <h2 class="text-4xl font-bold mb-6 gradient-text" data-translate="about.title">Sobre mí</h2>
+
+                <p class="text-lg text-slate-800 dark:text-slate-400 mb-6" data-translate="about.description1">
+                    Soy un Desarrollador Full Stack con amplia experiencia en la construcción de aplicaciones web,
+                    enseñanza de programación y creación de recursos de diseño interactivos. Durante los últimos
+                    años, he trabajado en proyectos que van desde servicios del mundo real para municipalidades
+                    hasta aplicaciones impulsadas por APIs, así como demos educativas utilizadas en aulas para
+                    explicar tecnologías web.
+                </p>
+
+                <p class="text-lg text-slate-800 dark:text-slate-400 mb-8" data-translate="about.description2">
+                    Mi enfoque está en entregar soluciones limpias, eficientes y escalables, mientras también hago
+                    que la tecnología sea más accesible a través de ejemplos claros y enseñanza. Me apasionan los
+                    frameworks de front-end (React, Vue, Next.js), el desarrollo back-end con Python/Django y
+                    Node.js, y las prácticas de diseño modernas (Tailwind, CSS3, layouts responsivos).
+                </p>
+
+                <!-- Cuadro de herramientas dividido en 3 columnas -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="bg-slate-200/90 dark:bg-slate-700/50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2"
+                            data-translate="about.skills.webDev.title">Desarrollo Web</h3>
+                        <p class="text-sm text-slate-800 dark:text-slate-400" data-translate="about.skills.webDev.description"></p>
+                    </div>
+
+                    <div class="bg-slate-200/90 dark:bg-slate-700/50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2" data-translate="about.skills.uiux.title">Diseño UI/UX</h3>
+                        <p class="text-sm text-slate-800 dark:text-slate-400" data-translate="about.skills.uiux.description"></p>
+                    </div>
+
+                    <div class="bg-slate-200/90 dark:bg-slate-700/50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2" data-translate="about.skills.apis.title">Backend y Arquitectura</h3>
+                        <p class="text-sm text-slate-800 dark:text-slate-400" data-translate="about.skills.apis.description">\</p>
+                    </div>
+
+                    <div class="bg-slate-200/90 dark:bg-slate-700/50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2" data-translate="about.skills.cloudAndDB.title">Cloud y DevOps</h3>
+                        <p class="text-sm text-slate-800 dark:text-slate-400" data-translate="about.skills.cloudAndDB.description"></p>
+                    </div>
+
+                    <div class="bg-slate-200/90 dark:bg-slate-700/50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2" data-translate="about.skills.education.title">Educación y Mentoría</h3>
+                        <p class="text-sm text-slate-800 dark:text-slate-400"  data-translate="about.skills.education.description"></p>
+                    </div>
+                    
+                    <div class="bg-slate-200/90 dark:bg-slate-700/50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2" data-translate="about.skills.integrations.title">AI y LLM Integrations</h3>
+                        <p class="text-sm text-slate-800 dark:text-slate-400" data-translate="about.skills.integrations.description"></p>
+                    </div>
+
+                    <div class="bg-slate-200/90 dark:bg-slate-700/50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2" data-translate="about.skills.versionControl.title"></h3>
+                        <p class="text-sm text-slate-800 dark:text-slate-400" data-translate="about.skills.versionControl.description"></p>
+                    </div>
+
+                    <div class="bg-slate-200/90 dark:bg-slate-700/50 p-4 rounded-lg lg:col-span-2">
+                        <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2" data-translate="about.skills.mcpDevelopment.title">MCP Development</h3>
+                        <p class="text-sm text-slate-800 dark:text-slate-400" data-translate="about.skills.mcpDevelopment.description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 flex flex-col md:flex-row md:space-x-12 gap-8">
+        <div class="mt-8 md:mt-0 md:w-1/4">
+            <div>
+                <h3 class="text-xl font-semibold mb-4 text-center text-slate-800 dark:text-slate-400 md:text-left"
+                    data-translate="languages.title">Idiomas</h3>
+                <ul class="space-y-2 text-center md:text-left">
+                    <li class="text-sm text-slate-800 dark:text-slate-400" data-translate="languages.spanish">🇦🇷
+                        Español</li>
+                    <li class="text-sm text-slate-800 dark:text-slate-400" data-translate="languages.english">🇺🇸
+                        Inglés</li>
+                    <li class="text-sm text-slate-800 dark:text-slate-400" data-translate="languages.portugues">🇧🇷
+                        Portugués</li>
+                </ul>
+            </div>
+            <div class="mt-8">
+                <h3 class="text-xl font-semibold mb-4 text-center text-slate-800 dark:text-slate-400 md:text-left"
+                    data-translate="methodologies.title">Metodologías Ágiles</h3>
+                <ul class="space-y-2 text-center md:text-left">
+                    <li class="text-sm text-slate-800 dark:text-slate-400">📌 Scrum, Kanban, Extreme Prog (XP)</li>
+                </ul>
+            </div>
+            <div class="mt-8">
+                <h3 class="text-xl font-semibold mb-4 text-center text-slate-800 dark:text-slate-400 md:text-left"
+                    data-translate="tools.title">Herramientas</h3>
+                <ul class="space-y-2 text-center md:text-left">
+                    <li class="text-sm text-slate-800 dark:text-slate-400">⚡ Git & repositorios (GitHub, GitLab)
+                    </li>
+                    <li class="text-sm text-slate-800 dark:text-slate-400">🐳 Docker</li>
+                    <li class="text-sm text-slate-800 dark:text-slate-400">📬 Postman</li>
+                    <li class="text-sm text-slate-800 dark:text-slate-400">🖥️ Editores: VS Code, Cursor, Windsurf
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-8">
+                <h3 class="text-xl font-semibold mb-4 text-center text-slate-800 dark:text-slate-400 md:text-left"
+                    data-translate="platforms.title">Plataformas y S.O.</h3>
+                <ul class="space-y-2 text-center md:text-left">
+                    <li class="text-sm text-slate-800 dark:text-slate-400">macOS</li>
+                    <li class="text-sm text-slate-800 dark:text-slate-400">Windows</li>
+                    <li class="text-sm text-slate-800 dark:text-slate-400">Linux</li>
+                    <li class="text-sm text-slate-800 dark:text-slate-400">iOS & Android</li>
+                </ul>
+            </div>
+        </div>
+        <div class="md:w-3/4">
+          <h3 class="text-xl font-semibold mb-4 text-center text-slate-800 dark:text-slate-400 md:text-left"
+              data-translate="about.skills.technologies.title">
+              Tecnologías y herramientas
+          </h3>
+
+          <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6 items-center justify-items-center">
+
+            <!-- Lenguajes -->
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/github/explore/main/topics/javascript/javascript.png" alt="JavaScript" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400">JavaScript</span>
+            </div>
+
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/github/explore/main/topics/typescript/typescript.png" alt="TypeScript" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400">TypeScript</span>
+            </div>
+
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/github/explore/main/topics/python/python.png" alt="Python" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400">Python</span>
+            </div>
+
+            <!-- Frontend -->
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/github/explore/main/topics/react/react.png" alt="React" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400">React</span>
+            </div>
+
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" alt="Next.js" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400">Next.js</span>
+            </div>
+
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/github/explore/main/topics/vue/vue.png" alt="Vue.js" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400">Vue.js</span>
+            </div>
+
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/github/explore/main/topics/tailwind/tailwind.png" alt="Tailwind CSS" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400">Tailwind CSS</span>
+            </div>
+
+            <!-- Backend -->
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/github/explore/main/topics/nodejs/nodejs.png" alt="Node.js" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400">Node.js</span>
+            </div>
+
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/NestJS.svg" alt="NestJS" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400">NestJS</span>
+            </div>
+
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/github/explore/main/topics/django/django.png" alt="Django" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400">Django</span>
+            </div>
+
+            <!-- Bases de datos -->
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/github/explore/main/topics/postgresql/postgresql.png" alt="PostgreSQL" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400 text-center">PostgreSQL + SQL</span>
+            </div>
+
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/github/explore/main/topics/mongodb/mongodb.png" alt="MongoDB" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400">MongoDB</span>
+            </div>
+
+            <!-- Integración e IA -->
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/512px-ChatGPT_logo.svg.png" alt="OpenAI" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400 text-center">OpenAI / MCP</span>
+            </div>
+
+            <!-- Infraestructura -->
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/github/explore/main/topics/docker/docker.png" alt="Docker" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400">Docker</span>
+            </div>
+
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/github/explore/main/topics/aws/aws.png" alt="AWS" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400 text-center">AWS + Services</span>
+            </div>
+              
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/GuilloSGit/portfolio-images/main/microservices.png" alt="Microservices" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400 text-center">Microservices</span>
+            </div>
+              
+            <div class="flex flex-col items-center space-y-2">
+              <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                <img src="https://raw.githubusercontent.com/GuilloSGit/portfolio-images/main/github-actions.png" alt="GitHub Actions" class="max-h-10 max-w-full object-contain">
+              </div>
+              <span class="text-sm text-slate-800 dark:text-slate-400 text-center">CI/CD</span>
+            </div>
+
+          </div>
+        </div>
+    </div>
+</section>
+</div>
+    <div><!-- Experience Section -->
+<section id="experience" class="py-20 dark:bg-slate-500/30 bg-slate-100/70 relative overflow-hidden">
+    <!-- Floating Elements -->
+    <div class="floating-element top-1/3 -right-20 w-72 h-72 bg-cyan-800 animate-float"
+        style="animation: float-4 24s ease-in-out infinite 1.5s;"></div>
+    <div class="floating-element bottom-1/4 left-0 w-56 h-56 bg-indigo-200 animate-float"
+        style="animation: float-5 28s ease-in-out infinite 2.5s;"></div>
+    <div class="floating-element top-1/2 -right-90 w-65 h-65 bg-green-700 animate-float"
+        style="animation: float-4 24s ease-in-out infinite 1.5s;"></div>
+    <div class="floating-element bottom-1/4 left-0 w-32 h-32 bg-yellow-100 animate-float"
+        style="animation: float-5 28s ease-in-out infinite 2.5s;"></div>
+
+    <!-- Título -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 text-center mb-16 scroll-reveal">
+        <h2 class="text-4xl font-bold mb-4 gradient-text" data-translate="experience.title">
+            Experiencia Profesional
+        </h2>
+        <p class="text-xl text-slate-800 dark:text-slate-400 max-w-2xl mx-auto"
+            data-translate="experience.subtitle">
+            Mi trayectoria como desarrollador Full Stack y Frontend en proyectos de alto impacto
+        </p>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 space-y-8">
+        <!-- Freelance -->
+        <div class="glass-effect rounded-xl p-8 scroll-reveal hover:scale-[1.01] transition">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                <div>
+                    <h3 class="text-2xl font-bold text-primary-400"
+                        data-translate="experience.jobs.freelance.position">Full Stack Developer</h3>
+                    <p class="text-lg text-slate-800 dark:text-yellow-300"
+                        data-translate="experience.jobs.freelance.company">
+                        Freelance</p>
+                </div>
+                <div
+                    class="mt-2 md:mt-0 bg-primary-900/30 text-gray-900 dark:text-primary-300 px-4 py-1 rounded-full text-sm">
+                    <span data-translate="experience.jobs.freelance.duration">2019 – 2025</span>
+                </div>
+            </div>
+            <p class="text-slate-800 dark:text-slate-400 mb-4"
+                data-translate="experience.jobs.freelance.description">
+                Desarrollo integral de aplicaciones web y APIs para clientes en LATAM y USA.
+                Creación de arquitecturas escalables, integración de servicios externos y despliegue en la nube.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-4">
+                <span class="tag">React</span><span class="tag">Next.js</span>
+                <span class="tag">Node.js</span><span class="tag">PostgreSQL</span>
+                <span class="tag">MongoDB</span><span class="tag">AWS</span>
+            </div>
+        </div>
+
+        <!-- Bahr Company -->
+        <div class="glass-effect rounded-xl p-8 scroll-reveal hover:scale-[1.01] transition">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                <div>
+                    <h3 class="text-2xl font-bold text-primary-400" data-translate="experience.jobs.bahr.position">
+                        Full Stack Developer</h3>
+                    <p class="text-lg text-slate-800 dark:text-yellow-300"
+                        data-translate="experience.jobs.bahr.company">Bahr Company
+                    </p>
+                </div>
+                <div
+                    class="mt-2 md:mt-0 bg-primary-900/30 text-gray-900 dark:text-primary-300 px-4 py-1 rounded-full text-sm">
+                    <span data-translate="experience.jobs.bahr.location">🌎 Remote / USA</span>
+                    <span data-translate="experience.jobs.bahr.duration">2025 (4 meses)</span>
+                    <span data-translate="experience.jobs.bahr.contractType">Contractor</span>
+                </div>
+            </div>
+            <p class="text-slate-800 dark:text-slate-400 mb-4" data-translate="experience.jobs.bahr.description">
+                Implementación de interfaces modernas en Next.js con enfoque en performance y
+                despliegue en Vercel. Contribución a diseño responsivo y arquitectura modular.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-4">
+                <span class="tag">Next.js</span><span class="tag">React</span>
+                <span class="tag">Tailwind</span><span class="tag">Vercel</span>
+            </div>
+        </div>
+
+        <!-- ODEA / YPF -->
+        <div class="glass-effect rounded-xl p-8 scroll-reveal hover:scale-[1.01] transition">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                <div>
+                    <h3 class="text-2xl font-bold text-primary-400" data-translate="experience.jobs.odea.position">
+                        Frontend Developer</h3>
+                    <p class="text-lg text-slate-800 dark:text-yellow-300"
+                        data-translate="experience.jobs.odea.company">ODEA (para
+                        YPF)</p>
+                </div>
+                <div
+                    class="mt-2 md:mt-0 bg-primary-900/30 text-gray-900 dark:text-primary-300 px-4 py-1 rounded-full text-sm">
+                    <span data-translate="experience.jobs.odea.location">🌎 Remote / Argentina</span>
+                    <span data-translate="experience.jobs.odea.duration">2023 – 2024</span>
+                    <span data-translate="experience.jobs.odea.contractType">Contratado</span>
+                </div>
+            </div>
+            <p class="text-slate-800 dark:text-slate-400 mb-4" data-translate="experience.jobs.odea.description">
+                Desarrollo de aplicaciones internas para YPF con JavaScript Vanilla, asegurando
+                compatibilidad y optimización en entornos corporativos de gran escala.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-4">
+                <span class="tag">JavaScript</span><span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+            </div>
+        </div>
+
+        <!-- Colegium -->
+        <div class="glass-effect rounded-xl p-8 scroll-reveal hover:scale-[1.01] transition">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                <div>
+                    <h3 class="text-2xl font-bold text-primary-400"
+                        data-translate="experience.jobs.colegium.position">Frontend Developer</h3>
+                    <p class="text-lg text-slate-800 dark:text-yellow-300"
+                        data-translate="experience.jobs.colegium.company">Colegium
+                    </p>
+                </div>
+                <div
+                    class="mt-2 md:mt-0 bg-primary-900/30 text-gray-900 dark:text-primary-300 px-4 py-1 rounded-full text-sm">
+                    <span data-translate="experience.jobs.colegium.location">🌎 Remoto / LATAM</span>
+                    <span data-translate="experience.jobs.colegium.duration">2022 – 2023</span>
+                    <span data-translate="experience.jobs.colegium.contractType">Contratado</span>
+                </div>
+            </div>
+            <p class="text-slate-800 dark:text-slate-400 mb-4"
+                data-translate="experience.jobs.colegium.description">
+                Implementación de interfaces escolares con Vue.js y PHP. Optimización del rendimiento,
+                mantenimiento de módulos existentes y creación de componentes reutilizables.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-4">
+                <span class="tag">Vue.js</span><span class="tag">PHP</span>
+                <span class="tag">JavaScript</span><span class="tag">CSS</span>
+            </div>
+        </div>
+
+        <!-- Electro 3 -->
+        <div class="glass-effect rounded-xl p-8 scroll-reveal hover:scale-[1.01] transition">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                <div>
+                    <h3 class="text-2xl font-bold text-primary-400"
+                        data-translate="experience.jobs.electro3.position">Full Stack Developer</h3>
+                    <p class="text-lg text-slate-800 dark:text-yellow-300"
+                        data-translate="experience.jobs.electro3.company">Electro 3</p>
+                </div>
+                <div
+                    class="mt-2 md:mt-0 bg-primary-900/30 text-gray-900 dark:text-primary-300 px-4 py-1 rounded-full text-sm">
+                    <span data-translate="experience.jobs.electro3.location">💼 Onsite / Argentina</span>
+                    <span data-translate="experience.jobs.electro3.duration">Jan 2021 – May 2023</span>
+                    <span data-translate="experience.jobs.electro3.contractType">Contratado</span>
+                </div>
+            </div>
+            <p class="text-slate-800 dark:text-slate-400 mb-4"
+                data-translate="experience.jobs.electro3.description">
+                Desarrollo de aplicaciones empresariales con frontend en Vue.js y backend en Node.js / PHP.
+                Implementación de APIs REST, bases de datos SQL y soporte a sistemas en producción.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-4">
+                <span class="tag">Vue.js</span><span class="tag">Node.js</span>
+                <span class="tag">PHP</span><span class="tag">MySQL</span>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+</div>
+    <div><!-- Projects Section -->
+<section id="projects" class="py-20 relative overflow-hidden">
+    <!-- Floating Elements -->
+    <div class="floating-element top-1/2 right-0 w-72 h-72 bg-cyan-800 animate-float"
+        style="animation: float-2 28s ease-in-out infinite 2s;"></div>
+    <div class="floating-element top-1/3 left-0 w-56 h-56 bg-indigo-200 animate-float"
+        style="animation: float-5 32s ease-in-out infinite 1.5s;"></div>
+    <div class="floating-element top-1/2 -right-44 w-44 h-44 bg-green-200 animate-float"
+        style="animation: float-4 24s ease-in-out infinite 1.5s;"></div>
+    <div class="floating-element bottom-1/4 left-0 w-32 h-32 bg-yellow-600 animate-float"
+        style="animation: float-5 28s ease-in-out infinite 2.5s;"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 scroll-reveal">
+            <h2 class="text-4xl font-bold mb-4 gradient-text" data-translate="projects.title">Mis Proyectos</h2>
+            <p class="text-xl text-slate-800 dark:text-slate-400 max-w-2xl mx-auto"
+                data-translate="projects.subtitle">
+                Este portafolio muestra tanto proyectos profesionales como recursos educativos que destacan mi
+                versatilidad como desarrollador Full Stack + Integraciones de IA
+            </p>
+            <p class="text-xs text-slate-400 max-w-2xl mx-auto mt-4" data-translate="projects.disclaimer">
+                ‼️ Nota: los proyectos privados de las empresas en las que trabajé no se pueden incluir aquí debido
+                a acuerdos de
+                confidencialidad.
+            </p>
+        </div>
+
+        <!-- Added project categories to organize the 14 projects -->
+        <!-- Real-world Apps & Services -->
+        <div class="mb-16">
+            <h3 class="text-2xl font-bold mb-8 text-center gradient-text"
+                data-translate="projects.categories.realWorld">🚀 Aplicaciones y Servicios del Mundo Real</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Bus Schedule Service -->
+                <div class="project-card glass-effect rounded-xl p-6 scroll-reveal">
+                    <!-- Added image container for Bus Schedule project -->
+                    <!-- Fixed image URL to match correct project -->
+                    <div class="h-48 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg mb-6 overflow-hidden">
+                        <img src="https://raw.githubusercontent.com/GuilloSGit/portfolio-images/main/MediaAgua-Transporte.jpg"
+                            alt="Bus Schedule Service - Media Agua" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3" data-translate="projects.list.realWorld.busSchedule.title">
+                        Bus Schedule Service – Media Agua</h3>
+                    <p class="text-slate-800 dark:text-slate-400 mb-4"
+                        data-translate="projects.list.realWorld.busSchedule.description">
+                        A simple web application that displays the public transportation schedule for the
+                        municipality of Sarmiento. Built to provide the local community with quick access to bus
+                        schedules without requiring a database.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-500/20 text-blue-300 px-2 py-1 rounded text-sm">Next.js</span>
+                        <span class="bg-cyan-500/20 text-cyan-300 px-2 py-1 rounded text-sm">Tailwind CSS</span>
+                        <span class="bg-yellow-500/20 text-yellow-300 px-2 py-1 rounded text-sm">JSON</span>
+                        <span class="bg-purple-500/20 text-purple-300 px-2 py-1 rounded text-sm">
+                            <a href="https://guillosgit.github.io/media-agua-colectivos/" target="_blank">🔗
+                                Link</a>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Passwords Admin -->
+                <div class="project-card glass-effect rounded-xl p-6 scroll-reveal">
+                    <!-- Added image container for Passwords Admin project -->
+                    <div class="h-48 bg-gradient-to-br from-red-500 to-pink-500 rounded-lg mb-6 overflow-hidden">
+                        <img src="https://raw.githubusercontent.com/GuilloSGit/portfolio-images/main/SharePass.jpg"
+                            alt="Passwords Admin - Secure Sharing Platform" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3"
+                        data-translate="projects.list.realWorld.passwordsAdmin.title">Passwords Admin – Secure
+                        Sharing Platform</h3>
+                    <p class="text-slate-800 dark:text-slate-400 mb-4"
+                        data-translate="projects.list.realWorld.passwordsAdmin.description">
+                        A web application that enables secure password sharing among team members. Designed to
+                        manage and share sensitive credentials safely within groups.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-500/20 text-green-300 px-2 py-1 rounded text-sm">Python</span>
+                        <span class="bg-blue-500/20 text-blue-300 px-2 py-1 rounded text-sm">Django</span>
+                        <span class="bg-gray-500/20 text-gray-300 px-2 py-1 rounded text-sm">SQLite</span>
+                        <span class="bg-purple-500/20 text-purple-300 px-2 py-1 rounded text-sm">
+                            <a href="https://passwords-admin.onrender.com/" target="_blank">🔗 Link</a>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- NASA Rover Image Searcher -->
+                <div class="project-card glass-effect rounded-xl p-6 scroll-reveal">
+                    <!-- Added image container for NASA Searcher project -->
+                    <!-- Fixed image URL to match correct project -->
+                    <div class="h-48 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg mb-6 overflow-hidden">
+                        <img src="https://raw.githubusercontent.com/GuilloSGit/portfolio-images/main/NASA-images.jpg"
+                            alt="NASA Rover Image Searcher" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3" data-translate="projects.list.realWorld.nasaRover.title">NASA
+                        Rover Image Searcher</h3>
+                    <p class="text-slate-800 dark:text-slate-400 mb-4"
+                        data-translate="projects.list.realWorld.nasaRover.description">
+                        A web app to search and display images captured by NASA's Mars Rover. Developed as part of a
+                        coding challenge for Nexo, demonstrating API integration and state management.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-500/20 text-green-300 px-2 py-1 rounded text-sm">Vue.js</span>
+                        <span class="bg-purple-500/20 text-purple-300 px-2 py-1 rounded text-sm">Pinia</span>
+                        <span class="bg-blue-500/20 text-blue-300 px-2 py-1 rounded text-sm">Bootstrap</span>
+                        <span class="bg-purple-500/20 text-purple-300 px-2 py-1 rounded text-sm">
+                            <a href="https://guillosgit.github.io/NASA-Rover-Image-Searcher-Challenge-Nexo/"
+                                target="_blank">🔗 Link</a>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Chuck Norris Jokes App -->
+                <div class="project-card glass-effect rounded-xl p-6 scroll-reveal">
+                    <!-- Added image container for Chuck Norris App project -->
+                    <!-- Using placeholder since no specific image available -->
+                    <div
+                        class="h-48 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-lg mb-6 overflow-hidden">
+                        <img src="https://raw.githubusercontent.com/GuilloSGit/portfolio-images/main/Jokes-App.jpg"
+                            alt="Chuck Norris Jokes App" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3" data-translate="projects.list.realWorld.chuckNorris.title">
+                        Chuck Norris Jokes App</h3>
+                    <p class="text-slate-800 dark:text-slate-400 mb-4"
+                        data-translate="projects.list.realWorld.chuckNorris.description">
+                        A Next.js web app that delivers unlimited Chuck Norris jokes with fun interactions. Users
+                        can favorite jokes, rate them, sort them, and even share them on WhatsApp.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-500/20 text-blue-300 px-2 py-1 rounded text-sm">Next.js</span>
+                        <span class="bg-cyan-500/20 text-cyan-300 px-2 py-1 rounded text-sm">Tailwind CSS</span>
+                        <span class="bg-red-500/20 text-red-300 px-2 py-1 rounded text-sm">Jest</span>
+                    </div>
+                </div>
+
+                <!-- Unsplash Image Searcher -->
+                <div class="project-card glass-effect rounded-xl p-6 scroll-reveal">
+                    <!-- Added image container for Unsplash Searcher project -->
+                    <!-- Fixed image URL to match correct project -->
+                    <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg mb-6 overflow-hidden">
+                        <img src="https://raw.githubusercontent.com/GuilloSGit/portfolio-images/main/Unsplash-ImageSearch.jpg"
+                            alt="Unsplash Image Searcher" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3" data-translate="projects.list.realWorld.unsplash.title">
+                        Unsplash Image Searcher</h3>
+                    <p class="text-slate-800 dark:text-slate-400 mb-4"
+                        data-translate="projects.list.realWorld.unsplash.description">
+                        A search engine that retrieves images from the Unsplash API based on user parameters. Built
+                        as an educational tool to teach API consumption and front-end frameworks.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-500/20 text-green-300 px-2 py-1 rounded text-sm">Vue.js</span>
+                        <span class="bg-purple-500/20 text-purple-300 px-2 py-1 rounded text-sm">Pinia</span>
+                        <span class="bg-blue-500/20 text-blue-300 px-2 py-1 rounded text-sm">Bootstrap</span>
+                        <span class="bg-purple-500/20 text-purple-300 px-2 py-1 rounded text-sm">
+                            <a href="https://guillosgit.github.io/unsplash_image_searcher/" target="_blank">🔗
+                                Link</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Educational & Design Demos -->
+        <div class="mb-16">
+            <h3 class="text-2xl font-bold mb-8 text-center gradient-text"
+                data-translate="projects.categories.educational">🎨 Demos Educativos y de Diseño</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 3D Animation – Bouncing Ball -->
+                <div class="project-card glass-effect rounded-xl p-6 scroll-reveal">
+                    <!-- Added image container for 3D Animation project -->
+                    <div
+                        class="h-48 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-lg mb-6 overflow-hidden">
+                        <img src="https://raw.githubusercontent.com/GuilloSGit/portfolio-images/main/3D-Animation.jpg"
+                            alt="3D Animation - Bouncing Ball" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3"
+                        data-translate="projects.list.educational.bouncingBall.title">3D Animation – Bouncing Ball
+                    </h3>
+                    <p class="text-slate-800 dark:text-slate-400 mb-4"
+                        data-translate="projects.list.educational.bouncingBall.description">
+                        A 3D animation of a ball bouncing on geometric shapes. Developed as a teaching resource for
+                        design classes, demonstrating basic animation principles.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-orange-500/20 text-orange-300 px-2 py-1 rounded text-sm">HTML</span>
+                        <span class="bg-blue-500/20 text-blue-300 px-2 py-1 rounded text-sm">CSS</span>
+                        <span class="bg-purple-500/20 text-purple-300 px-2 py-1 rounded text-sm">
+                            <a href="https://guillosgit.github.io/Animacion3D/" target="_blank">🔗 Link</a>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Neon Buttons -->
+                <div class="project-card glass-effect rounded-xl p-6 scroll-reveal">
+                    <!-- Added image container for Neon Buttons project -->
+                    <div class="h-48 bg-gradient-to-br from-pink-500 to-rose-500 rounded-lg mb-6 overflow-hidden">
+                        <img src="https://raw.githubusercontent.com/GuilloSGit/portfolio-images/main/Neon.jpg"
+                            alt="Neon Buttons" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3" data-translate="projects.list.educational.neonButtons.title">
+                        Neon Buttons</h3>
+                    <p class="text-slate-800 dark:text-slate-400 mb-4"
+                        data-translate="projects.list.educational.neonButtons.description">
+                        A collection of glowing neon-style buttons. Created as an educational example for design
+                        students, showcasing creative CSS styling.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-orange-500/20 text-orange-300 px-2 py-1 rounded text-sm">HTML</span>
+                        <span class="bg-blue-500/20 text-blue-300 px-2 py-1 rounded text-sm">CSS</span>
+                    </div>
+                </div>
+
+                <!-- Glass Effect UI -->
+                <div class="project-card glass-effect rounded-xl p-6 scroll-reveal">
+                    <!-- Added image container for Glass Effect UI project -->
+                    <div class="h-48 bg-gradient-to-br from-teal-500 to-cyan-500 rounded-lg mb-6 overflow-hidden">
+                        <img src="https://raw.githubusercontent.com/GuilloSGit/portfolio-images/main/Glassmorphism.jpg"
+                            alt="Glass Effect UI - Mock Company" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3" data-translate="projects.list.educational.glassEffect.title">
+                        Glass Effect UI – Mock Company</h3>
+                    <p class="text-slate-800 dark:text-slate-400 mb-4"
+                        data-translate="projects.list.educational.glassEffect.description">
+                        A mock company interface displaying tasks with a modern glassmorphism effect. Designed as a
+                        teaching demo for web design, highlighting advanced CSS visuals.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-orange-500/20 text-orange-300 px-2 py-1 rounded text-sm">HTML</span>
+                        <span class="bg-blue-500/20 text-blue-300 px-2 py-1 rounded text-sm">CSS</span>
+                        <span class="bg-purple-500/20 text-purple-300 px-2 py-1 rounded text-sm">
+                            <a href="https://guillosgit.github.io/Efecto-Cristal/#" target="_blank">🔗 Link</a>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Image Blender -->
+                <div class="project-card glass-effect rounded-xl p-6 scroll-reveal">
+                    <!-- Added image container for Image Blender project -->
+                    <div
+                        class="h-48 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-lg mb-6 overflow-hidden">
+                        <img src="https://raw.githubusercontent.com/GuilloSGit/portfolio-images/main/Image-Blend.jpg"
+                            alt="Image Blender - CSS Blend Modes" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3"
+                        data-translate="projects.list.educational.imageBlender.title">Image Blender – CSS Blend
+                        Modes</h3>
+                    <p class="text-slate-800 dark:text-slate-400 mb-4"
+                        data-translate="projects.list.educational.imageBlender.description">
+                        A demo showcasing image blending and masking effects with CSS. Used in design classes to
+                        illustrate the power of CSS blend modes.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-orange-500/20 text-orange-300 px-2 py-1 rounded text-sm">HTML</span>
+                        <span class="bg-blue-500/20 text-blue-300 px-2 py-1 rounded text-sm">CSS</span>
+                    </div>
+                </div>
+
+                <!-- Flexbox Layouts -->
+                <div class="project-card glass-effect rounded-xl p-6 scroll-reveal">
+                    <!-- Added image container for Flexbox Layouts project -->
+                    <div
+                        class="h-48 bg-gradient-to-br from-violet-500 to-purple-500 rounded-lg mb-6 overflow-hidden">
+                        <img src="https://raw.githubusercontent.com/GuilloSGit/portfolio-images/main/DisplayFlex.jpg"
+                            alt="Flexbox Layouts" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3" data-translate="projects.list.educational.flexbox.title">
+                        Flexbox Layouts</h3>
+                    <p class="text-slate-800 dark:text-slate-400 mb-4"
+                        data-translate="projects.list.educational.flexbox.description">
+                        A practical demonstration of CSS Flexbox for creating responsive layouts. Educational
+                        project to help students understand Flexbox concepts.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-orange-500/20 text-orange-300 px-2 py-1 rounded text-sm">HTML</span>
+                        <span class="bg-blue-500/20 text-blue-300 px-2 py-1 rounded text-sm">CSS</span>
+                    </div>
+                </div>
+
+                <!-- Custom Cursor Examples -->
+                <div class="project-card glass-effect rounded-xl p-6 scroll-reveal">
+                    <!-- Added image container for Custom Cursor project -->
+                    <div
+                        class="h-48 bg-gradient-to-br from-amber-500 to-orange-500 rounded-lg mb-6 overflow-hidden">
+                        <img src="https://raw.githubusercontent.com/GuilloSGit/portfolio-images/main/Cursor-Attributes.jpg"
+                            alt="Custom Cursor Examples" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3"
+                        data-translate="projects.list.educational.customCursor.title">Custom Cursor Examples</h3>
+                    <p class="text-slate-800 dark:text-slate-400 mb-4"
+                        data-translate="projects.list.educational.customCursor.description">
+                        A set of interactive demos showcasing different cursor styles and their applications. Built
+                        for teaching purposes to explain cursor customization with CSS.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-orange-500/20 text-orange-300 px-2 py-1 rounded text-sm">HTML</span>
+                        <span class="bg-blue-500/20 text-blue-300 px-2 py-1 rounded text-sm">CSS</span>
+                        <span class="bg-purple-500/20 text-purple-300 px-2 py-1 rounded text-sm">
+                            <a href="https://guillosgit.github.io/CursorPointers/" target="_blank">🔗 Link</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI & Experimental Projects -->
+        <div class="mb-16">
+            <h3 class="text-2xl font-bold mb-8 text-center gradient-text" data-translate="projects.categories.ai">🤖
+                Proyectos de IA y Experimentales</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- AI Console Assistant -->
+                <div class="project-card glass-effect rounded-xl p-6 scroll-reveal">
+                    <!-- Added image container for AI Console Assistant project -->
+                    <!-- Using placeholder since no specific image available -->
+                    <div
+                        class="h-48 bg-gradient-to-br from-green-500 to-emerald-500 rounded-lg mb-6 overflow-hidden">
+                        <img src="https://raw.githubusercontent.com/GuilloSGit/portfolio-images/main/AI1.jpg"
+                            alt="AI Console Assistant" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3" data-translate="projects.list.ai.aiConsole.title">AI Console
+                        Assistant</h3>
+                    <p class="text-slate-800 dark:text-slate-400 mb-4"
+                        data-translate="projects.list.ai.aiConsole.description">
+                        A simple AI-powered console assistant that answers questions and performs tasks using
+                        LangChain and OpenAI. Personal project to explore AI integrations in Python with minimal
+                        setup.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-500/20 text-green-300 px-2 py-1 rounded text-sm">Python</span>
+                        <span class="bg-blue-500/20 text-blue-300 px-2 py-1 rounded text-sm">LangChain</span>
+                        <span class="bg-purple-500/20 text-purple-300 px-2 py-1 rounded text-sm">OpenAI API</span>
+                    </div>
+                </div>
+
+                <!-- Resume Critique App -->
+                <div class="project-card glass-effect rounded-xl p-6 scroll-reveal">
+                    <!-- Added image container for Resume Critique App project -->
+                    <!-- Using placeholder since no specific image available -->
+                    <div class="h-48 bg-gradient-to-br from-red-500 to-rose-500 rounded-lg mb-6 overflow-hidden">
+                        <img src="https://raw.githubusercontent.com/GuilloSGit/portfolio-images/main/AI2.jpg"
+                            alt="Resume Critique App" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3" data-translate="projects.list.ai.resumeCritique.title">Resume
+                        Critique App</h3>
+                    <p class="text-slate-800 dark:text-slate-400 mb-4"
+                        data-translate="projects.list.ai.resumeCritique.description">
+                        A resume analysis tool that critiques resumes using OpenAI's GPT-4o-mini model. Provides
+                        structured feedback with a slightly sarcastic tone. Designed to assist job seekers by
+                        offering AI-driven resume critiques with a fun twist.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-500/20 text-green-300 px-2 py-1 rounded text-sm">Python</span>
+                        <span class="bg-red-500/20 text-red-300 px-2 py-1 rounded text-sm">Streamlit</span>
+                        <span class="bg-purple-500/20 text-purple-300 px-2 py-1 rounded text-sm">OpenAI API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+    <div><!-- Contact Section -->
+<section id="contact" class="py-20 dark:bg-slate-800/90 bg-slate-100/70 relative overflow-hidden">
+    <!-- Floating Elements -->
+    <div class="floating-element top-1/4 right-1/4 w-64 h-64 bg-blue-300 animate-float"
+        style="animation: float-1 30s ease-in-out infinite 2s;"></div>
+    <div class="floating-element bottom-1/4 left-1/4 w-56 h-56 bg-purple-300 animate-float"
+        style="animation: float-3 26s ease-in-out infinite 1.5s;"></div>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 scroll-reveal">
+            <h2 class="text-4xl font-bold mb-4 gradient-text" data-translate="contact.title">Contacto</h2>
+            <p class="text-xl text-slate-100" data-translate="contact.subtitle">
+                ¿Tienes un proyecto en mente? ¡Hablemos!
+            </p>
+        </div>
+
+        <!-- 2 columnas -->
+        <div class="flex flex-col lg:flex-row items-start gap-12">
+            <!-- Columna 30%: Datos personales -->
+            <aside class="w-full lg:w-[30%]">
+                <div class="glass-effect rounded-2xl p-6 sm:p-8 scroll-reveal h-full">
+                    <h3 class="text-2xl font-bold dark:text-primary-500 text-slate-600 mb-6"
+                        data-translate="contact.info.title">
+                        Información de Contacto
+                    </h3>
+                    <ul class="space-y-5">
+                        <!-- Teléfono -->
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-primary-500 mt-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h1.28a2 2 0 011.94 1.515l.57 2.28a2 2 0 01-.5 1.94l-1.02 1.02a16 16 0 006.36 6.36l1.02-1.02a2 2 0 011.94-.5l2.28.57A2 2 0 0121 17.72V19a2 2 0 01-2 2h-1A16 16 0 013 5v0z" />
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold dark:text-slate-100 text-slate-600"
+                                    data-translate="contact.info.phoneTitle">
+                                    Teléfono celular</h4>
+                                <a href="tel:+543876295801"
+                                    class="text-slate-800 dark:text-slate-400 hover:text-white transition-colors">
+                                    +54 387 629 5801
+                                </a>
+                            </div>
+                        </li>
+
+                        <!-- Email -->
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-primary-500 mt-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8m-18 8h18a2 2 0 002-2V8a2 2 0 00-2-2H3a2 2 0 00-2 2v6a2 2 0 002 2z" />
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold dark:text-slate-100 text-slate-600"
+                                    data-translate="contact.info.emailTitle">
+                                    Email</h4>
+                                <a href="mailto:guillermoandrada@gmail.com"
+                                    class="text-slate-800 dark:text-slate-400 hover:text-white transition-colors">
+                                    guillermoandrada@gmail.com
+                                </a>
+                            </div>
+                        </li>
+
+                        <!-- Residencia -->
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-primary-500 mt-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 11a4 4 0 100-8 4 4 0 000 8zm0 0c-4.418 0-8 2.239-8 5v2h16v-2c0-2.761-3.582-5-8-5z" />
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold dark:text-slate-100 text-slate-600"
+                                    data-translate="contact.info.locationTitle">Residencia</h4>
+                                <p class="text-slate-800 dark:text-slate-400">San Juan, Argentina</p>
+                                <a href="https://maps.app.goo.gl/7rYtKfSQZrxkr3QX9"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="relative text-xs text-slate-300 transition-colors duration-300 hover:text-blue-300
+                                     after:content-[''] after:absolute after:left-0 after:bottom-0
+                                     after:w-0 after:h-[1px] after:bg-blue-300
+                                     after:transition-all after:duration-300 hover:after:w-full"
+                                   data-translate="contact.info.gps_url"></a>
+                            </div>
+                        </li>
+
+                        <!-- Redes sociales -->
+                        <li>
+                            <div class="pt-6 mt-6">
+                                <h4 class="font-semibold dark:text-slate-100 text-slate-600 mb-4"
+                                    data-translate="contact.info.socialTitle">
+                                    Redes Sociales</h4>
+                                <div class="flex gap-4">
+                                    <!-- LinkedIn -->
+                                    <a href="https://www.linkedin.com/in/guillermo-david-andrada/" target="_blank" rel="noopener noreferrer"
+                                        class="text-slate-400 hover:text-primary-500 transition">
+                                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"
+                                            aria-hidden="true">
+                                            <path d="M19 0h-14c-2.8 0-5 2.2-5 5v14c0
+                                                2.8 2.2 5 5 5h14c2.8 0 5-2.2
+                                                5-5v-14c0-2.8-2.2-5-5-5zM8 19h-3v-11h3v11zM6.5
+                                                7.7c-1 0-1.8-.8-1.8-1.7 0-1 .8-1.7
+                                                1.8-1.7s1.8.8 1.8 1.7c0 1-.8 1.7-1.8
+                                                1.7zm13.5 11.3h-3v-5.5c0-1.3 0-3-1.8-3s-2
+                                                1.4-2 2.9v5.6h-3v-11h2.9v1.5h.1c.4-.8
+                                                1.4-1.8 3-1.8 3.3 0 3.9 2.1
+                                                3.9 4.9v6.4z" />
+                                        </svg>
+                                    </a>
+                                    <!-- X -->
+                                    <a href="https://x.com/GA_Softwares" target="_blank"
+                                        class="text-slate-400 hover:text-primary-500 transition">
+                                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M18.244 2H21.5l-7.327 8.367L22 22h-6.743l-5.28-7.013L3.5 22H0l7.997-9.125L0 2h6.743l4.842 6.442L18.244 2z" />
+                                        </svg>
+                                    </a>
+                                    <!-- Instagram -->
+                                    <a href="https://www.instagram.com/ga.software/" target="_blank"
+                                        class="text-slate-400 hover:text-primary-500 transition">
+                                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"
+                                            aria-hidden="true">
+                                            <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75
+                                                5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2
+                                                16.25v-8.5A5.75 5.75 0 0 1 7.75
+                                                2zm0 1.5A4.25 4.25 0 0 0 3.5
+                                                7.75v8.5A4.25 4.25 0 0 0 7.75
+                                                20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25
+                                                4.25 0 0 0 16.25 3.5h-8.5zm4.25
+                                                3.25a5.25 5.25 0 1 1 0
+                                                10.5 5.25 5.25 0 0 1 0-10.5zm0
+                                                1.5a3.75 3.75 0 1 0 0
+                                                7.5 3.75 3.75 0 0 0 0-7.5zm5.75-.88a1.13
+                                                1.13 0 1 1-2.25 0 1.13 1.13 0 0 1
+                                                2.25 0z" />
+                                        </svg>
+                                    </a>
+                                    <!-- Facebook -->
+                                    <a href="https://web.facebook.com/profile.php?id=61578618113228" target="_blank"
+                                        class="text-slate-400 hover:text-primary-500 transition">
+                                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"
+                                            aria-hidden="true">
+                                            <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2
+                                                1.2-3.1 3-3.1.9 0 1.8.1
+                                                1.8.1v2h-1c-1 0-1.3.6-1.3
+                                                1.2V12h2.2l-.4 3h-1.8v7A10
+                                                10 0 0 0 22 12z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Columna 70%: Formulario -->
+            <div class="w-full lg:w-[70%]">
+                <div class="glass-effect rounded-2xl p-6 sm:p-8 scroll-reveal h-full">
+                    <form id="contact-form" action="https://formspree.io/f/mjkoqnny" method="POST"
+                        class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name"
+                                    class="block text-sm font-medium text-slate-600 dark:text-slate-100 mb-2"
+                                    data-translate="contact.form.name">Nombre</label>
+                                <input type="text" id="name" name="name" required
+                                    class="w-full px-4 py-3 dark:bg-slate-800/80 border border-slate-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all text-slate-600 dark:text-slate-100 placeholder-slate-400">
+                            </div>
+                            <div>
+                                <label for="email"
+                                    class="block text-sm font-medium text-slate-600 dark:text-slate-100 mb-2"
+                                    data-translate="contact.form.email">Email</label>
+                                <input type="email" id="email" name="email" required
+                                    class="w-full px-4 py-3 dark:bg-slate-800/80 border border-slate-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all text-slate-600 dark:text-slate-100 placeholder-slate-400">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="message"
+                                class="block text-sm font-medium text-slate-600 dark:text-slate-100 mb-2"
+                                data-translate="contact.form.message">Mensaje</label>
+                            <textarea id="message" name="message" rows="6" required
+                                class="w-full px-4 py-3 dark:bg-slate-800/80 border border-slate-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none font-bold dark:font-normal dark:text-slate-100 placeholder-slate-400"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" id="submit-button"
+                                class="bg-primary-600 hover:bg-primary-700 px-8 py-3 rounded-lg font-semibold transition-all transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed">
+                                <span id="button-text" data-translate="contact.form.send">Enviar Mensaje</span>
+                                <span id="loading-text" class="hidden"
+                                    data-translate="contact.form.sending">Enviando...</span>
+                            </button>
+                        </div>
+                    </form>
+                    <div id="status" class="hidden mt-4 mx-auto p-4 rounded-lg text-center inline-block"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+    <div><!-- Footer -->
+<footer class="bg-white/80 dark:bg-slate-900/90 py-12 border-t border-slate-200 dark:border-slate-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <div class="text-2xl font-bold gradient-text mb-2">Guille Andrada</div>
+                <p class="text-slate-800 dark:text-slate-400" data-translate="footer.role">Desarrollador Full Stack
+                </p>
+            </div>
+
+            <div class="flex space-x-6">
+                <a href="https://www.linkedin.com/in/guillermo-david-andrada/" target="_blank"
+                    class="text-slate-800 dark:text-slate-400 hover:text-primary-400 transition-colors hover:scale-110 transform">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg>
+                </a>
+                <a
+                  href="https://github.com/GuilloSGit"
+                  target="_blank"
+                  class="text-slate-800 dark:text-slate-400
+                         hover:text-primary-400
+                         transition-colors
+                         hover:scale-110 transform"
+                  aria-label="GitHub"
+                >
+                  <svg
+                    class="w-6 h-6"
+                    viewBox="0 0 1024 1024"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
+                      transform="scale(64)"
+                    />
+                  </svg>
+                </a>
+
+                <a href="mailto:guillermoandrada+websitecontact@gmail.com"
+                    class="text-slate-800 dark:text-slate-400 hover:text-primary-400 transition-colors hover:scale-110 transform">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="border-t border-slate-700 mt-8 pt-8 text-center text-slate-400">
+            <p>&copy; 2026 Guille Andrada.
+                <span data-translate="footer.rights">Todos los derechos reservados.</span>
+            </p>
+        </div>
+    </div>
+</footer>
+</div>
+
+    <!-- JavaScript -->
+    <script src="assets/main.js"></script>
+
+    
+
+
+    <!-- Initialization -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize all functionality
+            initializeLanguage();
+            
+            // Initialize CV selector
+            const cvButton = document.getElementById("cv-button");
+            const cvMenu = document.getElementById("cv-menu");
+            if (cvButton && cvMenu) {
+                cvButton.addEventListener("click", () => {
+                    cvMenu.classList.toggle("hidden");
+                });
+
+                document.addEventListener("click", (e) => {
+                    if (!e.target.closest("#cv-button") && !e.target.closest("#cv-menu")) {
+                        cvMenu.classList.add("hidden");
+                    }
+                });
+            }
+        });
+    </script>
+    
+</body>
+
+</html>

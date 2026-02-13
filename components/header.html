@@ -1,0 +1,118 @@
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-white dark:bg-slate-900 border-b border-gray-200 dark:border-slate-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+            <div>
+                <img src="https://raw.githubusercontent.com/GuilloSGit/portfolio-images/main/profile.jpg"
+                    alt="Guille Andrada profile picture" class="w-12 h-12 rounded-full border-2 border-primary-500/30 object-cover">
+            </div>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#home"
+                    class="text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 transition-colors"
+                    data-translate="nav.home">Inicio</a>
+                <a href="#about"
+                    class="text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 transition-colors"
+                    data-translate="nav.about">Sobre
+                    mí</a>
+                <a href="#experience"
+                    class="text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 transition-colors"
+                    data-translate="nav.experience">Experiencia</a>
+                <a href="#projects"
+                    class="text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 transition-colors"
+                    data-translate="nav.projects">Proyectos</a>
+                <a href="#contact"
+                    class="text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 transition-colors"
+                    data-translate="nav.contact">Contacto</a>
+
+                <!-- Theme Toggle Controls -->
+                <div class="flex items-center space-x-3">
+                    <button id="theme-toggle"
+                        class="p-3 rounded-full hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors text-lg">
+                        <i class="fas fa-moon text-primary-500"></i>
+                    </button>
+                </div>
+
+                <!-- Language selector -->
+               <div class="relative">
+                  <button id="language-selector" class="flex items-center space-x-1 text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 transition-colors">
+                    <img id="language-icon" src="https://flagcdn.com/es.svg" class="w-5 h-5 rounded-sm" alt="ES" />
+                    <span id="current-language">ES</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </button>
+
+                  <!-- Language options -->
+                  <div id="language-dropdown" class="absolute right-0 mt-2 w-20 dark:bg-slate-800 bg-slate-100 rounded-lg shadow-lg border border-slate-600 hidden">
+                    <button class="language-option w-full flex items-center px-3 py-2 text-left dark:hover:bg-slate-700 hover:bg-slate-300 rounded-t-lg" data-lang="es">
+                      <img src="https://flagcdn.com/es.svg" class="w-5 h-5 rounded-sm mr-2" alt="ES" /> ES
+                    </button>
+                    <button class="language-option w-full flex items-center px-3 py-2 text-left dark:hover:bg-slate-700 hover:bg-slate-300 rounded-b-lg" data-lang="en">
+                      <img src="https://flagcdn.com/gb.svg" class="w-5 h-5 rounded-sm mr-2" alt="EN" /> EN
+                    </button>
+                  </div>
+                </div>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div id="mobile-menu-overlay" class="hidden fixed inset-0 bg-black/50 z-40"></div>
+
+    <!-- Drawer -->
+    <div id="mobile-menu"
+        class="hidden md:hidden fixed top-0 left-0 h-full w-72 bg-slate-900 !bg-opacity-100 z-[60] transform -translate-x-full transition-transform duration-300"
+        style="background-color: #0f172a !important; /* slate-900 */">
+        <div class="px-6 pt-8 pb-12 flex flex-col h-full space-y-6">
+
+            <!-- Links -->
+            <nav class="flex flex-col space-y-2">
+                <a href="#home"
+                    class="px-3 py-2 rounded-lg text-slate-100 hover:bg-primary-600/20 hover:text-primary-400 transition"
+                    data-translate="nav.home">Inicio</a>
+                <a href="#about"
+                    class="px-3 py-2 rounded-lg text-slate-100 hover:bg-primary-600/20 hover:text-primary-400 transition"
+                    data-translate="nav.about">Sobre mí</a>
+                <a href="#experience"
+                    class="px-3 py-2 rounded-lg text-slate-100 hover:bg-primary-600/20 hover:text-primary-400 transition"
+                    data-translate="nav.experience">Experiencia</a>
+                <a href="#projects"
+                    class="px-3 py-2 rounded-lg text-slate-100 hover:bg-primary-600/20 hover:text-primary-400 transition"
+                    data-translate="nav.projects">Proyectos</a>
+                <a href="#contact"
+                    class="px-3 py-2 rounded-lg text-slate-100 hover:bg-primary-600/20 hover:text-primary-400 transition"
+                    data-translate="nav.contact">Contacto</a>
+            </nav>
+
+            <!-- Idiomas -->
+            <div class="border-t border-slate-700/40 pt-6">
+                <p class="text-sm font-medium text-slate-400 mb-3" data-translate="language.title">Idiomas</p>
+                <div class="flex gap-3">
+                    <button
+                        class="language-option px-4 py-1.5 rounded-full bg-slate-800/70 text-slate-200 hover:bg-primary-600/30 hover:text-primary-300 transition"
+                        data-lang="es">Español</button>
+                    <button
+                        class="language-option px-4 py-1.5 rounded-full bg-slate-800/70 text-slate-200 hover:bg-primary-600/30 hover:text-primary-300 transition"
+                        data-lang="en">English</button>
+                </div>
+            </div>
+
+            <!-- Tema -->
+            <div class="border-t border-slate-700/40 pt-6">
+                <p class="text-sm font-medium text-slate-400 mb-3" data-translate="nav.theme.toggle">Tema</p>
+                <button id="mobile-theme-toggle"
+                    class="flex items-center gap-3 px-3 py-2 rounded-lg bg-slate-800/70 hover:bg-primary-600/30 transition w-full text-left">
+                    <i class="fas fa-moon text-primary-400"></i>
+                    <span id="mobile-theme-text" class="text-slate-200" data-translate="nav.theme.toggle">Cambiar
+                        tema</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
