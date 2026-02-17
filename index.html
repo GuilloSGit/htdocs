@@ -165,9 +165,9 @@
         html {
             scroll-behavior: smooth;
         }
-        
+
         .metadata-pic {
-        	border-radius: 50%;
+            border-radius: 50%;
         }
 
         .floating-element {
@@ -267,7 +267,8 @@
             <div class="flex justify-between items-center py-4">
                 <div>
                     <img src="https://raw.githubusercontent.com/GuilloSGit/portfolio-images/main/profile.jpg"
-                        alt="Guille Andrada profile picture" class="w-12 h-12 rounded-full border-2 border-primary-500/30 object-cover">
+                        alt="Guille Andrada profile picture"
+                        class="w-12 h-12 rounded-full border-2 border-primary-500/30 object-cover">
                 </div>
                 <div class="hidden md:flex items-center space-x-6">
                     <a href="#home"
@@ -296,24 +297,32 @@
                     </div>
 
                     <!-- Language selector -->
-                   <div class="relative">
-                      <button id="language-selector" class="flex items-center space-x-1 text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 transition-colors">
-                        <img id="language-icon" src="https://flagcdn.com/es.svg" class="w-5 h-5 rounded-sm" alt="ES" />
-                        <span id="current-language">ES</span>
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                      </button>
+                    <div class="relative">
+                        <button id="language-selector"
+                            class="flex items-center space-x-1 text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400 transition-colors">
+                            <img id="language-icon" src="https://flagcdn.com/es.svg" class="w-5 h-5 rounded-sm"
+                                alt="ES" />
+                            <span id="current-language">ES</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
 
-                      <!-- Language options -->
-                      <div id="language-dropdown" class="absolute right-0 mt-2 w-20 dark:bg-slate-800 bg-slate-100 rounded-lg shadow-lg border border-slate-600 hidden">
-                        <button class="language-option w-full flex items-center px-3 py-2 text-left dark:hover:bg-slate-700 hover:bg-slate-300 rounded-t-lg" data-lang="es">
-                          <img src="https://flagcdn.com/es.svg" class="w-5 h-5 rounded-sm mr-2" alt="ES" /> ES
-                        </button>
-                        <button class="language-option w-full flex items-center px-3 py-2 text-left dark:hover:bg-slate-700 hover:bg-slate-300 rounded-b-lg" data-lang="en">
-                          <img src="https://flagcdn.com/gb.svg" class="w-5 h-5 rounded-sm mr-2" alt="EN" /> EN
-                        </button>
-                      </div>
+                        <!-- Language options -->
+                        <div id="language-dropdown"
+                            class="absolute right-0 mt-2 w-20 dark:bg-slate-800 bg-slate-100 rounded-lg shadow-lg border border-slate-600 hidden">
+                            <button
+                                class="language-option w-full flex items-center px-3 py-2 text-left dark:hover:bg-slate-700 hover:bg-slate-300 rounded-t-lg"
+                                data-lang="es">
+                                <img src="https://flagcdn.com/es.svg" class="w-5 h-5 rounded-sm mr-2" alt="ES" /> ES
+                            </button>
+                            <button
+                                class="language-option w-full flex items-center px-3 py-2 text-left dark:hover:bg-slate-700 hover:bg-slate-300 rounded-b-lg"
+                                data-lang="en">
+                                <img src="https://flagcdn.com/gb.svg" class="w-5 h-5 rounded-sm mr-2" alt="EN" /> EN
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <button id="mobile-menu-btn" class="md:hidden">
@@ -460,48 +469,33 @@
                         Contactar
                     </a>
                     <div class="relative inline-block">
-                        <button
-                        	id="cv-button"
-                                class="bg-emerald-400 hover:bg-emerald-500 text-black px-8 py-3 rounded-lg font-semibold transition-all transform hover:scale-105"
-                        >
-                        Ver CV
-                      </button>
+                        <button id="cv-button"
+                            class="bg-emerald-400 hover:bg-emerald-500 text-black px-8 py-3 rounded-lg font-semibold transition-all transform hover:scale-105">
+                            Ver CV
+                        </button>
 
-                        <div
-                          id="cv-menu"
-                          class="
+                        <div id="cv-menu" class="
                             hidden absolute right-70 mt-3 w-64
                             rounded-xl overflow-hidden shadow-xl
                             bg-white text-slate-900
                             border border-slate-200
                             dark:bg-slate-900 dark:text-slate-100
                             dark:border-slate-700
-                          "
-                        >
-                        <a
-                          id="cv-es"
-                          href=""
-                          target="_blank"
-                          class="
+                          ">
+                            <a id="cv-es" href="" target="_blank" class="
                                  block px-4 py-3 text-sm
                                  hover:bg-emerald-50
                                  dark:hover:bg-slate-800
                                  transition
-                                 "
-                        ></a>
+                                 "></a>
 
-                        <a
-                          id="cv-en"
-                          href=""
-                          target="_blank"
-                          class="
+                            <a id="cv-en" href="" target="_blank" class="
                                 block px-4 py-3 text-sm
                                 hover:bg-emerald-50
                                 dark:hover:bg-slate-800
                                 transition
-                              "
-                        ></a>
-                      </div>
+                              "></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -535,10 +529,14 @@
                 <!-- Columna 1: Foto -->
                 <div class="scroll-reveal flex justify-center md:justify-end">
                     <div class="relative">
-                        <div class="w-72 h-72 md:w-80 md:h-80 rounded-2xl overflow-hidden border-4 border-primary-500/20">
-                            <img src="./assets/profile-tiny.jpeg" alt="Guille Andrada" class="w-full h-full object-cover">
+                        <div
+                            class="w-72 h-72 md:w-80 md:h-80 rounded-2xl overflow-hidden border-4 border-primary-500/20">
+                            <img src="./assets/profile-tiny.jpeg" alt="Guille Andrada"
+                                class="w-full h-full object-cover">
                         </div>
-                        <div class="absolute -top-4 -right-4 w-24 h-24 bg-accent-500 rounded-full opacity-20 animate-float"></div>
+                        <div
+                            class="absolute -top-4 -right-4 w-24 h-24 bg-accent-500 rounded-full opacity-20 animate-float">
+                        </div>
                         <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-primary-500 rounded-full opacity-30 animate-float"
                             style="animation-delay: 1s;"></div>
                     </div>
@@ -568,42 +566,57 @@
                         <div class="bg-slate-200/90 dark:bg-slate-700/50 p-4 rounded-lg">
                             <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2"
                                 data-translate="about.skills.webDev.title">Desarrollo Web</h3>
-                            <p class="text-sm text-slate-800 dark:text-slate-400" data-translate="about.skills.webDev.description"></p>
+                            <p class="text-sm text-slate-800 dark:text-slate-400"
+                                data-translate="about.skills.webDev.description"></p>
                         </div>
 
                         <div class="bg-slate-200/90 dark:bg-slate-700/50 p-4 rounded-lg">
-                            <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2" data-translate="about.skills.uiux.title">Diseño UI/UX</h3>
-                            <p class="text-sm text-slate-800 dark:text-slate-400" data-translate="about.skills.uiux.description"></p>
+                            <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2"
+                                data-translate="about.skills.uiux.title">Diseño UI/UX</h3>
+                            <p class="text-sm text-slate-800 dark:text-slate-400"
+                                data-translate="about.skills.uiux.description"></p>
                         </div>
 
                         <div class="bg-slate-200/90 dark:bg-slate-700/50 p-4 rounded-lg">
-                            <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2" data-translate="about.skills.apis.title">Backend y Arquitectura</h3>
-                            <p class="text-sm text-slate-800 dark:text-slate-400" data-translate="about.skills.apis.description">\</p>
+                            <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2"
+                                data-translate="about.skills.apis.title">Backend y Arquitectura</h3>
+                            <p class="text-sm text-slate-800 dark:text-slate-400"
+                                data-translate="about.skills.apis.description">\</p>
                         </div>
 
                         <div class="bg-slate-200/90 dark:bg-slate-700/50 p-4 rounded-lg">
-                            <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2" data-translate="about.skills.cloudAndDB.title">Cloud y DevOps</h3>
-                            <p class="text-sm text-slate-800 dark:text-slate-400" data-translate="about.skills.cloudAndDB.description"></p>
+                            <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2"
+                                data-translate="about.skills.cloudAndDB.title">Cloud y DevOps</h3>
+                            <p class="text-sm text-slate-800 dark:text-slate-400"
+                                data-translate="about.skills.cloudAndDB.description"></p>
                         </div>
 
                         <div class="bg-slate-200/90 dark:bg-slate-700/50 p-4 rounded-lg">
-                            <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2" data-translate="about.skills.education.title">Educación y Mentoría</h3>
-                            <p class="text-sm text-slate-800 dark:text-slate-400"  data-translate="about.skills.education.description"></p>
-                        </div>
-                        
-                        <div class="bg-slate-200/90 dark:bg-slate-700/50 p-4 rounded-lg">
-                            <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2" data-translate="about.skills.integrations.title">AI y LLM Integrations</h3>
-                            <p class="text-sm text-slate-800 dark:text-slate-400" data-translate="about.skills.integrations.description"></p>
+                            <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2"
+                                data-translate="about.skills.education.title">Educación y Mentoría</h3>
+                            <p class="text-sm text-slate-800 dark:text-slate-400"
+                                data-translate="about.skills.education.description"></p>
                         </div>
 
                         <div class="bg-slate-200/90 dark:bg-slate-700/50 p-4 rounded-lg">
-                            <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2" data-translate="about.skills.versionControl.title"></h3>
-                            <p class="text-sm text-slate-800 dark:text-slate-400" data-translate="about.skills.versionControl.description"></p>
+                            <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2"
+                                data-translate="about.skills.integrations.title">AI y LLM Integrations</h3>
+                            <p class="text-sm text-slate-800 dark:text-slate-400"
+                                data-translate="about.skills.integrations.description"></p>
+                        </div>
+
+                        <div class="bg-slate-200/90 dark:bg-slate-700/50 p-4 rounded-lg">
+                            <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2"
+                                data-translate="about.skills.versionControl.title"></h3>
+                            <p class="text-sm text-slate-800 dark:text-slate-400"
+                                data-translate="about.skills.versionControl.description"></p>
                         </div>
 
                         <div class="bg-slate-200/90 dark:bg-slate-700/50 p-4 rounded-lg lg:col-span-2">
-                            <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2" data-translate="about.skills.mcpDevelopment.title">MCP Development</h3>
-                            <p class="text-sm text-slate-800 dark:text-slate-400" data-translate="about.skills.mcpDevelopment.description"></p>
+                            <h3 class="font-semibold text-blue-800 dark:text-primary-400 mb-2"
+                                data-translate="about.skills.mcpDevelopment.title">MCP Development</h3>
+                            <p class="text-sm text-slate-800 dark:text-slate-400"
+                                data-translate="about.skills.mcpDevelopment.description"></p>
                         </div>
                     </div>
                 </div>
@@ -654,139 +667,174 @@
                 </div>
             </div>
             <div class="md:w-3/4">
-              <h3 class="text-xl font-semibold mb-4 text-center text-slate-800 dark:text-slate-400 md:text-left"
-                  data-translate="about.skills.technologies.title">
-                  Tecnologías y herramientas
-              </h3>
+                <h3 class="text-xl font-semibold mb-4 text-center text-slate-800 dark:text-slate-400 md:text-left"
+                    data-translate="about.skills.technologies.title">
+                    Tecnologías y herramientas
+                </h3>
 
-              <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6 items-center justify-items-center">
+                <div
+                    class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6 items-center justify-items-center">
 
-                <!-- Lenguajes -->
-                <div class="flex flex-col items-center space-y-2">
-                  <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
-                    <img src="https://raw.githubusercontent.com/github/explore/main/topics/javascript/javascript.png" alt="JavaScript" class="max-h-10 max-w-full object-contain">
-                  </div>
-                  <span class="text-sm text-slate-800 dark:text-slate-400">JavaScript</span>
-                </div>
+                    <!-- Lenguajes -->
+                    <div class="flex flex-col items-center space-y-2">
+                        <div
+                            class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                            <img src="https://raw.githubusercontent.com/github/explore/main/topics/javascript/javascript.png"
+                                alt="JavaScript" class="max-h-10 max-w-full object-contain">
+                        </div>
+                        <span class="text-sm text-slate-800 dark:text-slate-400">JavaScript</span>
+                    </div>
 
-                <div class="flex flex-col items-center space-y-2">
-                  <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
-                    <img src="https://raw.githubusercontent.com/github/explore/main/topics/typescript/typescript.png" alt="TypeScript" class="max-h-10 max-w-full object-contain">
-                  </div>
-                  <span class="text-sm text-slate-800 dark:text-slate-400">TypeScript</span>
-                </div>
+                    <div class="flex flex-col items-center space-y-2">
+                        <div
+                            class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                            <img src="https://raw.githubusercontent.com/github/explore/main/topics/typescript/typescript.png"
+                                alt="TypeScript" class="max-h-10 max-w-full object-contain">
+                        </div>
+                        <span class="text-sm text-slate-800 dark:text-slate-400">TypeScript</span>
+                    </div>
 
-                <div class="flex flex-col items-center space-y-2">
-                  <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
-                    <img src="https://raw.githubusercontent.com/github/explore/main/topics/python/python.png" alt="Python" class="max-h-10 max-w-full object-contain">
-                  </div>
-                  <span class="text-sm text-slate-800 dark:text-slate-400">Python</span>
-                </div>
+                    <div class="flex flex-col items-center space-y-2">
+                        <div
+                            class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                            <img src="https://raw.githubusercontent.com/github/explore/main/topics/python/python.png"
+                                alt="Python" class="max-h-10 max-w-full object-contain">
+                        </div>
+                        <span class="text-sm text-slate-800 dark:text-slate-400">Python</span>
+                    </div>
 
-                <!-- Frontend -->
-                <div class="flex flex-col items-center space-y-2">
-                  <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
-                    <img src="https://raw.githubusercontent.com/github/explore/main/topics/react/react.png" alt="React" class="max-h-10 max-w-full object-contain">
-                  </div>
-                  <span class="text-sm text-slate-800 dark:text-slate-400">React</span>
-                </div>
+                    <!-- Frontend -->
+                    <div class="flex flex-col items-center space-y-2">
+                        <div
+                            class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                            <img src="https://raw.githubusercontent.com/github/explore/main/topics/react/react.png"
+                                alt="React" class="max-h-10 max-w-full object-contain">
+                        </div>
+                        <span class="text-sm text-slate-800 dark:text-slate-400">React</span>
+                    </div>
 
-                <div class="flex flex-col items-center space-y-2">
-                  <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" alt="Next.js" class="max-h-10 max-w-full object-contain">
-                  </div>
-                  <span class="text-sm text-slate-800 dark:text-slate-400">Next.js</span>
-                </div>
+                    <div class="flex flex-col items-center space-y-2">
+                        <div
+                            class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" alt="Next.js"
+                                class="max-h-10 max-w-full object-contain">
+                        </div>
+                        <span class="text-sm text-slate-800 dark:text-slate-400">Next.js</span>
+                    </div>
 
-                <div class="flex flex-col items-center space-y-2">
-                  <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
-                    <img src="https://raw.githubusercontent.com/github/explore/main/topics/vue/vue.png" alt="Vue.js" class="max-h-10 max-w-full object-contain">
-                  </div>
-                  <span class="text-sm text-slate-800 dark:text-slate-400">Vue.js</span>
-                </div>
+                    <div class="flex flex-col items-center space-y-2">
+                        <div
+                            class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                            <img src="https://raw.githubusercontent.com/github/explore/main/topics/vue/vue.png"
+                                alt="Vue.js" class="max-h-10 max-w-full object-contain">
+                        </div>
+                        <span class="text-sm text-slate-800 dark:text-slate-400">Vue.js</span>
+                    </div>
 
-                <div class="flex flex-col items-center space-y-2">
-                  <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
-                    <img src="https://raw.githubusercontent.com/github/explore/main/topics/tailwind/tailwind.png" alt="Tailwind CSS" class="max-h-10 max-w-full object-contain">
-                  </div>
-                  <span class="text-sm text-slate-800 dark:text-slate-400">Tailwind CSS</span>
-                </div>
+                    <div class="flex flex-col items-center space-y-2">
+                        <div
+                            class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                            <img src="https://raw.githubusercontent.com/github/explore/main/topics/tailwind/tailwind.png"
+                                alt="Tailwind CSS" class="max-h-10 max-w-full object-contain">
+                        </div>
+                        <span class="text-sm text-slate-800 dark:text-slate-400">Tailwind CSS</span>
+                    </div>
 
-                <!-- Backend -->
-                <div class="flex flex-col items-center space-y-2">
-                  <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
-                    <img src="https://raw.githubusercontent.com/github/explore/main/topics/nodejs/nodejs.png" alt="Node.js" class="max-h-10 max-w-full object-contain">
-                  </div>
-                  <span class="text-sm text-slate-800 dark:text-slate-400">Node.js</span>
-                </div>
+                    <!-- Backend -->
+                    <div class="flex flex-col items-center space-y-2">
+                        <div
+                            class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                            <img src="https://raw.githubusercontent.com/github/explore/main/topics/nodejs/nodejs.png"
+                                alt="Node.js" class="max-h-10 max-w-full object-contain">
+                        </div>
+                        <span class="text-sm text-slate-800 dark:text-slate-400">Node.js</span>
+                    </div>
 
-                <div class="flex flex-col items-center space-y-2">
-                  <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/NestJS.svg" alt="NestJS" class="max-h-10 max-w-full object-contain">
-                  </div>
-                  <span class="text-sm text-slate-800 dark:text-slate-400">NestJS</span>
-                </div>
+                    <div class="flex flex-col items-center space-y-2">
+                        <div
+                            class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/NestJS.svg" alt="NestJS"
+                                class="max-h-10 max-w-full object-contain">
+                        </div>
+                        <span class="text-sm text-slate-800 dark:text-slate-400">NestJS</span>
+                    </div>
 
-                <div class="flex flex-col items-center space-y-2">
-                  <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
-                    <img src="https://raw.githubusercontent.com/github/explore/main/topics/django/django.png" alt="Django" class="max-h-10 max-w-full object-contain">
-                  </div>
-                  <span class="text-sm text-slate-800 dark:text-slate-400">Django</span>
-                </div>
+                    <div class="flex flex-col items-center space-y-2">
+                        <div
+                            class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                            <img src="https://raw.githubusercontent.com/github/explore/main/topics/django/django.png"
+                                alt="Django" class="max-h-10 max-w-full object-contain">
+                        </div>
+                        <span class="text-sm text-slate-800 dark:text-slate-400">Django</span>
+                    </div>
 
-                <!-- Bases de datos -->
-                <div class="flex flex-col items-center space-y-2">
-                  <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
-                    <img src="https://raw.githubusercontent.com/github/explore/main/topics/postgresql/postgresql.png" alt="PostgreSQL" class="max-h-10 max-w-full object-contain">
-                  </div>
-                  <span class="text-sm text-slate-800 dark:text-slate-400 text-center">PostgreSQL + SQL</span>
-                </div>
+                    <!-- Bases de datos -->
+                    <div class="flex flex-col items-center space-y-2">
+                        <div
+                            class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                            <img src="https://raw.githubusercontent.com/github/explore/main/topics/postgresql/postgresql.png"
+                                alt="PostgreSQL" class="max-h-10 max-w-full object-contain">
+                        </div>
+                        <span class="text-sm text-slate-800 dark:text-slate-400 text-center">PostgreSQL + SQL</span>
+                    </div>
 
-                <div class="flex flex-col items-center space-y-2">
-                  <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
-                    <img src="https://raw.githubusercontent.com/github/explore/main/topics/mongodb/mongodb.png" alt="MongoDB" class="max-h-10 max-w-full object-contain">
-                  </div>
-                  <span class="text-sm text-slate-800 dark:text-slate-400">MongoDB</span>
-                </div>
+                    <div class="flex flex-col items-center space-y-2">
+                        <div
+                            class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                            <img src="https://raw.githubusercontent.com/github/explore/main/topics/mongodb/mongodb.png"
+                                alt="MongoDB" class="max-h-10 max-w-full object-contain">
+                        </div>
+                        <span class="text-sm text-slate-800 dark:text-slate-400">MongoDB</span>
+                    </div>
 
-                <!-- Integración e IA -->
-                <div class="flex flex-col items-center space-y-2">
-                  <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/512px-ChatGPT_logo.svg.png" alt="OpenAI" class="max-h-10 max-w-full object-contain">
-                  </div>
-                  <span class="text-sm text-slate-800 dark:text-slate-400 text-center">OpenAI / MCP</span>
-                </div>
+                    <!-- Integración e IA -->
+                    <div class="flex flex-col items-center space-y-2">
+                        <div
+                            class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/512px-ChatGPT_logo.svg.png"
+                                alt="OpenAI" class="max-h-10 max-w-full object-contain">
+                        </div>
+                        <span class="text-sm text-slate-800 dark:text-slate-400 text-center">OpenAI / MCP</span>
+                    </div>
 
-                <!-- Infraestructura -->
-                <div class="flex flex-col items-center space-y-2">
-                  <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
-                    <img src="https://raw.githubusercontent.com/github/explore/main/topics/docker/docker.png" alt="Docker" class="max-h-10 max-w-full object-contain">
-                  </div>
-                  <span class="text-sm text-slate-800 dark:text-slate-400">Docker</span>
-                </div>
+                    <!-- Infraestructura -->
+                    <div class="flex flex-col items-center space-y-2">
+                        <div
+                            class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                            <img src="https://raw.githubusercontent.com/github/explore/main/topics/docker/docker.png"
+                                alt="Docker" class="max-h-10 max-w-full object-contain">
+                        </div>
+                        <span class="text-sm text-slate-800 dark:text-slate-400">Docker</span>
+                    </div>
 
-                <div class="flex flex-col items-center space-y-2">
-                  <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
-                    <img src="https://raw.githubusercontent.com/github/explore/main/topics/aws/aws.png" alt="AWS" class="max-h-10 max-w-full object-contain">
-                  </div>
-                  <span class="text-sm text-slate-800 dark:text-slate-400 text-center">AWS + Services</span>
-                </div>
-                  
-                <div class="flex flex-col items-center space-y-2">
-                  <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
-                    <img src="https://raw.githubusercontent.com/GuilloSGit/portfolio-images/main/microservices.png" alt="Microservices" class="max-h-10 max-w-full object-contain">
-                  </div>
-                  <span class="text-sm text-slate-800 dark:text-slate-400 text-center">Microservices</span>
-                </div>
-                  
-                <div class="flex flex-col items-center space-y-2">
-                  <div class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
-                    <img src="https://raw.githubusercontent.com/GuilloSGit/portfolio-images/main/github-actions.png" alt="GitHub Actions" class="max-h-10 max-w-full object-contain">
-                  </div>
-                  <span class="text-sm text-slate-800 dark:text-slate-400 text-center">CI/CD</span>
-                </div>
+                    <div class="flex flex-col items-center space-y-2">
+                        <div
+                            class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                            <img src="https://raw.githubusercontent.com/github/explore/main/topics/aws/aws.png"
+                                alt="AWS" class="max-h-10 max-w-full object-contain">
+                        </div>
+                        <span class="text-sm text-slate-800 dark:text-slate-400 text-center">AWS + Services</span>
+                    </div>
 
-              </div>
+                    <div class="flex flex-col items-center space-y-2">
+                        <div
+                            class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                            <img src="https://raw.githubusercontent.com/GuilloSGit/portfolio-images/main/microservices.png"
+                                alt="Microservices" class="max-h-10 max-w-full object-contain">
+                        </div>
+                        <span class="text-sm text-slate-800 dark:text-slate-400 text-center">Microservices</span>
+                    </div>
+
+                    <div class="flex flex-col items-center space-y-2">
+                        <div
+                            class="flex items-center justify-center w-16 h-16 bg-slate-200/40 dark:bg-slate-800/40 border border-slate-700 rounded-lg p-2">
+                            <img src="https://raw.githubusercontent.com/GuilloSGit/portfolio-images/main/github-actions.png"
+                                alt="GitHub Actions" class="max-h-10 max-w-full object-contain">
+                        </div>
+                        <span class="text-sm text-slate-800 dark:text-slate-400 text-center">CI/CD</span>
+                    </div>
+
+                </div>
             </div>
 
         </div>
@@ -1341,6 +1389,23 @@
                             Información de Contacto
                         </h3>
                         <ul class="space-y-5">
+                            <!-- Calendar scheduling -->
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-calendar-alt text-primary-500 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold dark:text-slate-100 text-slate-600 mb-2"
+                                        data-translate="contact.info.scheduleTitle">
+                                        Agendar Reunión</h4>
+                                    <button
+                                        class="bg-transparent border border-white text-white hover:bg-primary-900 px-8 py-1 rounded-lg font-semibold transition-all transform">
+                                        <a href="https://calendar.app.google/uwivDGxsB2rJqLvP9" target="_blank"
+                                            class="text-slate-800 dark:text-slate-400 hover:text-white transition-colors"
+                                            data-translate="contact.info.scheduleLink">Agendar</a>
+                                    </button>
+                                </div>
+                            </li>
+
+                            <!-- Agregar WhatsApp link junto al teléfono -->
                             <!-- Teléfono -->
                             <li class="flex items-start gap-3">
                                 <svg class="w-5 h-5 text-primary-500 mt-1" fill="none" viewBox="0 0 24 24"
@@ -1351,7 +1416,14 @@
                                 <div>
                                     <h4 class="font-semibold dark:text-slate-100 text-slate-600"
                                         data-translate="contact.info.phoneTitle">
-                                        Teléfono celular</h4>
+                                        Teléfono celular
+                                    </h4>
+                                    <a href="https://wa.me/5493876295801" target="_blank" class="relative text-xs text-slate-300 transition-colors duration-300 hover:text-blue-300
+                                     after:content-[''] after:absolute after:left-0 after:bottom-0
+                                     after:w-0 after:h-[1px] after:bg-blue-300
+                                     after:transition-all after:duration-300 hover:after:w-full mr-3">
+                                        WhatsApp
+                                    </a>
                                     <a href="tel:+543876295801"
                                         class="text-slate-800 dark:text-slate-400 hover:text-white transition-colors">
                                         +54 387 629 5801
@@ -1388,14 +1460,12 @@
                                     <h4 class="font-semibold dark:text-slate-100 text-slate-600"
                                         data-translate="contact.info.locationTitle">Residencia</h4>
                                     <p class="text-slate-800 dark:text-slate-400">San Juan, Argentina</p>
-                                    <a href="https://maps.app.goo.gl/7rYtKfSQZrxkr3QX9"
-                                       target="_blank"
-      rel="noopener noreferrer"
-                                       class="relative text-xs text-slate-300 transition-colors duration-300 hover:text-blue-300
+                                    <a href="https://maps.app.goo.gl/7rYtKfSQZrxkr3QX9" target="_blank"
+                                        rel="noopener noreferrer" class="relative text-xs text-slate-300 transition-colors duration-300 hover:text-blue-300
                                          after:content-[''] after:absolute after:left-0 after:bottom-0
                                          after:w-0 after:h-[1px] after:bg-blue-300
                                          after:transition-all after:duration-300 hover:after:w-full"
-                                       data-translate="contact.info.gps_url"></a>
+                                        data-translate="contact.info.gps_url"></a>
                                 </div>
                             </li>
 
@@ -1407,7 +1477,8 @@
                                         Redes Sociales</h4>
                                     <div class="flex gap-4">
                                         <!-- LinkedIn -->
-                                        <a href="https://www.linkedin.com/in/guillermo-david-andrada/" target="_blank" rel="noopener noreferrer"
+                                        <a href="https://www.linkedin.com/in/guillermo-david-andrada/" target="_blank"
+                                            rel="noopener noreferrer"
                                             class="text-slate-400 hover:text-primary-500 transition">
                                             <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"
                                                 aria-hidden="true">
@@ -1533,28 +1604,16 @@
                                 d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                         </svg>
                     </a>
-                    <a
-                      href="https://github.com/GuilloSGit"
-                      target="_blank"
-                      class="text-slate-800 dark:text-slate-400
+                    <a href="https://github.com/GuilloSGit" target="_blank" class="text-slate-800 dark:text-slate-400
                              hover:text-primary-400
                              transition-colors
-                             hover:scale-110 transform"
-                      aria-label="GitHub"
-                    >
-                      <svg
-                        class="w-6 h-6"
-                        viewBox="0 0 1024 1024"
-                        fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
-                          transform="scale(64)"
-                        />
-                      </svg>
+                             hover:scale-110 transform" aria-label="GitHub">
+                        <svg class="w-6 h-6" viewBox="0 0 1024 1024" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
+                                transform="scale(64)" />
+                        </svg>
                     </a>
 
                     <a href="mailto:guillermoandrada+websitecontact@gmail.com"
@@ -1604,7 +1663,7 @@
                 hero: {
                     greeting: "Hola, soy",
                     name: "Guille Andrada",
-                    title:"Desarrollador Full Stack",
+                    title: "Desarrollador Full Stack",
                     subtitle: "Desarrollador Full Stack, apasionado creador digital",
                     viewProjects: "Ver Proyectos",
                     contact: "Contactar"
@@ -1734,10 +1793,12 @@
                         emailTitle: "Correo electrónico",
                         title: "Información de Contacto",
                         cvSelector: {
-                          button: "Ver CV",
-                          es: "Ver CV en Español",
-                          en: "Ver CV en Inglés"
-                        }
+                            button: "Ver CV",
+                            es: "Ver CV en Español",
+                            en: "Ver CV en Inglés"
+                        },
+                        scheduleTitle: "Agendar Reunión",
+                        scheduleLink: "Agendar"
                     },
                     form: {
                         name: "Nombre",
@@ -1971,7 +2032,9 @@
                             button: "View Resume",
                             es: "Link to Spanish version",
                             en: "Link to English version"
-                        }
+                        },
+                        scheduleTitle: "Schedule a Meeting",
+                        scheduleLink: "Schedule"
                     },
                     form: {
                         name: "Name",
@@ -2085,7 +2148,7 @@
             if (translations[lang]) {
                 applyTranslations(translations[lang]);
                 document.getElementById('current-language').textContent = lang.toUpperCase();
-                
+
                 // Actualizar la bandera (src del img)
                 const languageIcon = document.getElementById('language-icon');
                 if (languageIcon) {
@@ -2107,7 +2170,7 @@
             currentLanguage = initialLang;
             applyTranslations(translations[initialLang]);
             document.getElementById('current-language').textContent = initialLang.toUpperCase();
-            
+
             // Establecer la bandera inicial
             const languageIcon = document.getElementById('language-icon');
             if (languageIcon) {
@@ -2133,7 +2196,7 @@
                 const lang = languageOption.getAttribute('data-lang');
                 changeLanguage(lang);
                 // Inicializar
-        		updateCVSelector();
+                updateCVSelector();
                 // Close mobile menu if open
                 const mobileMenu = document.getElementById('mobile-menu');
                 const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
@@ -2271,7 +2334,7 @@
                 `;
             }
 
-                // Wait for transition to complete before hiding
+            // Wait for transition to complete before hiding
             const onTransitionEnd = () => {
                 if (mobileMenu) {
                     mobileMenu.removeEventListener('transitionend', onTransitionEnd);
@@ -2375,7 +2438,7 @@
             // Initialize language
             initializeLanguage();
             // Inicializar
-        	updateCVSelector();
+            updateCVSelector();
 
             // Check for saved animation preference or use system preference
             const savedAnimation = localStorage.getItem('animations');
@@ -2403,12 +2466,12 @@
 
             // Update theme icon with proper language
             updateThemeIcon(initialTheme === 'dark');
-           
+
             // Apply translations
             if (translations[preferredLanguage]) {
                 applyTranslations(preferredLanguage);
                 // Inicializar
-        		updateCVSelector();
+                updateCVSelector();
             }
 
             // Set initial mobile menu button text
@@ -2428,31 +2491,31 @@
         const cvEn = document.getElementById("cv-en");
 
         function updateCVSelector() {
-          const t = translations[currentLanguage].contact.info;
-          const selector = t.cvSelector;
+            const t = translations[currentLanguage].contact.info;
+            const selector = t.cvSelector;
 
-          // Texto del botón
-          cvButton.textContent = selector.button;
+            // Texto del botón
+            cvButton.textContent = selector.button;
 
-          // Links (fijos)
-          cvEs.href = translations.es.contact.info.cvLink;
-          cvEn.href = translations.en.contact.info.cvLink;
+            // Links (fijos)
+            cvEs.href = translations.es.contact.info.cvLink;
+            cvEn.href = translations.en.contact.info.cvLink;
 
-          // Textos dinámicos
-          cvEs.textContent = selector.es;
-          cvEn.textContent = selector.en;
+            // Textos dinámicos
+            cvEs.textContent = selector.es;
+            cvEn.textContent = selector.en;
         }
 
         // Toggle menú
         cvButton.addEventListener("click", () => {
-          cvMenu.classList.toggle("hidden");
+            cvMenu.classList.toggle("hidden");
         });
 
         // Cerrar al hacer click afuera
         document.addEventListener("click", (e) => {
-          if (!e.target.closest("#cv-button") && !e.target.closest("#cv-menu")) {
-            cvMenu.classList.add("hidden");
-          }
+            if (!e.target.closest("#cv-button") && !e.target.closest("#cv-menu")) {
+                cvMenu.classList.add("hidden");
+            }
         });
 
     </script>
