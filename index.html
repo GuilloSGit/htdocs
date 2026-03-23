@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-translate="hero.name">Guille Andrada - Full Stack</title>
+    <title data-translate="hero.name">Guille Andrada - Software Engineer, AI integrations & Automations</title>
     <meta name="description"
         content="Desarrollador Full Stack especializado en tecnologías web modernas. Creando soluciones digitales innovadoras.">
     <link rel="icon" href="assets/favicon.png" type="image/png">
@@ -12,8 +12,48 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Structured Data - JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Guille Andrada",
+        "url": "https://ga-software.dev",
+        "image": "",
+        "description": "Full Stack Developer especializado en tecnologías web modernas, AI integrations y desarrollo de aplicaciones escalables.",
+        "jobTitle": "Software Engineer, AI integrations & Automations",
+        "knowsAbout": [
+            "JavaScript", "React", "Vue.js", "Node.js", "Python", "PHP",
+            "MongoDB", "MySQL", "PostgreSQL", "AWS", "Docker",
+            "AI Integration", "LLM Development", "Generative AI"
+        ],
+        "sameAs": [
+            "https://github.com/GuilloSGit",
+            "https://www.linkedin.com/in/guillermo-david-andrada/",
+            "https://x.com/GA_Softwares"
+        ],
+        "offers": {
+            "@type": "Offer",
+            "name": "Servicios de Desarrollo Web",
+            "description": "Desarrollo Full Stack, Integraciones IA, Consultoría Técnica"
+        },
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Universidad Nacional de San Juan"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "Argentina",
+            "addressRegion": "San Juan"
+        }
+    }
+    </script>
 
     <!-- Custom Tailwind Config -->
     <script>
@@ -81,182 +121,6 @@
             }
         }
     </script>
-
-    <!-- Custom CSS -->
-    <style>
-        /* Floating animations */
-        @keyframes float-1 {
-
-            0%,
-            100% {
-                transform: translateY(0) translateX(0) rotate(0deg);
-            }
-
-            50% {
-                transform: translateY(-20px) translateX(10px) rotate(5deg);
-            }
-        }
-
-        @keyframes float-2 {
-
-            0%,
-            100% {
-                transform: translateY(0) translateX(0) rotate(0deg);
-            }
-
-            50% {
-                transform: translateY(-15px) translateX(-10px) rotate(-3deg);
-            }
-        }
-
-        @keyframes float-3 {
-
-            0%,
-            100% {
-                transform: translateY(0) translateX(0) scale(1);
-            }
-
-            50% {
-                transform: translateY(10px) translateX(5px) scale(1.05);
-            }
-        }
-
-        @keyframes float-4 {
-
-            0%,
-            100% {
-                transform: translateY(0) rotate(0deg);
-            }
-
-            50% {
-                transform: translateY(-25px) rotate(5deg);
-            }
-        }
-
-        @keyframes float-5 {
-
-            0%,
-            100% {
-                transform: translateY(0) scale(1);
-            }
-
-            50% {
-                transform: translateY(-15px) scale(1.1);
-            }
-        }
-
-        @keyframes float-6 {
-
-            0%,
-            100% {
-                transform: translateY(0) rotate(0deg);
-            }
-
-            50% {
-                transform: translateY(20px) rotate(-5deg);
-            }
-        }
-
-        :root {
-            --animation-play-state: running;
-        }
-
-        /* Ensure scroll behavior is always smooth */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        .metadata-pic {
-            border-radius: 50%;
-        }
-
-        .floating-element {
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(20px);
-            opacity: 0.35;
-            z-index: 0;
-            pointer-events: none;
-            transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-            animation-play-state: var(--animation-play-state, running);
-        }
-
-        .floating-element.hidden {
-            opacity: 0;
-            transform: scale(0.8);
-        }
-
-        .gradient-text {
-            background: linear-gradient(135deg, #0ea5e9, #4f46e5);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: #0ea5e9;
-            display: inline-block;
-            position: relative;
-        }
-
-        .gradient-text::selection {
-            -webkit-text-fill-color: #ffffff;
-            color: #ffffff;
-        }
-
-        .dark .gradient-text {
-            background: none;
-            -webkit-text-fill-color: #60a5fa;
-            /* Color sólido en modo oscuro */
-            color: #60a5fa;
-        }
-
-        /* Asegurar que el texto sea visible en navegadores antiguos */
-        @supports not (background-clip: text) {
-            .gradient-text {
-                background: transparent;
-                color: #0ea5e9;
-            }
-
-            .dark .gradient-text {
-                color: #60a5fa;
-            }
-        }
-
-        .glass-effect {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(0, 0, 0, 0.1);
-        }
-
-        .dark .glass-effect {
-            background: rgba(15, 23, 42, 0.8);
-            border: 1px solid rgba(148, 163, 184, 0.1);
-        }
-
-        .project-card {
-            transition: all 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .scroll-reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s ease;
-        }
-
-        .scroll-reveal.revealed {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        h1,
-        h2,
-        h3 {
-            position: relative;
-            z-index: 10;
-        }
-    </style>
 </head>
 
 <body
@@ -526,12 +390,8 @@
         <div class="floating-element top-1/2 -right-20 w-77 h-77 bg-green-200 animate-float"
             style="animation: float-4 24s ease-in-out infinite 1.5s;"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid gap-10 items-start
-            sm:grid-cols-1
-            md:grid-cols-[1fr_2fr]
-            lg:grid-cols-[1fr_2fr]
-            xl:grid-cols-[1fr_2fr]">
-
+            <div
+                class="grid gap-10 items-start sm:grid-cols-1 md:grid-cols-[1fr_2fr] lg:grid-cols-[1fr_2fr] xl:grid-cols-[1fr_2fr]">
                 <!-- Columna 1: Foto -->
                 <div class="scroll-reveal flex justify-center md:justify-end">
                     <div class="relative">
@@ -870,139 +730,356 @@
         </div>
 
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 mt-12 space-y-8">
-            <!-- Freelance -->
+            <!-- Usados Europa -->
             <div class="glass-effect rounded-xl p-5 scroll-reveal hover:scale-[1.01] transition lg:mx-auto">
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
-                    <div>
-                        <h3 class="text-2xl font-bold text-primary-400"
-                            data-translate="experience.jobs.freelance.position">Full Stack Developer</h3>
-                        <p class="text-lg text-slate-800 dark:text-yellow-300"
-                            data-translate="experience.jobs.freelance.company">
-                            Freelance</p>
+                    <div class="flex flex-row gap-6">
+                        <div class="flex items-center justify-center bg-white rounded px-2">
+                            <img src="assets/usados-europa.svg" alt="Usados Europa" width="85px" height="85px">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary-400"
+                                data-translate="experience.jobs.usadosEuropa.position"></h3>
+                            <p class="text-lg text-slate-800 dark:text-yellow-300"
+                                data-translate="experience.jobs.usadosEuropa.company"></p>
+                            <p class="text-sm text-primary-600 dark:text-primary-400 mt-1"
+                                data-translate="experience.jobs.usadosEuropa.subtitle"></p>
+                        </div>
                     </div>
                     <div
                         class="mt-2 md:mt-0 bg-primary-900/30 text-gray-900 dark:text-primary-300 px-4 py-1 rounded-full text-sm">
-                        <span data-translate="experience.jobs.freelance.duration">2019 – 2025</span>
+                        <span data-translate="experience.jobs.usadosEuropa.location"></span>
+                        <span data-translate="experience.jobs.usadosEuropa.duration"></span>
                     </div>
                 </div>
-                <p class="text-slate-800 dark:text-slate-400 mb-4"
-                    data-translate="experience.jobs.freelance.description">
-                    Desarrollo integral de aplicaciones web y APIs para clientes en LATAM y USA.
-                    Creación de arquitecturas escalables, integración de servicios externos y despliegue en la nube.
-                </p>
+                <div class="text-slate-800 dark:text-slate-400 mb-4">
+                    <p class="mb-4" data-translate="experience.jobs.usadosEuropa.description"></p>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-primary-500 mb-2"
+                            data-translate="experience.jobs.usadosEuropa.coreResponsibilities.title"></h4>
+                        <ul class="list-disc list-inside space-y-2 text-sm">
+                            <li data-translate="experience.jobs.usadosEuropa.coreResponsibilities.roadmap"></li>
+                            <li data-translate="experience.jobs.usadosEuropa.coreResponsibilities.architecture"></li>
+                            <li data-translate="experience.jobs.usadosEuropa.coreResponsibilities.leadership"></li>
+                            <li data-translate="experience.jobs.usadosEuropa.coreResponsibilities.stakeholders"></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold text-primary-500 mb-2"
+                            data-translate="experience.jobs.usadosEuropa.keyExpertise.title"></h4>
+                        <ul class="list-disc list-inside space-y-2 text-sm">
+                            <li data-translate="experience.jobs.usadosEuropa.keyExpertise.deployment"></li>
+                            <li data-translate="experience.jobs.usadosEuropa.keyExpertise.design"></li>
+                            <li data-translate="experience.jobs.usadosEuropa.keyExpertise.performance"></li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="flex flex-wrap gap-2 mt-4">
-                    <span class="tag">React</span><span class="tag">Next.js</span>
-                    <span class="tag">Node.js</span><span class="tag">PostgreSQL</span>
-                    <span class="tag">MongoDB</span><span class="tag">AWS</span>
+                    <span class="tag">MongoDB</span><span class="tag">Express.js</span>
+                    <span class="tag">React</span><span class="tag">Node.js</span>
+                    <span class="tag">Agile</span><span class="tag">Clean Code</span>
+                    <span class="tag">Technical Leadership</span>
                 </div>
             </div>
 
-            <!-- Bahr Company -->
+            <!-- Self-employed - AI & Automation -->
             <div class="glass-effect rounded-xl p-5 scroll-reveal hover:scale-[1.01] transition lg:mx-auto">
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
-                    <div>
-                        <h3 class="text-2xl font-bold text-primary-400" data-translate="experience.jobs.bahr.position">
-                            Full Stack Developer</h3>
-                        <p class="text-lg text-slate-800 dark:text-yellow-300"
-                            data-translate="experience.jobs.bahr.company">Bahr Company
-                        </p>
+                   <div class="flex flex-row gap-6">
+                        <div class="flex items-center justify-center bg-gray-800 rounded">
+                            <img src="assets/favicon.png" alt="Own trademark" width="85px" height="85px">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary-400"
+                                data-translate="experience.jobs.selfEmployed.position"></h3>
+                            <p class="text-lg text-slate-800 dark:text-yellow-300"
+                                data-translate="experience.jobs.selfEmployed.company"></p>
+                            <p class="text-sm text-primary-600 dark:text-primary-400 mt-1"
+                                data-translate="experience.jobs.selfEmployed.subtitle"></p>
+                        </div>
                     </div>
                     <div
                         class="mt-2 md:mt-0 bg-primary-900/30 text-gray-900 dark:text-primary-300 px-4 py-1 rounded-full text-sm">
-                        <span data-translate="experience.jobs.bahr.location">🌎 Remote / USA</span>
-                        <span data-translate="experience.jobs.bahr.duration">2025 (4 meses)</span>
-                        <span data-translate="experience.jobs.bahr.contractType">Contractor</span>
+                        <span data-translate="experience.jobs.selfEmployed.location"></span>
+                        <span data-translate="experience.jobs.selfEmployed.duration"></span>
                     </div>
                 </div>
-                <p class="text-slate-800 dark:text-slate-400 mb-4" data-translate="experience.jobs.bahr.description">
-                    Implementación de interfaces modernas en Next.js con enfoque en performance y
-                    despliegue en Vercel. Contribución a diseño responsivo y arquitectura modular.
-                </p>
+                <div class="text-slate-800 dark:text-slate-400 mb-4">
+                    <p class="mb-4" data-translate="experience.jobs.selfEmployed.description"></p>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-primary-500 mb-2">Agents & Workflows:</h4>
+                        <p class="text-sm" data-translate="experience.jobs.selfEmployed.agentsWorkflows"></p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-primary-500 mb-2">LLM Integration:</h4>
+                        <p class="text-sm" data-translate="experience.jobs.selfEmployed.llmIntegration"></p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-primary-500 mb-2">Prompt Engineering & Tools:</h4>
+                        <p class="text-sm" data-translate="experience.jobs.selfEmployed.promptEngineering"></p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-primary-500 mb-2">Full Stack Core:</h4>
+                        <p class="text-sm" data-translate="experience.jobs.selfEmployed.fullStackCore"></p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold text-primary-500 mb-2"
+                            data-translate="experience.jobs.selfEmployed.impactFigures.title"></h4>
+                        <ul class="list-disc list-inside space-y-2 text-sm">
+                            <li data-translate="experience.jobs.selfEmployed.impactFigures.efficiency"></li>
+                            <li data-translate="experience.jobs.selfEmployed.impactFigures.versatility"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-4">
+                    <span class="tag">OpenAI</span><span class="tag">Anthropic</span>
+                    <span class="tag">GitHub Copilot</span><span class="tag">Cursor</span>
+                    <span class="tag">React</span><span class="tag">Vue.js</span>
+                    <span class="tag">Node.js</span><span class="tag">PHP</span>
+                    <span class="tag">Automation</span>
+                </div>
+            </div>
+
+            <!-- AIometrix - Bahr & Co -->
+            <div class="glass-effect rounded-xl p-5 scroll-reveal hover:scale-[1.01] transition lg:mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                   <div class="flex flex-row gap-6">
+                        <div class="flex items-center justify-center bg-white rounded px-2">
+                            <img src="assets/aiometrix.png" alt="AIometrix" width="85px" height="85px">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary-400"
+                                data-translate="experience.jobs.aiometrix.position"></h3>
+                            <p class="text-lg text-slate-800 dark:text-yellow-300"
+                                data-translate="experience.jobs.aiometrix.company"></p>
+                        </div>
+                    </div>
+                    <div
+                        class="mt-2 md:mt-0 bg-primary-900/30 text-gray-900 dark:text-primary-300 px-4 py-1 rounded-full text-sm">
+                        <span data-translate="experience.jobs.aiometrix.location"></span>
+                        <span data-translate="experience.jobs.aiometrix.duration"></span>
+                    </div>
+                </div>
+                <div class="text-slate-800 dark:text-slate-400 mb-4">
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-primary-500 mb-2">1. Scalable Modern Architecture Implementation
+                        </h4>
+                        <p class="text-sm" data-translate="experience.jobs.aiometrix.architecture"></p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-primary-500 mb-2">2. AI-Driven Logic & Complex Interactivity</h4>
+                        <p class="text-sm" data-translate="experience.jobs.aiometrix.aiLogic"></p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold text-primary-500 mb-2">3. Performance Optimization at Scale</h4>
+                        <p class="text-sm" data-translate="experience.jobs.aiometrix.performance"></p>
+                    </div>
+                </div>
                 <div class="flex flex-wrap gap-2 mt-4">
                     <span class="tag">Next.js</span><span class="tag">React</span>
-                    <span class="tag">Tailwind</span><span class="tag">Vercel</span>
+                    <span class="tag">SSR</span><span class="tag">SSG</span>
+                    <span class="tag">LLM Integration</span><span class="tag">API Optimization</span>
+                    <span class="tag">Caching</span>
                 </div>
             </div>
 
-            <!-- ODEA / YPF -->
+            <!-- ODEA - Frontend Developer & Maps Layers -->
             <div class="glass-effect rounded-xl p-5 scroll-reveal hover:scale-[1.01] transition lg:mx-auto">
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
-                    <div>
-                        <h3 class="text-2xl font-bold text-primary-400" data-translate="experience.jobs.odea.position">
-                            Frontend Developer</h3>
-                        <p class="text-lg text-slate-800 dark:text-yellow-300"
-                            data-translate="experience.jobs.odea.company">ODEA (para
-                            YPF)</p>
+                   <div class="flex flex-row gap-6">
+                        <div class="flex items-center justify-center bg-white rounded px-2">
+                            <img src="assets/odea.png" alt="ODEA" width="85px" height="85px">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary-400"
+                                data-translate="experience.jobs.odea.position">
+                            </h3>
+                            <p class="text-lg text-slate-800 dark:text-yellow-300"
+                                data-translate="experience.jobs.odea.company"></p>
+                            <p class="text-sm text-primary-600 dark:text-primary-400 mt-1"
+                                data-translate="experience.jobs.odea.subtitle"></p>
+                        </div>
                     </div>
                     <div
                         class="mt-2 md:mt-0 bg-primary-900/30 text-gray-900 dark:text-primary-300 px-4 py-1 rounded-full text-sm">
-                        <span data-translate="experience.jobs.odea.location">🌎 Remote / Argentina</span>
-                        <span data-translate="experience.jobs.odea.duration">2023 – 2024</span>
-                        <span data-translate="experience.jobs.odea.contractType">Contratado</span>
+                        <span data-translate="experience.jobs.odea.location"></span>
+                        <span data-translate="experience.jobs.odea.duration"></span>
                     </div>
                 </div>
-                <p class="text-slate-800 dark:text-slate-400 mb-4" data-translate="experience.jobs.odea.description">
-                    Desarrollo de aplicaciones internas para YPF con JavaScript Vanilla, asegurando
-                    compatibilidad y optimización en entornos corporativos de gran escala.
-                </p>
+                <div class="text-slate-800 dark:text-slate-400 mb-4">
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-primary-500 mb-2">Scalable Vanilla JS Architectures</h4>
+                        <p class="text-sm" data-translate="experience.jobs.odea.vanillaJS"></p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-primary-500 mb-2">Geospatial Intelligence (GIS)</h4>
+                        <p class="text-sm" data-translate="experience.jobs.odea.gis"></p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-primary-500 mb-2">State & Event Management</h4>
+                        <p class="text-sm" data-translate="experience.jobs.odea.stateEvent"></p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-primary-500 mb-2">Advanced UI Rendering</h4>
+                        <p class="text-sm" data-translate="experience.jobs.odea.uiRendering"></p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-primary-500 mb-2">Engineering Best Practices</h4>
+                        <p class="text-sm" data-translate="experience.jobs.odea.bestPractices"></p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold text-primary-500 mb-2"
+                            data-translate="experience.jobs.odea.impact.title"></h4>
+                        <ul class="list-disc list-inside space-y-2 text-sm">
+                            <li data-translate="experience.jobs.odea.impact.visualization"></li>
+                            <li data-translate="experience.jobs.odea.impact.performance"></li>
+                            <li data-translate="experience.jobs.odea.impact.dom"></li>
+                            <li data-translate="experience.jobs.odea.impact.autonomy"></li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="flex flex-wrap gap-2 mt-4">
-                    <span class="tag">JavaScript</span><span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
+                    <span class="tag">Vanilla JavaScript</span><span class="tag">ES6+</span>
+                    <span class="tag">GIS</span><span class="tag">Maps</span>
+                    <span class="tag">Event Management</span><span class="tag">Atomic Design</span>
+                    <span class="tag">Performance Optimization</span>
                 </div>
             </div>
 
-            <!-- Colegium -->
+            <!-- Colegium - Full Stack & AI -->
             <div class="glass-effect rounded-xl p-5 scroll-reveal hover:scale-[1.01] transition lg:mx-auto">
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
-                    <div>
-                        <h3 class="text-2xl font-bold text-primary-400"
-                            data-translate="experience.jobs.colegium.position">Frontend Developer</h3>
-                        <p class="text-lg text-slate-800 dark:text-yellow-300"
-                            data-translate="experience.jobs.colegium.company">Colegium
-                        </p>
+                   <div class="flex flex-row gap-6">
+                        <div class="flex items-center justify-center bg-white rounded px-2">
+                            <img src="assets/colegium.png" alt="Colegium" width="85px" height="85px">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary-400"
+                                data-translate="experience.jobs.colegium.position"></h3>
+                            <p class="text-lg text-slate-800 dark:text-yellow-300"
+                                data-translate="experience.jobs.colegium.company"></p>
+                            <p class="text-sm text-primary-600 dark:text-primary-400 mt-1"
+                                data-translate="experience.jobs.colegium.subtitle"></p>
+                        </div>
                     </div>
                     <div
                         class="mt-2 md:mt-0 bg-primary-900/30 text-gray-900 dark:text-primary-300 px-4 py-1 rounded-full text-sm">
-                        <span data-translate="experience.jobs.colegium.location">🌎 Remoto / LATAM</span>
-                        <span data-translate="experience.jobs.colegium.duration">2022 – 2023</span>
-                        <span data-translate="experience.jobs.colegium.contractType">Contratado</span>
+                        <span data-translate="experience.jobs.colegium.location"></span>
+                        <span data-translate="experience.jobs.colegium.duration"></span>
                     </div>
                 </div>
-                <p class="text-slate-800 dark:text-slate-400 mb-4"
-                    data-translate="experience.jobs.colegium.description">
-                    Implementación de interfaces escolares con Vue.js y PHP. Optimización del rendimiento,
-                    mantenimiento de módulos existentes y creación de componentes reutilizables.
-                </p>
+                <div class="text-slate-800 dark:text-slate-400 mb-4">
+                    <p class="mb-4" data-translate="experience.jobs.colegium.description"></p>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-primary-500 mb-2">Instructional Planning (Teachers)</h4>
+                        <p class="text-sm" data-translate="experience.jobs.colegium.teachers"></p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-primary-500 mb-2">Automated Summarization (Students)</h4>
+                        <p class="text-sm" data-translate="experience.jobs.colegium.students"></p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-primary-500 mb-2">Strategic Insights (Executives)</h4>
+                        <p class="text-sm" data-translate="experience.jobs.colegium.executives"></p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold text-primary-500 mb-2">Canonical Data Automation (Staff/Preceptors)
+                        </h4>
+                        <p class="text-sm" data-translate="experience.jobs.colegium.staff"></p>
+                    </div>
+                </div>
                 <div class="flex flex-wrap gap-2 mt-4">
-                    <span class="tag">Vue.js</span><span class="tag">PHP</span>
-                    <span class="tag">JavaScript</span><span class="tag">CSS</span>
+                    <span class="tag">Generative AI</span><span class="tag">NLP</span>
+                    <span class="tag">Data Analytics</span><span class="tag">Vue.js</span>
+                    <span class="tag">PHP</span><span class="tag">Machine Learning</span>
+                    <span class="tag">Education Tech</span>
                 </div>
             </div>
 
-            <!-- Electro 3 -->
+            <!-- Electro 3 - Full Stack Developer -->
             <div class="glass-effect rounded-xl p-5 scroll-reveal hover:scale-[1.01] transition lg:mx-auto">
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
-                    <div>
-                        <h3 class="text-2xl font-bold text-primary-400"
-                            data-translate="experience.jobs.electro3.position">Full Stack Developer</h3>
-                        <p class="text-lg text-slate-800 dark:text-yellow-300"
-                            data-translate="experience.jobs.electro3.company">Electro 3</p>
+                   <div class="flex flex-row gap-6">
+                        <div class="flex items-center justify-center bg-white rounded px-2">
+                            <img src="assets/electro3.png" alt="Electro 3" width="85px" height="85px">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary-400"
+                                data-translate="experience.jobs.electro3.position"></h3>
+                            <p class="text-lg text-slate-800 dark:text-yellow-300"
+                                data-translate="experience.jobs.electro3.company"></p>
+                        </div>
                     </div>
                     <div
                         class="mt-2 md:mt-0 bg-primary-900/30 text-gray-900 dark:text-primary-300 px-4 py-1 rounded-full text-sm">
-                        <span data-translate="experience.jobs.electro3.location">💼 Onsite / Argentina</span>
-                        <span data-translate="experience.jobs.electro3.duration">Jan 2021 – May 2023</span>
-                        <span data-translate="experience.jobs.electro3.contractType">Contratado</span>
+                        <span data-translate="experience.jobs.electro3.location"></span>
+                        <span data-translate="experience.jobs.electro3.duration"></span>
                     </div>
                 </div>
-                <p class="text-slate-800 dark:text-slate-400 mb-4"
-                    data-translate="experience.jobs.electro3.description">
-                    Desarrollo de aplicaciones empresariales con frontend en Vue.js y backend en Node.js / PHP.
-                    Implementación de APIs REST, bases de datos SQL y soporte a sistemas en producción.
-                </p>
+                <div class="text-slate-800 dark:text-slate-400 mb-4">
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-primary-500 mb-2"
+                            data-translate="experience.jobs.electro3.feEngineering.title"></h4>
+                        <ul class="list-disc list-inside space-y-2 text-sm">
+                            <li data-translate="experience.jobs.electro3.feEngineering.components"></li>
+                            <li data-translate="experience.jobs.electro3.feEngineering.dataConsumption"></li>
+                            <li data-translate="experience.jobs.electro3.feEngineering.quality"></li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-primary-500 mb-2"
+                            data-translate="experience.jobs.electro3.beDs.title"></h4>
+                        <ul class="list-disc list-inside space-y-2 text-sm">
+                            <li data-translate="experience.jobs.electro3.beDs.apis"></li>
+                            <li data-translate="experience.jobs.electro3.beDs.data"></li>
+                            <li data-translate="experience.jobs.electro3.beDs.tooling"></li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-primary-500 mb-2"
+                            data-translate="experience.jobs.electro3.methodologies.title"></h4>
+                        <ul class="list-disc list-inside space-y-2 text-sm">
+                            <li data-translate="experience.jobs.electro3.methodologies.agile"></li>
+                            <li data-translate="experience.jobs.electro3.methodologies.devops"></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold text-primary-500 mb-2"
+                            data-translate="experience.jobs.electro3.keyProjects.title"></h4>
+                        <ul class="list-disc list-inside space-y-2 text-sm">
+                            <li data-translate="experience.jobs.electro3.keyProjects.siis"></li>
+                            <li data-translate="experience.jobs.electro3.keyProjects.totems"></li>
+                            <li data-translate="experience.jobs.electro3.keyProjects.punteros"></li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="flex flex-wrap gap-2 mt-4">
-                    <span class="tag">Vue.js</span><span class="tag">Node.js</span>
-                    <span class="tag">PHP</span><span class="tag">MySQL</span>
+                    <span class="tag">Vue.js</span><span class="tag">Vuex</span>
+                    <span class="tag">Node.js</span><span class="tag">Express</span>
+                    <span class="tag">PHP</span><span class="tag">Codeigniter</span>
+                    <span class="tag">MySQL</span><span class="tag">Cypress</span>
+                    <span class="tag">PrimeVue</span>
                 </div>
             </div>
         </div>
@@ -1387,7 +1464,8 @@
                 </h2>
                 <p class="text-xl text-slate-800 dark:text-slate-400 max-w-3xl mx-auto"
                     data-translate="aiAgents.subtitle">
-                    Soluciones inteligentes de automatización con Agentes de IA y comunicación Agente-a-Agente para transformar tu negocio
+                    Soluciones inteligentes de automatización con Agentes de IA y comunicación Agente-a-Agente para
+                    transformar tu negocio
                 </p>
             </div>
 
@@ -1395,14 +1473,17 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                 <!-- Agente 1: Customer Service -->
                 <div class="glass-effect rounded-xl p-6 scroll-reveal hover:scale-[1.02] transition">
-                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mb-4">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mb-4">
                         <i class="fas fa-headset text-white text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-primary-400" data-translate="aiAgents.customerService.title">
                         Agente de Servicio al Cliente
                     </h3>
-                    <p class="text-slate-800 dark:text-slate-400 mb-4" data-translate="aiAgents.customerService.description">
-                        Atención 24/7 con IA avanzada. Responde preguntas frecuentes, gestiona tickets y escala problemas complejos a humanos cuando es necesario.
+                    <p class="text-slate-800 dark:text-slate-400 mb-4"
+                        data-translate="aiAgents.customerService.description">
+                        Atención 24/7 con IA avanzada. Responde preguntas frecuentes, gestiona tickets y escala
+                        problemas complejos a humanos cuando es necesario.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="bg-blue-500/20 text-blue-300 px-2 py-1 rounded text-sm">NLP</span>
@@ -1422,14 +1503,17 @@
 
                 <!-- Agente 2: Sales Assistant -->
                 <div class="glass-effect rounded-xl p-6 scroll-reveal hover:scale-[1.02] transition">
-                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mb-4">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mb-4">
                         <i class="fas fa-chart-line text-white text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-primary-400" data-translate="aiAgents.salesAssistant.title">
                         Agente de Ventas Inteligente
                     </h3>
-                    <p class="text-slate-800 dark:text-slate-400 mb-4" data-translate="aiAgents.salesAssistant.description">
-                        Calificación de leads, seguimiento automático y recomendaciones de productos basadas en análisis predictivo y comportamiento del cliente.
+                    <p class="text-slate-800 dark:text-slate-400 mb-4"
+                        data-translate="aiAgents.salesAssistant.description">
+                        Calificación de leads, seguimiento automático y recomendaciones de productos basadas en análisis
+                        predictivo y comportamiento del cliente.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="bg-green-500/20 text-green-300 px-2 py-1 rounded text-sm">Lead Scoring</span>
@@ -1449,14 +1533,17 @@
 
                 <!-- Agente 3: Data Analyst -->
                 <div class="glass-effect rounded-xl p-6 scroll-reveal hover:scale-[1.02] transition">
-                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mb-4">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mb-4">
                         <i class="fas fa-chart-pie text-white text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-primary-400" data-translate="aiAgents.dataAnalyst.title">
                         Agente Analista de Datos
                     </h3>
-                    <p class="text-slate-800 dark:text-slate-400 mb-4" data-translate="aiAgents.dataAnalyst.description">
-                        Análisis automático de métricas business, generación de insights y reportes personalizados con visualizaciones interactivas en tiempo real.
+                    <p class="text-slate-800 dark:text-slate-400 mb-4"
+                        data-translate="aiAgents.dataAnalyst.description">
+                        Análisis automático de métricas business, generación de insights y reportes personalizados con
+                        visualizaciones interactivas en tiempo real.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="bg-purple-500/20 text-purple-300 px-2 py-1 rounded text-sm">Analytics</span>
@@ -1476,14 +1563,16 @@
 
                 <!-- Agente 4: Marketing Automation -->
                 <div class="glass-effect rounded-xl p-6 scroll-reveal hover:scale-[1.02] transition">
-                    <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg flex items-center justify-center mb-4">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg flex items-center justify-center mb-4">
                         <i class="fas fa-bullhorn text-white text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-primary-400" data-translate="aiAgents.marketing.title">
                         Agente de Marketing Automation
                     </h3>
                     <p class="text-slate-800 dark:text-slate-400 mb-4" data-translate="aiAgents.marketing.description">
-                        Creación de campañas personalizadas, segmentación de audiencia y optimización automática de contenido basada en rendimiento.
+                        Creación de campañas personalizadas, segmentación de audiencia y optimización automática de
+                        contenido basada en rendimiento.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="bg-orange-500/20 text-orange-300 px-2 py-1 rounded text-sm">Campaigns</span>
@@ -1503,14 +1592,16 @@
 
                 <!-- Agente 5: HR Assistant -->
                 <div class="glass-effect rounded-xl p-6 scroll-reveal hover:scale-[1.02] transition">
-                    <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-cyan-500 rounded-lg flex items-center justify-center mb-4">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-teal-500 to-cyan-500 rounded-lg flex items-center justify-center mb-4">
                         <i class="fas fa-users text-white text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-primary-400" data-translate="aiAgents.hr.title">
                         Agente de Recursos Humanos
                     </h3>
                     <p class="text-slate-800 dark:text-slate-400 mb-4" data-translate="aiAgents.hr.description">
-                        Screening de candidatos, programación de entrevistas y onboarding automatizado con análisis de compatibilidad y seguimiento de desempeño.
+                        Screening de candidatos, programación de entrevistas y onboarding automatizado con análisis de
+                        compatibilidad y seguimiento de desempeño.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="bg-teal-500/20 text-teal-300 px-2 py-1 rounded text-sm">Recruitment</span>
@@ -1530,14 +1621,16 @@
 
                 <!-- Agente 6: Operations Manager -->
                 <div class="glass-effect rounded-xl p-6 scroll-reveal hover:scale-[1.02] transition">
-                    <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-blue-500 rounded-lg flex items-center justify-center mb-4">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-blue-500 rounded-lg flex items-center justify-center mb-4">
                         <i class="fas fa-cogs text-white text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-primary-400" data-translate="aiAgents.operations.title">
                         Agente de Operaciones
                     </h3>
                     <p class="text-slate-800 dark:text-slate-400 mb-4" data-translate="aiAgents.operations.description">
-                        Optimización de procesos, gestión de inventario y coordinación logística con predicción de demanda y asignación automática de recursos.
+                        Optimización de procesos, gestión de inventario y coordinación logística con predicción de
+                        demanda y asignación automática de recursos.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="bg-indigo-500/20 text-indigo-300 px-2 py-1 rounded text-sm">Process Opt</span>
@@ -1564,57 +1657,68 @@
                     </h3>
                     <p class="text-lg text-slate-800 dark:text-slate-400 max-w-2xl mx-auto"
                         data-translate="aiAgents.a2a.subtitle">
-                        Nuestros agentes colaboran entre sí para resolver problemas complejos mediante comunicación inteligente y coordinada
+                        Nuestros agentes colaboran entre sí para resolver problemas complejos mediante comunicación
+                        inteligente y coordinada
                     </p>
                 </div>
 
                 <div class="glass-effect rounded-xl p-8 scroll-reveal">
                     <div class="grid md:grid-cols-2 gap-8 items-center">
                         <div>
-                            <h4 class="text-2xl font-bold mb-4 text-primary-400" data-translate="aiAgents.a2a.workflowTitle">
+                            <h4 class="text-2xl font-bold mb-4 text-primary-400"
+                                data-translate="aiAgents.a2a.workflowTitle">
                                 Flujo de Trabajo Colaborativo
                             </h4>
                             <div class="space-y-4">
                                 <div class="flex items-start gap-3">
-                                    <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <div
+                                        class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                                         <span class="text-white text-sm font-bold">1</span>
                                     </div>
                                     <div>
                                         <h5 class="font-semibold mb-1">Detección del Cliente</h5>
-                                        <p class="text-sm text-slate-600 dark:text-slate-400">El Agente de Servicio detecta una consulta compleja sobre ventas</p>
+                                        <p class="text-sm text-slate-600 dark:text-slate-400">El Agente de Servicio
+                                            detecta una consulta compleja sobre ventas</p>
                                     </div>
                                 </div>
                                 <div class="flex items-start gap-3">
-                                    <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <div
+                                        class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                                         <span class="text-white text-sm font-bold">2</span>
                                     </div>
                                     <div>
                                         <h5 class="font-semibold mb-1">Consulta A2A</h5>
-                                        <p class="text-sm text-slate-600 dark:text-slate-400">Comunica automáticamente con el Agente de Ventas</p>
+                                        <p class="text-sm text-slate-600 dark:text-slate-400">Comunica automáticamente
+                                            con el Agente de Ventas</p>
                                     </div>
                                 </div>
                                 <div class="flex items-start gap-3">
-                                    <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <div
+                                        class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                                         <span class="text-white text-sm font-bold">3</span>
                                     </div>
                                     <div>
                                         <h5 class="font-semibold mb-1">Análisis Compartido</h5>
-                                        <p class="text-sm text-slate-600 dark:text-slate-400">El Agente de Analista proporciona datos históricos</p>
+                                        <p class="text-sm text-slate-600 dark:text-slate-400">El Agente de Analista
+                                            proporciona datos históricos</p>
                                     </div>
                                 </div>
                                 <div class="flex items-start gap-3">
-                                    <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <div
+                                        class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                                         <span class="text-white text-sm font-bold">4</span>
                                     </div>
                                     <div>
                                         <h5 class="font-semibold mb-1">Respuesta Integrada</h5>
-                                        <p class="text-sm text-slate-600 dark:text-slate-400">Respuesta coordinada con información completa al cliente</p>
+                                        <p class="text-sm text-slate-600 dark:text-slate-400">Respuesta coordinada con
+                                            información completa al cliente</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="relative">
-                            <div class="bg-gradient-to-br from-primary-500/20 to-accent-500/20 rounded-xl p-6 border border-primary-500/30">
+                            <div
+                                class="bg-gradient-to-br from-primary-500/20 to-accent-500/20 rounded-xl p-6 border border-primary-500/30">
                                 <div class="text-center mb-4">
                                     <i class="fas fa-network-wired text-4xl text-primary-400 mb-2"></i>
                                     <h5 class="font-bold text-lg">Red de Agentes Conectados</h5>
@@ -1646,7 +1750,8 @@
                                     </div>
                                 </div>
                                 <div class="mt-4 text-center">
-                                    <div class="inline-flex items-center gap-2 bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-sm">
+                                    <div
+                                        class="inline-flex items-center gap-2 bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-sm">
                                         <i class="fas fa-sync-alt animate-spin"></i>
                                         Tiempo Real
                                     </div>
@@ -1660,35 +1765,41 @@
             <!-- Beneficios -->
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="text-center scroll-reveal">
-                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
                         <i class="fas fa-rocket text-white text-2xl"></i>
                     </div>
                     <h4 class="text-xl font-bold mb-2" data-translate="aiAgents.benefits.efficiency.title">
                         Eficiencia 10x
                     </h4>
-                    <p class="text-slate-600 dark:text-slate-400" data-translate="aiAgents.benefits.efficiency.description">
+                    <p class="text-slate-600 dark:text-slate-400"
+                        data-translate="aiAgents.benefits.efficiency.description">
                         Automatización de tareas repetitivas y procesamiento paralelo de múltiples solicitudes
                     </p>
                 </div>
                 <div class="text-center scroll-reveal">
-                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
                         <i class="fas fa-brain text-white text-2xl"></i>
                     </div>
                     <h4 class="text-xl font-bold mb-2" data-translate="aiAgents.benefits.intelligence.title">
                         Inteligencia Colectiva
                     </h4>
-                    <p class="text-slate-600 dark:text-slate-400" data-translate="aiAgents.benefits.intelligence.description">
+                    <p class="text-slate-600 dark:text-slate-400"
+                        data-translate="aiAgents.benefits.intelligence.description">
                         Los agentes aprenden continuamente y comparten conocimiento entre sí
                     </p>
                 </div>
                 <div class="text-center scroll-reveal">
-                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
                         <i class="fas fa-shield-alt text-white text-2xl"></i>
                     </div>
                     <h4 class="text-xl font-bold mb-2" data-translate="aiAgents.benefits.security.title">
                         Seguridad y Control
                     </h4>
-                    <p class="text-slate-600 dark:text-slate-400" data-translate="aiAgents.benefits.security.description">
+                    <p class="text-slate-600 dark:text-slate-400"
+                        data-translate="aiAgents.benefits.security.description">
                         Protocolos de seguridad avanzados y supervisión humana en puntos críticos
                     </p>
                 </div>
@@ -2163,45 +2274,112 @@
                     title: "Experiencia profesional",
                     subtitle: "Mi trayectoria como desarrollador Full Stack y Frontend en proyectos de alto impacto",
                     jobs: {
-                        electro3: {
+                        usadosEuropa: {
                             position: "Full Stack Developer",
-                            company: "Electro 3",
-                            duration: "Ene 2021 – Jun 2022",
-                            location: "💼 Presencial / Argentina",
-                            contractType: "Contratado",
-                            description: "Desarrollo de aplicaciones empresariales con frontend en Vue.js y backend en Node.js / PHP. Implementación de APIs REST, bases de datos SQL y soporte a sistemas en producción."
+                            company: "Usados Europa",
+                            subtitle: "Strategic Engineering & Technical Product Ownership",
+                            duration: "2024 – Presente",
+                            location: "🌎 Remoto / Amberes, Bélgica",
+                            description: "Lidero el ciclo de vida completo de la plataforma Usados Europa, actuando como el puente crítico entre la visión de negocio y la ejecución técnica de alto nivel. Mi enfoque está en la escalabilidad del producto, eficiencia de ingeniería y alinear la tecnología con el crecimiento comercial.",
+                            coreResponsibilities: {
+                                title: "Responsabilidades Clave & Impacto Estratégico:",
+                                roadmap: "Technical Roadmap & Strategy: Transformo requisitos de negocio complejos en arquitecturas técnicas escalables. Gestiono el ciclo de vida completo del proyecto, desde acuerdos con stakeholders hasta despliegue en producción.",
+                                architecture: "Architecture & MERN Stack Mastery: Diseño y superviso arquitecturas robustas usando MongoDB, Express, React y Node.js, asegurando integridad de datos y rendimiento de alta concurrencia.",
+                                leadership: "Engineering Leadership: Mentorizo y gestiono el equipo de desarrollo bajo metodologías Agile, fomentando Clean Code, Peer Reviews y mejora continua.",
+                                stakeholders: "Stakeholder Management: Mantengo comunicación directa con socios estratégicos para asegurar que el roadmap técnico esté alineado con KPIs de negocio."
+                            },
+                            keyExpertise: {
+                                title: "Expertise Clave:",
+                                deployment: "Deployment Excellence: Ejecución de planes de despliegue estratégicos, minimizando downtime y optimizando costos de infraestructura en la nube.",
+                                design: "System Design: Especialista en descomponer problemas de negocio complejos en soluciones técnicas modulares, mantenibles y seguras.",
+                                performance: "Performance Optimization: Impulsando cambios arquitectónicos que mejoran la experiencia del usuario durante períodos de alto tráfico."
+                            }
                         },
-                        colegium: {
-                            position: "Frontend Developer",
-                            company: "Colegium",
-                            duration: "Ene 2021 – Nov 2022",
-                            location: "🌎 Remoto / LATAM",
-                            contractType: "Contratado",
-                            description: "Implementación de interfaces escolares con Vue.js y PHP. Optimización del rendimiento, mantenimiento de módulos existentes y creación de componentes reutilizables."
+                        selfEmployed: {
+                            position: "Full Stack Developer",
+                            company: "Self Employed",
+                            subtitle: "AI & Automation Focus (Current)",
+                            duration: "2024 – Presente",
+                            location: "🌎 Remoto",
+                            description: "En el período reciente, he evolucionado mi flujo de trabajo y soluciones integrando Generative AI y Automation, logrando una reducción del 30-40% en los tiempos de entrega de MVPs y mejorando la robustez arquitectónica.",
+                            agentsWorkflows: "Agents & Workflows: Implementación de agentes autónomos para automatización de tareas y gestión de flujos de datos complejos.",
+                            llmIntegration: "LLM Integration: Desarrollo de aplicaciones utilizando APIs de Language Models (OpenAI, Anthropic) para procesamiento de texto, generación de contenido y asistentes inteligentes personalizados.",
+                            promptEngineering: "Prompt Engineering & Tools: Uso avanzado de herramientas como GitHub Copilot y Cursor, junto con automatizaciones personalizadas para optimizar coding, debugging y testing automatizado.",
+                            fullStackCore: "Full Stack Core: Como freelance full stack developer, entrego soluciones end-to-end con experiencia en React/Vue frontends, Node.js/PHP backends y despliegue en la nube.",
+                            impactFigures: {
+                                title: "Impacto en Cifras:",
+                                efficiency: "Efficiency: Optimización de procesos a través de scripts de automatización, reduciendo errores manuales en un 25%.",
+                                versatility: "Versatility: Actuando como 'Force Multiplier' combinando desarrollo tradicional con herramientas de IA para escalar proyectos ágilmente."
+                            }
+                        },
+                        aiometrix: {
+                            position: "Full Stack Developer",
+                            company: "AIometrix - Bahr & Co",
+                            duration: "2024",
+                            location: "🌎 Remoto / USA",
+                            architecture: "1. Scalable Modern Architecture Implementation: Arquitecté y desplegué aplicaciones web de alto rendimiento usando Next.js. Mediante SSR y SSG, mejoré rankings SEO y reduje tiempos de carga en un 30%.",
+                            aiLogic: "2. AI-Driven Logic & Complex Interactivity: Evolucioné desde desarrollo estándar hacia construcción de sistemas complejos con IA integrada. Especializado en conectar LLMs con lógica de negocio, habilitando features como consultas automatizadas y procesamiento inteligente.",
+                            performance: "3. Performance Optimization at Scale: Optimicé operaciones de IA para manejar altos volúmenes de requests minimizando latency y costos operativos. Mediante refinamiento de APIs y caching estratégico, mantuve rendimiento pico y reduje overhead en un 20%."
                         },
                         odea: {
-                            position: "Frontend Developer",
-                            company: "Odea S.A.",
-                            duration: "Jun 2022 – Mar 2023",
-                            location: "💼 Híbrido / Argentina",
-                            contractType: "Contratado",
-                            description: "Desarrollo de aplicaciones web con React y PHP. Implementación de soluciones empresariales y mantenimiento de sistemas existentes."
+                            position: "Frontend & Architecture Engineer",
+                            company: "ODEA",
+                            subtitle: "Strategic Development & Performance Optimization",
+                            duration: "2023 – 2024",
+                            location: "🌎 Remoto / Argentina",
+                            vanillaJS: "Scalable Vanilla JS Architectures: Diseño e implementación de aplicaciones web personalizadas sin framework usando JavaScript Modular avanzado (ES6+).",
+                            gis: "Geospatial Intelligence (GIS): Especializado en desarrollar interfaces de mapas personalizadas y gestionar capas de datos GIS. Experto en parsear, sanitizar y proyectar datos espaciales desde CSV y otros formatos crudos hacia visualizaciones interactivas.",
+                            stateEvent: "State & Event Management: Manejo experto de Reactive Programming mediante Event Listeners personalizados, Triggers y patrones Pub/Sub para gestionar estados complejos de aplicaciones.",
+                            uiRendering: "Advanced UI Rendering: Modelado y styling DOM de alto rendimiento, asegurando 60fps rendering y Critical Rendering Paths optimizadas.",
+                            bestPractices: "Engineering Best Practices: Establecí estructuras de carpetas escalables (Atomic Design/Clean Architecture) y documentación técnica comprensiva para frameworks internos.",
+                            impact: {
+                                title: "Expertise Adquirida & Impacto:",
+                                visualization: "Data Visualization: Implementación exitosa de sistemas de mapeo dinámicos capaces de procesar grandes datasets CSV para generar heatmaps y overlays geográficos en tiempo real.",
+                                performance: "Performance: Reducción de bundle sizes en un 40% comparado con frameworks estándar usando Vanilla JS optimizado.",
+                                dom: "DOM Mastery: Conocimiento profundo del Shadow DOM y browser APIs para actualizaciones UI de alta eficiencia.",
+                                autonomy: "Autonomy: Historial comprobado de ownership independiente de proyectos y adherencia estricta a timelines Agile."
+                            }
                         },
-                        bahr: {
+                        colegium: {
                             position: "Full Stack Developer",
-                            company: "Bahr Company",
-                            duration: "Mar 2023 – Nov 2024",
-                            location: "🌎 Remoto / USA",
-                            contractType: "Contractor",
-                            description: "Desarrollo de aplicaciones web modernas con React y Node.js. Implementación de soluciones escalables y mantenimiento de código existente. Integración de IA con LangChain y OpenAI."
+                            company: "Colegium",
+                            subtitle: "AI Transformation & Education Intelligence",
+                            duration: "2022 – 2023",
+                            location: "🌎 Remoto / LATAM",
+                            description: "Lideré la integración de Generative AI y Data Analytics para optimizar el ecosistema educativo para cuatro segmentos clave de usuarios:",
+                            teachers: "Instructional Planning (Teachers): Desarrollé un asistente de IA que reduce el tiempo de planificación de lecciones en un 40%, alineando contenido curricular con estándares pedagógicos automáticamente.",
+                            students: "Automated Summarization (Students): Implementé un motor NLP para generar resúmenes de estudio de alta fidelidad desde materiales de clase, aumentando el engagement de estudiantes con contenido digital.",
+                            executives: "Strategic Insights (Executives): Ingeniería de dashboard que transforma datos académicos crudos en insights predictivos, permitiendo a directores identificar estudiantes en riesgo y tendencias con 90% de accuracy.",
+                            staff: "Canonical Data Automation (Staff/Preceptors): Streamlined workflows administrativos centralizando datos through AI agents, reduciendo errores de entrada manual en un 25% y asegurando integridad de datos across the platform."
                         },
-                        freelance: {
-                            position: "Desarrollador Full Stack Freelance",
-                            company: "Autónomo",
-                            duration: "Nov 2019 – Presente",
-                            location: "🌎 Remoto / Global",
-                            contractType: "Freelance",
-                            description: "Desarrollo de aplicaciones web personalizadas, sitios web y soluciones tecnológicas para diversos clientes. Especialización en JavaScript, React, Node.js y bases de datos."
+                        electro3: {
+                            position: "Full Stack Developer",
+                            company: "Electro3",
+                            duration: "Ene 2021 – May 2023",
+                            location: "💼 Presencial / Argentina",
+                            feEngineering: {
+                                title: "Front End Engineering",
+                                components: "Complex Component Architecture: Especializado en desarrollar y personalizar UI components avanzados usando Vue.js y Vuex, asegurando estructuras modulares, altamente reutilizables y escalables.",
+                                dataConsumption: "Data Consumption & State Management: Implementación de lógica robusta para consumo de APIs RESTful via Axios, optimizando state management global y persistencia de datos client-side.",
+                                quality: "Quality Assurance & Styling: Asegurando fidelidad visual y funcional through PrimeVue y PrimeFaces integration, mientras implemento testing E2E con Cypress para mantener near-zero regression rate."
+                            },
+                            beDs: {
+                                title: "Backend & Data Systems",
+                                apis: "API & Microservices Development: Diseño y construcción de servicios escalables usando Node.js (Express) y PHP (Codeigniter), priorizando seguridad y eficiencia de transferencia de datos.",
+                                data: "Data Persistence & Modeling: Expertise en diseño de esquemas de bases de datos relacionales SQL y gestión avanzada con MySQL Workbench, asegurando integridad referencial y optimización de queries complejas.",
+                                tooling: "Professional Tooling: Mastery de Postman para testing exhaustivo de endpoints y documentación de API contracts."
+                            },
+                            methodologies: {
+                                title: "Methodologies & Workflow",
+                                agile: "Agile Mindset: Ejecución de proyectos bajo framework Scrum, con gestión activa de lifecycle en Jira y Trello.",
+                                devops: "DevOps & Versioning: Control de versiones avanzado con Git y workflows de integración continua en GitLab."
+                            },
+                            keyProjects: {
+                                title: "Key Projects",
+                                siis: "SIIS (San Juan Police Dept. Office App): Desarrollé la aplicación de oficina central, gestionando flujos de información crítica y entornos de alta concurrencia.",
+                                totems: "Totems Admin: Sistema de administración end-to-end para terminales self-service y visualización de datos en tiempo real.",
+                                punteros: "Punteros BL: Implementación de business logic especializada para tracking y gestión de data pointers."
+                            }
                         }
                     }
                 },
@@ -2441,45 +2619,112 @@
                     title: "Professional Experience",
                     subtitle: "My journey as a Full Stack and Frontend developer in high-impact projects",
                     jobs: {
-                        electro3: {
+                        usadosEuropa: {
                             position: "Full Stack Developer",
-                            company: "Electro 3",
-                            duration: "Jan 2021 – Jun 2022",
-                            location: "💼 Onsite / Argentina",
-                            contractType: "Full-time",
-                            description: "Development of enterprise applications with Vue.js frontend and Node.js/PHP backend. Implementation of REST APIs, SQL databases, and production system support."
+                            company: "Usados Europa",
+                            subtitle: "Strategic Engineering & Technical Product Ownership",
+                            duration: "2024 – Present",
+                            location: "🌎 Remote / Antwerp, Belgium",
+                            description: "I lead the end-to-end lifecycle of the Usados Europa platform, acting as the critical bridge between business vision and high-level technical execution. My focus is on product scalability, engineering efficiency, and aligning technology with commercial growth.",
+                            coreResponsibilities: {
+                                title: "Core Responsibilities & Strategic Impact:",
+                                roadmap: "Technical Roadmap & Strategy: I transform complex business requirements into scalable technical architectures. I manage the entire project lifecycle, from initial stakeholder agreements and requirements analysis to production deployment and evolutionary maintenance.",
+                                architecture: "Architecture & MERN Stack Mastery: I design and oversee robust architectures based on MongoDB, Express, React, and Node.js, ensuring data integrity, high-concurrency performance, and long-term system stability.",
+                                leadership: "Engineering Leadership: I mentor and manage the development team under Agile methodologies, fostering a culture of Clean Code, rigorous Peer Reviews, and continuous process improvement.",
+                                stakeholders: "Stakeholder Management: I maintain direct communication with strategic partners to ensure the technical roadmap is perfectly aligned with business KPIs, ensuring every sprint delivers measurable value."
+                            },
+                            keyExpertise: {
+                                title: "Key Expertise:",
+                                deployment: "Deployment Excellence: Execution of strategic deployment plans, minimizing downtime and optimizing cloud infrastructure costs.",
+                                design: "System Design: Specialist in breaking down 'big picture' business problems into modular, maintainable, and secure technical solutions.",
+                                performance: "Performance Optimization: Driving architectural changes that enhance user experience and platform speed during high-traffic periods."
+                            }
                         },
-                        colegium: {
-                            position: "Frontend Developer",
-                            company: "Colegium",
-                            duration: "Jan 2021 – Nov 2022",
-                            location: "🌎 Remote / LATAM",
-                            contractType: "Full-time",
-                            description: "Developing school interfaces with Vue.js and PHP. Optimizing performance, maintaining existing modules, and creating reusable components."
+                        selfEmployed: {
+                            position: "Full Stack Developer",
+                            company: "Self Employed",
+                            subtitle: "AI & Automation Focus (Current)",
+                            duration: "2024 – Present",
+                            location: "🌎 Remote",
+                            description: "In the recent period, I have evolved my workflow and solutions by integrating Generative AI and Automation, achieving a 30-40% reduction in MVP delivery times and enhancing architectural robustness.",
+                            agentsWorkflows: "Agents & Workflows: Implementation of autonomous agents for task automation and management of complex data flows.",
+                            llmIntegration: "LLM Integration: Development of applications utilizing Language Model APIs (OpenAI, Anthropic) for text processing, content generation, and custom intelligent assistants.",
+                            promptEngineering: "Prompt Engineering & Tools: Advanced use of tools like GitHub Copilot and Cursor, along with custom automations to optimize coding, debugging, and automated testing.",
+                            fullStackCore: "Full Stack Core: As a freelance full stack developer, I deliver end-to-end solutions. My expertise covers React and Vue frontends, Node.js and PHP backends, and cloud deployment.",
+                            impactFigures: {
+                                title: "Impact in Figures (Statistics):",
+                                efficiency: "Efficiency: Process optimization through automation scripts, reducing manual errors by 25%.",
+                                versatility: "Versatility: Ability to act as a 'Force Multiplier' by combining traditional development with AI tools to scale projects agilely."
+                            }
+                        },
+                        aiometrix: {
+                            position: "Full Stack Developer",
+                            company: "AIometrix - Bahr & Co",
+                            duration: "2024",
+                            location: "🌎 Remote / USA",
+                            architecture: "1. Scalable Modern Architecture Implementation: Successfully architected and deployed high-performance web applications using Next.js. By leveraging Server-Side Rendering (SSR) and Static Site Generation (SSG), I improved SEO rankings and reduced page load times by 30%, ensuring a seamless and dynamic user experience.",
+                            aiLogic: "2. AI-Driven Logic & Complex Interactivity: Evolved from standard development to building complex, AI-integrated systems. I specialized in connecting Large Language Models (LLMs) with application business logic, enabling advanced features such as automated database product queries and intelligent order processing systems.",
+                            performance: "3. Performance Optimization at Scale: Optimized AI operations to handle high request volumes while minimizing latency and operational costs. By refining API interactions and implementing efficient caching strategies, I maintained peak application performance and reduced infrastructure overhead by 20%."
                         },
                         odea: {
-                            position: "Frontend Developer",
-                            company: "Odea S.A.",
-                            duration: "Jun 2022 – Mar 2023",
-                            location: "💼 Hybrid / Argentina",
-                            contractType: "Full-time",
-                            description: "Web application development with React and PHP. Implementation of business solutions and maintenance of existing systems."
+                            position: "Frontend & Architecture Engineer",
+                            company: "ODEA",
+                            subtitle: "Strategic Development & Performance Optimization",
+                            duration: "2023 – 2024",
+                            location: "🌎 Remote / Argentina",
+                            vanillaJS: "Scalable Vanilla JS Architectures: Design and implementation of custom, framework-less web applications using advanced Modular JavaScript (ES6+).",
+                            gis: "Geospatial Intelligence (GIS): Specialized in developing custom map-based interfaces and managing GIS data layers. Expert in parsing, sanitizing, and projecting spatial data from CSV files and other raw formats into interactive map visualizations.",
+                            stateEvent: "State & Event Management: Expert handling of Reactive Programming through custom Event Listeners, Triggers, and Pub/Sub (Subscription) patterns to manage complex application states.",
+                            uiRendering: "Advanced UI Rendering: High-performance DOM modeling and styling, ensuring 60fps rendering and optimized Critical Rendering Paths.",
+                            bestPractices: "Engineering Best Practices: Established scalable folder structures (Atomic Design/Clean Architecture) and comprehensive technical documentation for internal frameworks.",
+                            impact: {
+                                title: "Gained Expertise & Impact:",
+                                visualization: "Data Visualization: Successfully implemented dynamic mapping systems capable of processing large CSV datasets to generate real-time heatmaps and geographic overlays.",
+                                performance: "Performance: Reduction in bundle sizes by 40% compared to standard frameworks by using optimized Vanilla JS.",
+                                dom: "DOM Mastery: Deep knowledge of the Shadow DOM and browser APIs for high-efficiency UI updates.",
+                                autonomy: "Proven track record of independent project ownership and strict adherence to Agile delivery timelines."
+                            }
                         },
-                        bahr: {
+                        colegium: {
                             position: "Full Stack Developer",
-                            company: "Bahr Company",
-                            duration: "Mar 2023 – Nov 2024",
-                            location: "🌎 Remote / USA",
-                            contractType: "Contractor",
-                            description: "Development of modern web applications with React and Node.js. Implementation of scalable solutions and maintenance of existing codebase. AI integration with LangChain and OpenAI."
+                            company: "Colegium",
+                            subtitle: "AI Transformation & Education Intelligence",
+                            duration: "2022 – 2023",
+                            location: "🌎 Remote / LATAM",
+                            description: "I led the integration of Generative AI and Data Analytics to optimize the educational ecosystem for four key user segments:",
+                            teachers: "Instructional Planning (Teachers): Developed an AI assistant that reduces lesson planning time by 40%, aligning curriculum content with pedagogical standards automatically.",
+                            students: "Automated Summarization (Students): Implemented an NLP engine to generate high-fidelity study summaries from class materials, increasing student engagement with digital content.",
+                            executives: "Strategic Insights (Executives): Engineered a dashboard that transforms raw academic data into predictive insights, allowing directors to identify at-risk students and trends with 90% accuracy.",
+                            staff: "Canonical Data Automation (Staff/Preceptors): Streamlined administrative workflows by centralizing data through AI agents, reducing manual entry errors by 25% and ensuring data integrity across the platform."
                         },
-                        freelance: {
-                            position: "Freelance Full Stack Developer",
-                            company: "Self-employed",
-                            duration: "2019 – Present",
-                            location: "🌎 Remote / Global",
-                            contractType: "Freelance",
-                            description: "Development of custom web applications, websites, and technological solutions for various clients. Specialization in JavaScript, React, Node.js, and databases."
+                        electro3: {
+                            position: "Full Stack Developer",
+                            company: "Electro3",
+                            duration: "Jan 2021 – May 2023",
+                            location: "💼 Onsite / Argentina",
+                            feEngineering: {
+                                title: "Front End Engineering",
+                                components: "Complex Component Architecture: Specialized in developing and customizing advanced UI components using Vue.js and Vuex, ensuring modular, highly reusable, and scalable interface structures.",
+                                dataConsumption: "Data Consumption & State Management: Implementation of robust logic for RESTful API consumption via Axios, optimizing global state management and client-side data persistence.",
+                                quality: "Quality Assurance & Styling: Ensuring visual and functional fidelity through PrimeVue and PrimeFaces integration, while implementing E2E testing with Cypress to maintain a near-zero regression rate."
+                            },
+                            beDs: {
+                                title: "Backend & Data Systems",
+                                apis: "API & Microservices Development: Design and construction of scalable services using Node.js (Express) and PHP (Codeigniter), prioritizing security and data transfer efficiency.",
+                                data: "Data Persistence & Modeling: Expertise in SQL relational database schema design and advanced management with MySQL Workbench, ensuring referential integrity and complex query optimization.",
+                                tooling: "Professional Tooling: Mastery of Postman for exhaustive endpoint testing and API contract documentation."
+                            },
+                            methodologies: {
+                                title: "Methodologies & Workflow",
+                                agile: "Agile Mindset: Project execution under the Scrum framework, with active lifecycle management in Jira and Trello.",
+                                devops: "DevOps & Versioning: Advanced version control with Git and continuous integration workflows in GitLab."
+                            },
+                            keyProjects: {
+                                title: "Key Projects",
+                                siis: "SIIS (San Juan Police Dept. Office App): Developed the central office application, managing critical information flows and high-concurrency environments.",
+                                totems: "Totems Admin: An end-to-end administration system for self-service terminals and real-time data visualization.",
+                                punteros: "Punteros BL: Implementation of specialized business logic for data pointer tracking and management."
+                            }
                         }
                     }
                 },
