@@ -1,0 +1,203 @@
+/* ============================================================
+   i18n.js — Traducciones al inglés.
+   El español es el contenido por defecto del HTML (se cachea al
+   cargar). Estas claves SOLO contienen el override en inglés,
+   mapeadas por el atributo data-i18n de cada elemento.
+   ============================================================ */
+window.I18N_EN = {
+  /* ---- Nav ---- */
+  "nav.about": "About",
+  "nav.experience": "Experience",
+  "nav.projects": "Projects",
+  "nav.contact": "Contact",
+
+  /* ---- Hero ---- */
+  "hero.eyebrow": "SOFTWARE · AI INTEGRATION · AUTOMATION",
+  "hero.h1": "I integrate <em>AI</em> into products that already exist.",
+  "hero.lead": "I'm <b>Guille Andrada</b>, a Full Stack Developer. I integrate LLMs, MCPs and automation into real systems — I don't train models, I connect them where they add value.",
+  "hero.cta1": "View projects",
+  "hero.cta2": "Let's talk",
+  "hero.card1.t": "LLM integration",
+  "hero.card1.d": "OpenAI, Anthropic and RAG wired into your business logic.",
+  "hero.card2.t": "Custom MCPs",
+  "hero.card2.d": "I extend language models with secure, modular, product-oriented integrations.",
+  "hero.card3.t": "Full stack apps",
+  "hero.card3.d": "End-to-end scalable web products: React/Next on the front, Node/Fastify on the back.",
+  "hero.strip": "Stack",
+
+  /* ---- About ---- */
+  "about.eyebrow": "ABOUT",
+  "about.title": "About me",
+  "about.p1": "I'm a Full Stack Developer with broad experience building web applications, teaching programming and creating interactive design resources. I've worked on projects ranging from real-world services for municipalities to API-driven applications. I specialize in <b>AI integration</b> (LLMs and MCPs) and workflow automation.",
+  "about.p2": "My focus is on delivering clean, efficient and scalable solutions, and on making technology more accessible through clear examples and teaching. I'm passionate about front-end frameworks (React, Vue, Next.js), back-end with Node.js and Python/Django, modern design practices (modern CSS, responsive layouts), LLM integration and building custom MCPs.",
+
+  /* ---- Skills ---- */
+  "sk.web.t": "Web Development",
+  "sk.web.d": "Next.js (SSR/SSG), React, Vue.js, Node.js, Django. Modern interfaces, high-traffic dashboards and scalable, product-oriented web apps.",
+  "sk.ui.t": "UI/UX Design",
+  "sk.ui.d": "Modern CSS, animations, responsive design and design systems. Focused on usability, accessibility and visual consistency in real products.",
+  "sk.api.t": "Backend & Architecture",
+  "sk.api.d": "REST APIs, microservices, event-driven architectures and distributed systems. End-to-end, production-ready solutions.",
+  "sk.cloud.t": "Cloud & DevOps",
+  "sk.cloud.d": "AWS (Lambda, S3, EC2, Cognito, SES), Docker, CI/CD, Vercel, GCP. Deployment, monitoring and optimization of production systems.",
+  "sk.ai.t": "AI & LLM Integration",
+  "sk.ai.d": "Integration with OpenAI and Anthropic, LangChain, RAG and LLM orchestration. Solutions applied to real products and process automation.",
+  "sk.mcp.t": "Custom MCP Development",
+  "sk.mcp.d": "Custom MCPs that extend language models through secure, modular, product-oriented integrations.",
+  "sk.tech": "Technologies & tools",
+
+  /* ---- Meta ---- */
+  "meta.lang.t": "Languages",
+  "meta.lang.es": "🇦🇷 Spanish (Native)",
+  "meta.lang.en": "🇺🇸 English (Proficient)",
+  "meta.lang.pt": "🇧🇷 Portuguese (Advanced)",
+  "meta.method.t": "Agile methodologies",
+  "meta.method.1": "Scrum · Kanban · XP",
+  "meta.tools.t": "Tools",
+  "meta.tools.1": "Git (GitHub / GitLab)",
+  "meta.tools.2": "Docker · Postman",
+  "meta.tools.3": "VS Code · Cursor · Windsurf",
+  "meta.plat.t": "OS & platforms",
+  "meta.plat.1": "macOS · Windows · Linux",
+  "meta.plat.2": "iOS · Android",
+
+  /* ---- Experience ---- */
+  "exp.eyebrow": "EXPERIENCE",
+  "exp.title": "Professional experience",
+  "exp.subtitle": "My path as a Full Stack and Frontend Developer across high-impact projects.",
+  "exp.new": "LATEST",
+
+  /* CaseBridge */
+  "exp.cb.pos": "Full Stack Developer (Backend focus)",
+  "exp.cb.co": "CaseBridge — Scylla Technologies",
+  "exp.cb.meta": "Apr 2026 – May 2026 · 🌎 Remote",
+  "exp.cb.desc": "Healthcare SaaS platform for clinical case management, medical documentation and referrals, handling sensitive patient data (PHI). I was one of the main backend contributors (189 commits across both repos, ~75% backend / 25% frontend) on a hexagonal architecture with CQRS, an in-process event bus and a transactional Unit of Work.",
+  "exp.cb.h1": "What I did",
+  "exp.cb.b1": "Built the clinical notes (SOAP) module from scratch: domain model, Prisma persistence, OpenAPI docs and test suite.",
+  "exp.cb.b2": "Fully migrated the AWS integration from SDK v2 to v3 (Cognito, S3, SES) and replaced in-memory buffers with file streaming to S3.",
+  "exp.cb.b3": "Implemented analytics caching in Redis with invalidation driven by domain events.",
+  "exp.cb.b4": "Applied backend security hardening: SSRF, XSS and injection mitigation, plus auth and session hardening.",
+  "exp.cb.b5": "On the frontend: Document Center with uploads, case archive/restore and CSV lead import.",
+
+  /* Usados Europa */
+  "exp.ue.pos": "Full Stack Developer",
+  "exp.ue.co": "Usados Europa",
+  "exp.ue.meta": "2026 – Present · 🌎 Remote / Antwerp, Belgium",
+  "exp.ue.sub": "Strategic Engineering & Technical Product Ownership",
+  "exp.ue.desc": "I lead the full lifecycle of the Usados Europa platform, acting as the bridge between business vision and high-level technical execution, focused on product scalability and engineering efficiency.",
+  "exp.ue.b1": "Technical roadmap & strategy: I turn complex business requirements into scalable technical architectures, managing the project from stakeholder agreements to production deployment.",
+  "exp.ue.b2": "MERN stack mastery: I design and oversee robust architectures with MongoDB, Express, React and Node.js, ensuring data integrity and high-concurrency performance.",
+  "exp.ue.b3": "Engineering leadership: I mentor the dev team under Agile, promoting Clean Code, peer reviews and continuous improvement.",
+  "exp.ue.b4": "Stakeholder management: direct communication with strategic partners to keep the technical roadmap aligned with business KPIs.",
+
+  /* Self Employed (reencuadrado: integración, no creación) */
+  "exp.se.pos": "Full Stack Developer",
+  "exp.se.co": "Self-employed",
+  "exp.se.meta": "2024 – Present · 🌎 Remote",
+  "exp.se.sub": "AI Integration & Automation",
+  "exp.se.desc": "I evolved my workflow by integrating generative AI and automation, achieving a 30–40% reduction in MVP delivery times and improving architectural robustness.",
+  "exp.se.b1": "AI integration & automation: I integrate Language Model APIs (OpenAI, Anthropic) into workflows for text processing, content generation and custom assistants.",
+  "exp.se.b2": "Prompt engineering & tooling: advanced use of GitHub Copilot and Cursor, plus custom automations to speed up coding, debugging and testing.",
+  "exp.se.b3": "Full stack core: end-to-end solutions across React/Vue front-ends, Node.js/PHP back-ends and cloud deployment.",
+  "exp.se.b4": "Efficiency: process optimization through automation scripts, reducing manual errors by 25%.",
+
+  /* AIometrix */
+  "exp.ax.pos": "Full Stack Developer",
+  "exp.ax.co": "AIometrix — Bahr & Co",
+  "exp.ax.meta": "2024 · 🌎 Remote / USA",
+  "exp.ax.b1": "Scalable modern architecture: architected and deployed high-performance web apps with Next.js, improving SEO and cutting load times by 30% via SSR/SSG.",
+  "exp.ax.b2": "AI-driven logic: connected LLMs with business logic, enabling features like automated product queries and intelligent order processing.",
+  "exp.ax.b3": "Performance at scale: optimized AI operations for high request volumes, refining APIs and caching to reduce infrastructure overhead by 20%.",
+
+  /* ODEA */
+  "exp.od.pos": "Frontend & Architecture Engineer",
+  "exp.od.co": "ODEA",
+  "exp.od.meta": "2023 – 2024 · 🌎 Remote / Argentina",
+  "exp.od.sub": "Strategic Development & Performance Optimization",
+  "exp.od.b1": "Scalable vanilla JS: framework-less web apps using advanced modular JavaScript (ES6+).",
+  "exp.od.b2": "Geospatial intelligence (GIS): custom map interfaces and GIS layers, parsing and projecting spatial data from CSV into interactive visualizations.",
+  "exp.od.b3": "State & event management: reactive programming via custom event listeners, triggers and Pub/Sub patterns.",
+  "exp.od.b4": "Engineering best practices: scalable folder structures (Atomic Design / Clean Architecture) and a 40% bundle-size reduction vs. standard frameworks.",
+
+  /* Colegium */
+  "exp.cg.pos": "Full Stack Developer",
+  "exp.cg.co": "Colegium",
+  "exp.cg.meta": "2022 – 2023 · 🌎 Remote / LATAM",
+  "exp.cg.sub": "AI Integration & Education Intelligence",
+  "exp.cg.desc": "I led the integration of generative AI and data analytics to optimize the educational ecosystem for four key user segments:",
+  "exp.cg.b1": "Teachers: an AI assistant that cuts lesson-planning time by 40%, aligning content with pedagogical standards.",
+  "exp.cg.b2": "Students: an NLP engine that generates high-fidelity study summaries from class materials.",
+  "exp.cg.b3": "Executives: a dashboard turning raw academic data into predictive insights, flagging at-risk students with 90% accuracy.",
+  "exp.cg.b4": "Staff: streamlined administrative workflows via AI integrations, reducing manual-entry errors by 25%.",
+
+  /* Electro3 */
+  "exp.e3.pos": "Full Stack Developer",
+  "exp.e3.co": "Electro3",
+  "exp.e3.meta": "Jan 2021 – May 2023 · 💼 Onsite / Argentina",
+  "exp.e3.b1": "Frontend: advanced UI components with Vue.js and Vuex, RESTful API consumption via Axios, and E2E testing with Cypress (near-zero regression rate).",
+  "exp.e3.b2": "Backend & data: scalable services with Node.js (Express) and PHP (CodeIgniter); SQL schema design and optimization with MySQL.",
+  "exp.e3.b3": "Methodologies: Scrum with Jira/Trello, advanced version control with Git and CI workflows on GitLab.",
+  "exp.e3.b4": "Key projects: SIIS (San Juan Police office app), Totems Admin (self-service terminals) and Punteros BL.",
+
+  /* ---- Projects ---- */
+  "pj.eyebrow": "PROJECTS",
+  "pj.title": "My projects",
+  "pj.subtitle": "Professional projects and educational resources that show my versatility as a Full Stack + AI integration developer.",
+  "pj.disclaimer": "Note: private projects from companies I've worked with can't be shown here due to NDAs.",
+  "pj.cat.real": "Real-world apps & services",
+  "pj.cat.edu": "Educational & design demos",
+  "pj.cat.ai": "AI & experimental projects",
+  "pj.bus.t": "Bus Schedule Service – Media Agua",
+  "pj.bus.d": "Web app showing the public transport schedule for the Sarmiento municipality, giving the community quick access without a database.",
+  "pj.pass.t": "Passwords Admin – Secure Sharing",
+  "pj.pass.d": "Web app for securely sharing credentials among team members, managing sensitive data within groups.",
+  "pj.nasa.t": "NASA Rover Image Searcher",
+  "pj.nasa.d": "Searches and displays NASA Mars Rover images. Built for a Nexo coding challenge, showing API integration and state management.",
+  "pj.chuck.t": "Chuck Norris Jokes App",
+  "pj.chuck.d": "Next.js app delivering endless Chuck Norris jokes — favorite, rate, sort and share on WhatsApp.",
+  "pj.uns.t": "Unsplash Image Searcher",
+  "pj.uns.d": "Search engine pulling images from the Unsplash API. An educational tool for teaching API consumption and front-end frameworks.",
+  "pj.ball.t": "3D Animation – Bouncing Ball",
+  "pj.ball.d": "A 3D animation of a ball bouncing on geometric shapes — a teaching resource for design classes.",
+  "pj.neon.t": "Neon Buttons",
+  "pj.neon.d": "A collection of glowing neon-style buttons, an educational example of creative CSS styling.",
+  "pj.glass.t": "Glass Effect UI",
+  "pj.glass.d": "A mock company interface with a modern glassmorphism effect — a web design teaching demo.",
+  "pj.blend.t": "Image Blender – CSS Blend Modes",
+  "pj.blend.d": "A demo of image blending and masking with CSS, used in design classes.",
+  "pj.flex.t": "Flexbox Layouts",
+  "pj.flex.d": "A practical demonstration of CSS Flexbox for responsive layouts.",
+  "pj.cursor.t": "Custom Cursor Examples",
+  "pj.cursor.d": "Interactive demos of different cursor styles, built for teaching CSS cursor customization.",
+  "pj.console.t": "AI Console Assistant",
+  "pj.console.d": "A console assistant that answers questions and runs tasks using LangChain and OpenAI — a personal project exploring AI integration in Python.",
+  "pj.resume.t": "Resume Critique App",
+  "pj.resume.d": "A résumé analysis tool that critiques CVs using OpenAI's GPT-4o-mini, with structured feedback and a slightly sarcastic tone.",
+  "pj.link": "Open ↗",
+
+  /* ---- Contact ---- */
+  "ct.eyebrow": "CONTACT",
+  "ct.title": "Have a project in mind?",
+  "ct.subtitle": "Let's talk.",
+  "ct.schedule.t": "Schedule a meeting",
+  "ct.schedule.l": "Schedule",
+  "ct.phone.t": "Phone",
+  "ct.email.t": "Email",
+  "ct.loc.t": "Current residence",
+  "ct.loc.v": "San Juan, Argentina",
+  "ct.social.t": "Social media",
+  "ct.cv.t": "Résumé",
+  "ct.cv.en": "Download Resume (EN)",
+  "ct.cv.es": "Download Resume (ES)",
+  "ct.form.name": "Name",
+  "ct.form.email": "Email",
+  "ct.form.msg": "Message",
+  "ct.form.send": "Send message",
+  "ct.form.sending": "Sending...",
+  "ct.form.ok": "Message sent successfully.",
+  "ct.form.err": "There was an error. Please try again.",
+
+  /* ---- Footer ---- */
+  "ft.role": "Full Stack Developer",
+  "ft.rights": "All rights reserved."
+};
