@@ -78,37 +78,79 @@ function toggleMotion() {
 }
 
 /* ------------------------------------------------------------
-   4) IDIOMA  (ES por defecto en el HTML / EN desde i18n.js)
+   4) IDIOMA  (ES por defecto en el HTML / EN, FR, PT desde i18n.js)
 ------------------------------------------------------------ */
+const LANGS = ["es", "en", "fr", "pt"];
 const i18nNodes = Array.from(document.querySelectorAll("[data-i18n]"));
 const originalES = new Map();
 i18nNodes.forEach((el) => {
   originalES.set(el, el.hasAttribute("data-html") ? el.innerHTML : el.textContent);
 });
 
+/* Devuelve el string traducido para `key` en el idioma actual, con
+   fallback al original en español (vía el elemento, si se pasa). */
+function i18nText(key, lang, el) {
+  if (lang === "es") return el ? originalES.get(el) : null;
+  const dict = window["I18N_" + lang.toUpperCase()];
+  return (dict && dict[key]) ?? (el ? originalES.get(el) : null);
+}
+
 function setLang(lang) {
+  if (!LANGS.includes(lang)) lang = "es";
   root.setAttribute("lang", lang);
   i18nNodes.forEach((el) => {
     const key = el.getAttribute("data-i18n");
-    if (lang === "en") {
-      const val = window.I18N_EN[key];
-      if (val == null) return;
-      if (el.hasAttribute("data-html")) el.innerHTML = val; else el.textContent = val;
-    } else {
-      const orig = originalES.get(el);
-      if (el.hasAttribute("data-html")) el.innerHTML = orig; else el.textContent = orig;
-    }
+    const val = i18nText(key, lang, el);
+    if (val == null) return;
+    if (el.hasAttribute("data-html")) el.innerHTML = val; else el.textContent = val;
   });
   const label = document.getElementById("lang-label");
-  if (label) label.textContent = lang === "en" ? "ES" : "EN";
+  if (label) label.textContent = lang.toUpperCase();
+  document.querySelectorAll("#lang-menu button[data-lang]").forEach((btn) => {
+    btn.setAttribute("aria-current", String(btn.getAttribute("data-lang") === lang));
+  });
   localStorage.setItem("lang", lang);
 }
 function initLang() {
   const saved = localStorage.getItem("lang");
-  setLang(saved || (navigator.language.startsWith("en") ? "en" : "es"));
+  if (saved && LANGS.includes(saved)) return setLang(saved);
+  const nav = (navigator.language || "es").slice(0, 2).toLowerCase();
+  setLang(LANGS.includes(nav) ? nav : "es");
 }
-function toggleLang() {
-  setLang(root.getAttribute("lang") === "en" ? "es" : "en");
+
+/* ------------------------------------------------------------
+   4b) MENÚ DE IDIOMA (dropdown)
+------------------------------------------------------------ */
+function initLangMenu() {
+  const btn = document.getElementById("lang-btn");
+  const menu = document.getElementById("lang-menu");
+  if (!btn || !menu) return;
+
+  function closeMenu() {
+    menu.classList.remove("open");
+    btn.setAttribute("aria-expanded", "false");
+  }
+  function openMenu() {
+    menu.classList.add("open");
+    btn.setAttribute("aria-expanded", "true");
+  }
+
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    menu.classList.contains("open") ? closeMenu() : openMenu();
+  });
+  menu.querySelectorAll("button[data-lang]").forEach((item) => {
+    item.addEventListener("click", () => {
+      setLang(item.getAttribute("data-lang"));
+      closeMenu();
+    });
+  });
+  document.addEventListener("click", (e) => {
+    if (!menu.contains(e.target) && e.target !== btn) closeMenu();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeMenu();
+  });
 }
 
 /* ------------------------------------------------------------
@@ -156,23 +198,23 @@ function initForm() {
   if (!form) return;
   const status = document.getElementById("form-status");
   const btn = form.querySelector('button[type="submit"]');
-  const labelSend = () => (root.getAttribute("lang") === "en" ? window.I18N_EN["ct.form.send"] : originalES.get(btn));
+  const t = (key, esDefault) => i18nText(key, root.getAttribute("lang"), null) ?? esDefault;
+  const labelSend = () => i18nText("ct.form.send", root.getAttribute("lang"), btn);
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
-    const en = root.getAttribute("lang") === "en";
     btn.disabled = true;
-    btn.textContent = en ? window.I18N_EN["ct.form.sending"] : "Enviando...";
+    btn.textContent = t("ct.form.sending", "Enviando...");
     status.textContent = ""; status.className = "form-status";
     try {
       const res = await fetch(form.action, {
         method: "POST", body: new FormData(form), headers: { Accept: "application/json" },
       });
       if (res.ok) {
-        status.textContent = en ? window.I18N_EN["ct.form.ok"] : "Mensaje enviado correctamente.";
+        status.textContent = t("ct.form.ok", "Mensaje enviado correctamente.");
         status.className = "form-status ok"; form.reset();
       } else throw new Error();
     } catch {
-      status.textContent = en ? window.I18N_EN["ct.form.err"] : "Hubo un error. Probá de nuevo.";
+      status.textContent = t("ct.form.err", "Hubo un error. Probá de nuevo.");
       status.className = "form-status err";
     } finally {
       btn.disabled = false; btn.textContent = labelSend();
@@ -200,6 +242,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initTheme();
   initMotion();
   initLang();
+  initLangMenu();
   initMenu();
   initReveal();
   initForm();
@@ -207,6 +250,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("theme-btn")?.addEventListener("click", toggleTheme);
   document.getElementById("motion-btn")?.addEventListener("click", toggleMotion);
-  document.getElementById("lang-btn")?.addEventListener("click", toggleLang);
-  document.getElementById("lang-btn-m")?.addEventListener("click", toggleLang);
 });

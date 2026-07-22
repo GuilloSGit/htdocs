@@ -4,23 +4,21 @@ Portafolio personal de desarrollador Full Stack con diseño moderno y responsivo
 
 ## 🚀 Tecnologías Utilizadas
 
-- **HTML5** y **CSS3** con **Tailwind CSS**
+- **HTML5** y **CSS3 puro** (custom properties, sin frameworks ni build step)
 - **JavaScript** vanilla con funcionalidades avanzadas
-- **Arquitectura modular** con componentes separados
 - **Diseño responsivo** y **modo oscuro/claro**
-- **Internacionalización** (Español/Inglés)
+- **Internacionalización** (Español/Inglés/Francés/Portugués)
 - **Animaciones** y efectos visuales
 
 ## 📁 Estructura del Proyecto
 
 ```
-portfolio/
-├── index.html              # Versión modular para desarrollo
-├── assets/                 # Recursos estáticos
-│   ├── styles.css
-│   ├── main.js
-│   ├── tailwind-config.js
-│   └── profile-tiny.jpeg
+htdocs/
+├── index.html      # Contenido (español = default) + metadata SEO
+├── styles.css      # Estilos (CSS puro, sin build step)
+├── app.js          # Lógica: tema, idioma, menú móvil, scroll reveal, formulario
+├── i18n.js         # Traducciones EN / FR / PT (overrides sobre el español del HTML)
+└── assets/         # Imágenes, favicons, thumbnails de proyectos
 ```
 
 ## 🛠️ Desarrollo Local
@@ -37,7 +35,7 @@ portfolio/
 - ✅ Modo oscuro/claro automático
 - ✅ Menú móvil interactivo
 - ✅ Animaciones de scroll
-- ✅ Soporte bilingüe (ES/EN)
+- ✅ Soporte multi-idioma (ES/EN/FR/PT)
 - ✅ Formulario de contacto funcional
 - ✅ Optimizado para performance
 

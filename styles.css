@@ -143,6 +143,27 @@ header.nav {
 .ctrl:hover { border-color: var(--accent-dim); color: var(--ink); }
 .ctrl svg { width: 18px; height: 18px; }
 .lang-btn { width: auto; padding: 0 12px; gap: 6px; }
+.lang-switch { position: relative; }
+.lang-menu {
+  position: absolute; top: calc(100% + 8px); right: 0; z-index: 60;
+  min-width: 168px; margin: 0; padding: 6px; list-style: none;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, .35);
+  display: none; flex-direction: column; gap: 2px;
+}
+.lang-menu.open { display: flex; }
+.lang-menu button {
+  all: unset; box-sizing: border-box; width: 100%; cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 9px 10px; border-radius: 4px;
+  font-family: var(--mono); font-size: 13px; color: var(--ink-soft);
+  transition: background .15s, color .15s;
+}
+.lang-menu button:hover,
+.lang-menu button:focus-visible { background: var(--bg-2); color: var(--ink); }
+.lang-menu button b { color: var(--ink-faint); font-weight: 600; }
+.lang-menu button[aria-current="true"] { color: var(--accent); }
+.lang-menu button[aria-current="true"] b { color: var(--accent); }
 
 .burger { display: none; flex-direction: column; gap: 5px; }
 .burger span { width: 20px; height: 2px; background: var(--ink); border-radius: 2px; transition: .3s; }

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Pay Alert">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#1a2a08"/>
+      <stop offset="100%" stop-color="#0a0a0b"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#glow)"/>
+  <g font-family="'Geist Mono','SFMono-Regular',monospace">
+    <text x="60" y="230" fill="#56564f" font-size="20" letter-spacing="4">[ MERCADO PAGO → WEBHOOK ]</text>
+    <text x="60" y="300" fill="#f4f4f0" font-size="56" font-weight="600">Pay Alert</text>
+    <text x="60" y="345" fill="#c6ff3a" font-size="22">$15.000 — Confirmado ✓</text>
+  </g>
+</svg>
