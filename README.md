@@ -18,6 +18,8 @@ htdocs/
 ├── styles.css      # Estilos (CSS puro, sin build step)
 ├── app.js          # Lógica: tema, idioma, menú móvil, scroll reveal, formulario
 ├── i18n.js         # Traducciones EN / FR / PT (overrides sobre el español del HTML)
+├── sitemap.xml     # Sitemap (una sola entrada — sitio de una página)
+├── robots.txt      # Referencia al sitemap para crawlers
 └── assets/         # Imágenes, favicons, thumbnails de proyectos
 ```
 
@@ -38,6 +40,7 @@ htdocs/
 - ✅ Soporte multi-idioma (ES/EN/FR/PT)
 - ✅ Formulario de contacto funcional
 - ✅ Optimizado para performance
+- ✅ SEO: sitemap.xml, robots.txt y verificación de Google Search Console
 
 ## 🚀 Deployment
 
