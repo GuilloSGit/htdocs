@@ -86,3 +86,9 @@ tocar nada — ahí está por qué el sitio dice lo que dice y cómo funciona el
 i18n a mano (ES default + I18N_EN/FR/PT + dropdown de idioma). Último estado:
 [completar con qué se hizo en esta sesión y qué quedó pendiente].
 ```
+
+### Último estado conocido (2026-07-22)
+
+- Reposicionamiento a "Full Stack Developer · Ingeniero en Sistemas" + Pay Alert/Galpón Digital + FR/PT: hecho y en producción.
+- SEO: `sitemap.xml`, `robots.txt` y meta tag de verificación de Google Search Console — hecho y en producción. **Pendiente del lado del usuario**: entrar a Search Console y enviar el sitemap manualmente (no se puede hacer desde acá).
+- **Pendiente, sin empezar**: Google Business Profile. Falta que el usuario decida el nombre del negocio a mostrar ("Guille Andrada" vs. brand "GA · software") antes de armar el perfil — ver [[seo-google-2026-07]] en memoria para el resto de los detalles (categoría sugerida, cómo manejar la falta de local físico, qué datos reusar del sitio).
