@@ -81,7 +81,7 @@ window.I18N_EN = {
 
   "exp.pa.pos": "Founder & Full Stack Developer",
   "exp.pa.co": "Pay Alert — own product",
-  "exp.pa.meta": "May 2026 – Present · 🌎 Remote",
+  "exp.pa.meta": "Jul 2025 – Present · 🌎 Remote",
   "exp.pa.desc": "Argentine SaaS that connects a business's Mercado Pago account and notifies authorized staff of every payment in real time, without sharing the account. I designed and built the whole system: API, worker, web frontend and internal admin panel.",
   "exp.pa.b1": "Backend: Fastify 5 + TypeScript + Prisma, with a BullMQ/Redis worker, Mercado Pago webhooks that are idempotent against retries, subscriptions and billing.",
   "exp.pa.b2": "Real time: WebSocket with ephemeral tokens, native push (FCM) and Web Push for Safari/iOS.",
@@ -280,7 +280,7 @@ window.I18N_FR = {
 
   "exp.pa.pos": "Fondateur & développeur Full Stack",
   "exp.pa.co": "Pay Alert — produit personnel",
-  "exp.pa.meta": "Mai 2026 – Présent · 🌎 Remote",
+  "exp.pa.meta": "Juil 2025 – Présent · 🌎 Remote",
   "exp.pa.desc": "SaaS argentin qui connecte le compte Mercado Pago d'un commerce et notifie en temps réel chaque paiement à ses employés autorisés, sans partager le compte. J'ai conçu et construit tout le système : API, worker, frontend web et panneau d'administration interne.",
   "exp.pa.b1": "Backend : Fastify 5 + TypeScript + Prisma, avec un worker BullMQ/Redis, des webhooks Mercado Pago idempotents face aux relances, des abonnements et la facturation.",
   "exp.pa.b2": "Temps réel : WebSocket avec jeton éphémère, push natif (FCM) et Web Push pour Safari/iOS.",
@@ -479,7 +479,7 @@ window.I18N_PT = {
 
   "exp.pa.pos": "Fundador e Desenvolvedor Full Stack",
   "exp.pa.co": "Pay Alert — produto próprio",
-  "exp.pa.meta": "Mai 2026 – Presente · 🌎 Remoto",
+  "exp.pa.meta": "Jul 2025 – Presente · 🌎 Remoto",
   "exp.pa.desc": "SaaS argentino que conecta a conta do Mercado Pago de um comércio e notifica em tempo real cada pagamento aos funcionários autorizados, sem compartilhar a conta. Projetei e construí o sistema completo: API, worker, frontend web e painel admin interno.",
   "exp.pa.b1": "Backend: Fastify 5 + TypeScript + Prisma, com worker BullMQ/Redis, webhooks do Mercado Pago idempotentes diante de retentativas, assinaturas e faturamento.",
   "exp.pa.b2": "Tempo real: WebSocket com token efêmero, push nativo (FCM) e Web Push para Safari/iOS.",
