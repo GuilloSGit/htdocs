@@ -92,7 +92,7 @@ Guardarlo **sobrescribiendo `NEXT_TASK.md`** en la raíz del repo (título `# NE
 ### Último estado conocido (2026-10-08)
 
 - Copy ajustado a una oferta de Velozient (flujo con Claude Code, "5+ años", inglés "Profesional", ownership de Galpón Digital y Pay Alert) en ES/EN/FR/PT. Ver [[cv-velozient-2026-10]] en memoria.
-- Pendiente: revisar FR/PT (traducción propia) y que el usuario diga si pushea.
+- Agregadas entradas Pay Alert y Galpón Digital en Experiencia (con íconos). Pendiente: revisar FR/PT, fechas del rol "Fundador" y push (no pusheado).
 
 ### Estado anterior (2026-07-22)
 
