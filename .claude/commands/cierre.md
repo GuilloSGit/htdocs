@@ -87,7 +87,14 @@ i18n a mano (ES default + I18N_EN/FR/PT + dropdown de idioma). Último estado:
 [completar con qué se hizo en esta sesión y qué quedó pendiente].
 ```
 
-### Último estado conocido (2026-07-22)
+Guardarlo **sobrescribiendo `NEXT_TASK.md`** en la raíz del repo (título `# NEXT_TASK — Prompt para la próxima sesión`, línea de "Última actualización" `YYYY-MM-DD`, prompt en bloque de código) y mostrarlo también en la respuesta final. Este repo es público y se sirve como sitio estático, así que `NEXT_TASK.md` va en `.git/info/exclude`: queda solo local, nunca se commitea.
+
+### Último estado conocido (2026-10-08)
+
+- Copy ajustado a una oferta de Velozient (flujo con Claude Code, "5+ años", inglés "Profesional", ownership de Galpón Digital y Pay Alert) en ES/EN/FR/PT. Ver [[cv-velozient-2026-10]] en memoria.
+- Pendiente: revisar FR/PT (traducción propia) y que el usuario diga si pushea.
+
+### Estado anterior (2026-07-22)
 
 - Reposicionamiento a "Full Stack Developer · Ingeniero en Sistemas" + Pay Alert/Galpón Digital + FR/PT: hecho y en producción.
 - SEO: `sitemap.xml`, `robots.txt`, verificación de Google Search Console y envío del sitemap — **todo hecho**, sin pendientes.

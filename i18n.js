@@ -28,7 +28,7 @@ window.I18N_EN = {
   /* ---- About ---- */
   "about.eyebrow": "ABOUT",
   "about.title": "About me",
-  "about.p1": "I'm a Full Stack Developer and Systems Engineer, experienced in building complete web products: from the data model and backend architecture to the final interface. I've worked on projects ranging from healthcare SaaS handling sensitive data to my own platforms in production for businesses and SMBs.",
+  "about.p1": "I'm a Full Stack Developer and Systems Engineer with 5+ years of experience building complete web products: from the data model and backend architecture to the final interface. I've worked on healthcare SaaS handling sensitive data, and I own two products of my own end to end: Galpón Digital (inventory with an immutable Kardex for hardware stores, a 6-app monorepo) and Pay Alert (real-time Mercado Pago payment notifications, with API, worker, webhooks and subscriptions).",
   "about.p2": "My focus is on delivering clean, efficient and scalable solutions. I'm passionate about front-end frameworks (React, Vue, Next.js), back-end with Node.js and Python/Django, event-driven architectures and relational databases. I also integrate AI (LLMs, MCPs) when it solves a concrete product problem.",
 
   /* ---- Skills ---- */
@@ -43,20 +43,20 @@ window.I18N_EN = {
   "sk.db.t": "Databases",
   "sk.db.d": "PostgreSQL, MySQL, Prisma and Sequelize. Relational modeling, migrations, multi-tenancy and consistent transactions in production systems.",
   "sk.ai.t": "AI Integration",
-  "sk.ai.d": "Integrating LLMs (OpenAI, Anthropic) and custom MCPs into real products, when they solve a concrete business problem.",
+  "sk.ai.d": "Integrating LLMs (OpenAI, Anthropic) and custom MCPs into real products. Daily agentic development (Claude Code): versioned CLAUDE.md, ARCHITECTURE.md and DESIGN.md so agents work to clear conventions and definitions of “done”.",
   "sk.tech": "Technologies & tools",
 
   /* ---- Meta ---- */
   "meta.lang.t": "Languages",
   "meta.lang.es": "🇦🇷 Spanish (Native)",
-  "meta.lang.en": "🇺🇸 English (Proficient)",
+  "meta.lang.en": "🇺🇸 English (Professional)",
   "meta.lang.pt": "🇧🇷 Portuguese (Advanced)",
   "meta.method.t": "Agile methodologies",
   "meta.method.1": "Scrum · Kanban · XP",
   "meta.tools.t": "Tools",
   "meta.tools.1": "Git (GitHub / GitLab)",
   "meta.tools.2": "Docker · Postman",
-  "meta.tools.3": "VS Code · Cursor · Windsurf",
+  "meta.tools.3": "VS Code · Claude Code · Cursor · Windsurf",
   "meta.plat.t": "OS & platforms",
   "meta.plat.1": "macOS · Windows · Linux",
   "meta.plat.2": "iOS · Android",
@@ -97,7 +97,7 @@ window.I18N_EN = {
   "exp.se.sub": "AI Integration & Automation",
   "exp.se.desc": "I evolved my workflow by integrating generative AI and automation, achieving a 30–40% reduction in MVP delivery times and improving architectural robustness.",
   "exp.se.b1": "AI integration & automation: I integrate Language Model APIs (OpenAI, Anthropic) into workflows for text processing, content generation and custom assistants.",
-  "exp.se.b2": "Prompt engineering & tooling: advanced use of GitHub Copilot and Cursor, plus custom automations to speed up coding, debugging and testing.",
+  "exp.se.b2": "Agentic development (Claude Code, Cursor): I use Claude daily with versioned in-repo context — a CLAUDE.md linked to ARCHITECTURE.md and DESIGN.md — defining the workspace, conventions, the definition of “done” and the expected workflow. The agent works within those parameters and I review and validate every result.",
   "exp.se.b3": "Full stack core: end-to-end solutions across React/Vue front-ends, Node.js/PHP back-ends and cloud deployment.",
   "exp.se.b4": "Efficiency: process optimization through automation scripts, reducing manual errors by 25%.",
 
@@ -209,7 +209,7 @@ window.I18N_FR = {
   /* ---- About ---- */
   "about.eyebrow": "À PROPOS",
   "about.title": "À propos de moi",
-  "about.p1": "Je suis développeur Full Stack et ingénieur en systèmes, avec de l'expérience dans la construction de produits web complets : du modèle de données et de l'architecture backend jusqu'à l'interface finale. J'ai travaillé sur des projets allant d'un SaaS de santé traitant des données sensibles à mes propres plateformes en production pour des commerces et des PME.",
+  "about.p1": "Je suis développeur Full Stack et ingénieur en systèmes, avec plus de 5 ans d'expérience dans la construction de produits web complets : du modèle de données et de l'architecture backend jusqu'à l'interface finale. J'ai travaillé sur un SaaS de santé traitant des données sensibles, et je porte de bout en bout deux produits à moi : Galpón Digital (gestion de stock avec Kardex immuable pour quincailleries, monorepo de 6 applications) et Pay Alert (notifications de paiements Mercado Pago en temps réel, avec API, worker, webhooks et abonnements).",
   "about.p2": "Mon objectif est de livrer des solutions propres, efficaces et évolutives. Je suis passionné par les frameworks front-end (React, Vue, Next.js), le back-end avec Node.js et Python/Django, les architectures événementielles et les bases de données relationnelles. J'intègre aussi l'IA (LLMs, MCPs) quand elle résout un problème concret du produit.",
 
   /* ---- Skills ---- */
@@ -224,20 +224,20 @@ window.I18N_FR = {
   "sk.db.t": "Bases de données",
   "sk.db.d": "PostgreSQL, MySQL, Prisma et Sequelize. Modélisation relationnelle, migrations, multi-tenancy et transactions cohérentes dans des systèmes en production.",
   "sk.ai.t": "Intégration de l'IA",
-  "sk.ai.d": "Intégration de LLMs (OpenAI, Anthropic) et de MCPs sur mesure dans des produits réels, quand ils résolvent un problème métier concret.",
+  "sk.ai.d": "Intégration de LLMs (OpenAI, Anthropic) et de MCPs sur mesure dans des produits réels. Développement quotidien avec des agents (Claude Code) : CLAUDE.md, ARCHITECTURE.md et DESIGN.md versionnés pour travailler avec des normes et des critères de « terminé » clairs.",
   "sk.tech": "Technologies & outils",
 
   /* ---- Meta ---- */
   "meta.lang.t": "Langues",
   "meta.lang.es": "🇦🇷 Espagnol (Natif)",
-  "meta.lang.en": "🇺🇸 Anglais (Courant)",
+  "meta.lang.en": "🇺🇸 Anglais (Professionnel)",
   "meta.lang.pt": "🇧🇷 Portugais (Avancé)",
   "meta.method.t": "Méthodologies agiles",
   "meta.method.1": "Scrum · Kanban · XP",
   "meta.tools.t": "Outils",
   "meta.tools.1": "Git (GitHub / GitLab)",
   "meta.tools.2": "Docker · Postman",
-  "meta.tools.3": "VS Code · Cursor · Windsurf",
+  "meta.tools.3": "VS Code · Claude Code · Cursor · Windsurf",
   "meta.plat.t": "OS & plateformes",
   "meta.plat.1": "macOS · Windows · Linux",
   "meta.plat.2": "iOS · Android",
@@ -278,7 +278,7 @@ window.I18N_FR = {
   "exp.se.sub": "Intégration IA & Automatisation",
   "exp.se.desc": "J'ai fait évoluer mon flux de travail en intégrant l'IA générative et l'automatisation, obtenant une réduction de 30 à 40 % des délais de livraison des MVP et une meilleure robustesse architecturale.",
   "exp.se.b1": "Intégration IA & automatisation : j'intègre des APIs de modèles de langage (OpenAI, Anthropic) dans des workflows de traitement de texte, de génération de contenu et d'assistants sur mesure.",
-  "exp.se.b2": "Prompt engineering & outillage : usage avancé de GitHub Copilot et Cursor, ainsi que des automatisations sur mesure pour accélérer le codage, le débogage et les tests.",
+  "exp.se.b2": "Développement agentique (Claude Code, Cursor) : j'utilise Claude quotidiennement avec un contexte versionné dans le dépôt — un CLAUDE.md lié à ARCHITECTURE.md et DESIGN.md — qui définit l'espace de travail, les normes, le critère de « terminé » et le flux attendu. L'agent travaille dans ce cadre et je revois et valide chaque résultat.",
   "exp.se.b3": "Cœur full stack : solutions de bout en bout avec des front-ends React/Vue, des back-ends Node.js/PHP et un déploiement cloud.",
   "exp.se.b4": "Efficacité : optimisation des processus grâce à des scripts d'automatisation, réduisant les erreurs manuelles de 25 %.",
 
@@ -390,7 +390,7 @@ window.I18N_PT = {
   /* ---- Sobre ---- */
   "about.eyebrow": "SOBRE",
   "about.title": "Sobre mim",
-  "about.p1": "Sou Desenvolvedor Full Stack e Engenheiro de Sistemas, com experiência na construção de produtos web completos: do modelo de dados e da arquitetura do backend até a interface final. Trabalhei em projetos que vão desde um SaaS de saúde com dados sensíveis até plataformas próprias em produção para comércios e PMEs.",
+  "about.p1": "Sou Desenvolvedor Full Stack e Engenheiro de Sistemas, com mais de 5 anos de experiência na construção de produtos web completos: do modelo de dados e da arquitetura do backend até a interface final. Trabalhei em um SaaS de saúde com dados sensíveis e sou responsável de ponta a ponta por dois produtos próprios: Galpón Digital (estoque com Kardex imutável para ferragens, monorepo de 6 apps) e Pay Alert (notificações de pagamentos do Mercado Pago em tempo real, com API, worker, webhooks e assinaturas).",
   "about.p2": "Meu foco é entregar soluções limpas, eficientes e escaláveis. Sou apaixonado por frameworks de front-end (React, Vue, Next.js), back-end com Node.js e Python/Django, arquiteturas orientadas a eventos e bancos de dados relacionais. Também integro IA (LLMs, MCPs) quando ela resolve um problema concreto do produto.",
 
   /* ---- Habilidades ---- */
@@ -405,20 +405,20 @@ window.I18N_PT = {
   "sk.db.t": "Bancos de dados",
   "sk.db.d": "PostgreSQL, MySQL, Prisma e Sequelize. Modelagem relacional, migrations, multi-tenancy e transações consistentes em sistemas produtivos.",
   "sk.ai.t": "Integração de IA",
-  "sk.ai.d": "Integração de LLMs (OpenAI, Anthropic) e MCPs sob medida em produtos reais, quando resolvem um problema concreto de negócio.",
+  "sk.ai.d": "Integração de LLMs (OpenAI, Anthropic) e MCPs sob medida em produtos reais. Desenvolvimento diário com agentes (Claude Code): CLAUDE.md, ARCHITECTURE.md e DESIGN.md versionados para trabalhar com normas e critérios de «pronto» claros.",
   "sk.tech": "Tecnologias & ferramentas",
 
   /* ---- Meta ---- */
   "meta.lang.t": "Idiomas",
   "meta.lang.es": "🇦🇷 Espanhol (Nativo)",
-  "meta.lang.en": "🇺🇸 Inglês (Fluente)",
+  "meta.lang.en": "🇺🇸 Inglês (Profissional)",
   "meta.lang.pt": "🇧🇷 Português (Avançado)",
   "meta.method.t": "Metodologias ágeis",
   "meta.method.1": "Scrum · Kanban · XP",
   "meta.tools.t": "Ferramentas",
   "meta.tools.1": "Git (GitHub / GitLab)",
   "meta.tools.2": "Docker · Postman",
-  "meta.tools.3": "VS Code · Cursor · Windsurf",
+  "meta.tools.3": "VS Code · Claude Code · Cursor · Windsurf",
   "meta.plat.t": "SO & plataformas",
   "meta.plat.1": "macOS · Windows · Linux",
   "meta.plat.2": "iOS · Android",
@@ -459,7 +459,7 @@ window.I18N_PT = {
   "exp.se.sub": "Integração de IA & Automação",
   "exp.se.desc": "Evoluí meu fluxo de trabalho integrando IA generativa e automação, alcançando uma redução de 30–40% nos prazos de entrega de MVPs e maior robustez arquitetural.",
   "exp.se.b1": "Integração de IA e automação: integro APIs de modelos de linguagem (OpenAI, Anthropic) em fluxos de trabalho para processamento de texto, geração de conteúdo e assistentes personalizados.",
-  "exp.se.b2": "Prompt engineering e ferramentas: uso avançado de GitHub Copilot e Cursor, além de automações próprias para acelerar coding, debugging e testes.",
+  "exp.se.b2": "Desenvolvimento com agentes (Claude Code, Cursor): uso o Claude diariamente com contexto versionado no repositório — um CLAUDE.md ligado a ARCHITECTURE.md e DESIGN.md — que define o espaço de trabalho, as normas, o critério de «pronto» e o fluxo esperado. O agente trabalha dentro desses parâmetros e eu reviso e valido cada resultado.",
   "exp.se.b3": "Full Stack core: soluções end-to-end com React/Vue no front, Node.js/PHP no back e deploy na nuvem.",
   "exp.se.b4": "Eficiência: otimização de processos com scripts de automação, reduzindo erros manuais em 25%.",
 
