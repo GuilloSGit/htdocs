@@ -79,6 +79,24 @@ window.I18N_EN = {
   "exp.cb.b4": "Applied backend security hardening: SSRF, XSS and injection mitigation, plus auth and session hardening.",
   "exp.cb.b5": "On the frontend: Document Center with uploads, case archive/restore and CSV lead import.",
 
+  "exp.pa.pos": "Founder & Full Stack Developer",
+  "exp.pa.co": "Pay Alert — own product",
+  "exp.pa.meta": "May 2026 – Present · 🌎 Remote",
+  "exp.pa.desc": "Argentine SaaS that connects a business's Mercado Pago account and notifies authorized staff of every payment in real time, without sharing the account. I designed and built the whole system: API, worker, web frontend and internal admin panel.",
+  "exp.pa.b1": "Backend: Fastify 5 + TypeScript + Prisma, with a BullMQ/Redis worker, Mercado Pago webhooks that are idempotent against retries, subscriptions and billing.",
+  "exp.pa.b2": "Real time: WebSocket with ephemeral tokens, native push (FCM) and Web Push for Safari/iOS.",
+  "exp.pa.b3": "Enterprise API: per-key rate-limited API keys and outbound webhooks signed with HMAC-SHA256, with delivery logs.",
+  "exp.pa.b4": "Security and operations: granular roles and permissions, access-token blocklist, internal admin panel, and deployment on Vercel + Render.",
+
+  "exp.gd.pos": "Founder & Full Stack Developer",
+  "exp.gd.co": "Galpón Digital — own product",
+  "exp.gd.meta": "Jul 2026 – Present · 🌎 Remote",
+  "exp.gd.desc": "Inventory and traceability SaaS for hardware stores, focused on an immutable Kardex and fast counter search. A 6-app monorepo (API, web, landing, warehouse PWA, platform panel and status page) in production.",
+  "exp.gd.b1": "Immutable Kardex: stock movements are insert-only and the cached stock is updated in the same transaction; multi-tenant per organization from day one.",
+  "exp.gd.b2": "Counter search with PostgreSQL trigram indexes (pg_trgm) and word_similarity ranking; designed to work offline, with receipt numbering by leased blocks.",
+  "exp.gd.b3": "Smart import of supplier price lists (Excel/PDF) using AI (Anthropic) and cached mapping recipes, with a preview before confirming.",
+  "exp.gd.b4": "100% passwordless authentication (magic link), PWAs with Web Push, and deployment on Vercel + Railway, with Cloudflare and Resend.",
+
   /* Usados Europa */
   "exp.ue.pos": "Full Stack Developer",
   "exp.ue.co": "Usados Europa",
@@ -260,6 +278,24 @@ window.I18N_FR = {
   "exp.cb.b4": "Renforcement de la sécurité backend : mitigation SSRF, XSS et injection, ainsi que durcissement de l'authentification et des sessions.",
   "exp.cb.b5": "Côté frontend : Document Center avec uploads, archivage/restauration de dossiers et import de leads par CSV.",
 
+  "exp.pa.pos": "Fondateur & développeur Full Stack",
+  "exp.pa.co": "Pay Alert — produit personnel",
+  "exp.pa.meta": "Mai 2026 – Présent · 🌎 Remote",
+  "exp.pa.desc": "SaaS argentin qui connecte le compte Mercado Pago d'un commerce et notifie en temps réel chaque paiement à ses employés autorisés, sans partager le compte. J'ai conçu et construit tout le système : API, worker, frontend web et panneau d'administration interne.",
+  "exp.pa.b1": "Backend : Fastify 5 + TypeScript + Prisma, avec un worker BullMQ/Redis, des webhooks Mercado Pago idempotents face aux relances, des abonnements et la facturation.",
+  "exp.pa.b2": "Temps réel : WebSocket avec jeton éphémère, push natif (FCM) et Web Push pour Safari/iOS.",
+  "exp.pa.b3": "API Enterprise : clés d'API avec limitation de débit par clé et webhooks sortants signés en HMAC-SHA256, avec journaux de livraison.",
+  "exp.pa.b4": "Sécurité et exploitation : rôles et permissions granulaires, liste de blocage des access tokens, panneau d'administration interne et déploiement sur Vercel + Render.",
+
+  "exp.gd.pos": "Fondateur & développeur Full Stack",
+  "exp.gd.co": "Galpón Digital — produit personnel",
+  "exp.gd.meta": "Juil. 2026 – Présent · 🌎 Remote",
+  "exp.gd.desc": "SaaS de gestion de stock et de traçabilité pour quincailleries, centré sur un Kardex immuable et la rapidité de recherche au comptoir. Monorepo de 6 applications (API, web, landing, PWA d'entrepôt, panneau de plateforme et page de statut) en production.",
+  "exp.gd.b1": "Kardex immuable : les mouvements de stock sont en insertion seule et le stock en cache est mis à jour dans la même transaction ; multi-tenant par organisation dès le premier jour.",
+  "exp.gd.b2": "Recherche au comptoir avec index trigram PostgreSQL (pg_trgm) et classement par word_similarity ; conçu pour fonctionner hors ligne, avec une numérotation des documents par blocs.",
+  "exp.gd.b3": "Import intelligent des listes de fournisseurs (Excel/PDF) avec l'IA (Anthropic) et des recettes de mapping en cache, avec aperçu avant confirmation.",
+  "exp.gd.b4": "Authentification 100 % sans mot de passe (magic link), PWAs avec Web Push et déploiement sur Vercel + Railway, avec Cloudflare et Resend.",
+
   /* Usados Europa */
   "exp.ue.pos": "Développeur Full Stack",
   "exp.ue.co": "Usados Europa",
@@ -440,6 +476,24 @@ window.I18N_PT = {
   "exp.cb.b3": "Implementei cache de analytics no Redis com invalidação orientada por eventos de domínio.",
   "exp.cb.b4": "Apliquei hardening de segurança no backend: mitigação de SSRF, XSS e injeção, além de reforço de autenticação e sessões.",
   "exp.cb.b5": "No frontend: Document Center com upload, arquivamento/restauração de casos e importação de leads via CSV.",
+
+  "exp.pa.pos": "Fundador e Desenvolvedor Full Stack",
+  "exp.pa.co": "Pay Alert — produto próprio",
+  "exp.pa.meta": "Mai 2026 – Presente · 🌎 Remoto",
+  "exp.pa.desc": "SaaS argentino que conecta a conta do Mercado Pago de um comércio e notifica em tempo real cada pagamento aos funcionários autorizados, sem compartilhar a conta. Projetei e construí o sistema completo: API, worker, frontend web e painel admin interno.",
+  "exp.pa.b1": "Backend: Fastify 5 + TypeScript + Prisma, com worker BullMQ/Redis, webhooks do Mercado Pago idempotentes diante de retentativas, assinaturas e faturamento.",
+  "exp.pa.b2": "Tempo real: WebSocket com token efêmero, push nativo (FCM) e Web Push para Safari/iOS.",
+  "exp.pa.b3": "API Enterprise: API keys com rate limit por chave e webhooks de saída assinados com HMAC-SHA256, com logs de entrega.",
+  "exp.pa.b4": "Segurança e operação: papéis e permissões granulares, blocklist de access tokens, painel admin interno e deploy na Vercel + Render.",
+
+  "exp.gd.pos": "Fundador e Desenvolvedor Full Stack",
+  "exp.gd.co": "Galpón Digital — produto próprio",
+  "exp.gd.meta": "Jul 2026 – Presente · 🌎 Remoto",
+  "exp.gd.desc": "SaaS de estoque e rastreabilidade para ferragens, com foco em Kardex imutável e velocidade de busca no balcão. Monorepo de 6 aplicações (API, web, landing, PWA de depósito, painel de plataforma e página de status) em produção.",
+  "exp.gd.b1": "Kardex imutável: as movimentações de estoque são somente inserção e o estoque em cache é atualizado na mesma transação; multi-tenant por organização desde o primeiro dia.",
+  "exp.gd.b2": "Busca no balcão com índices trigram do PostgreSQL (pg_trgm) e ranking por word_similarity; projetado para funcionar offline, com numeração de comprovantes por blocos.",
+  "exp.gd.b3": "Importação inteligente de listas de fornecedores (Excel/PDF) com IA (Anthropic) e receitas de mapeamento em cache, com prévia antes de confirmar.",
+  "exp.gd.b4": "Autenticação 100% sem senha (magic link), PWAs com Web Push e deploy na Vercel + Railway, com Cloudflare e Resend.",
 
   /* Usados Europa */
   "exp.ue.pos": "Desenvolvedor Full Stack",

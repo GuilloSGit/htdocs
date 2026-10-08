@@ -241,6 +241,8 @@ header.nav {
 .job:hover { border-color: var(--line-strong); }
 .job.featured { border-color: var(--accent-dim); }
 .job-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px; align-items: baseline; margin-bottom: 6px; }
+.job-id { display: flex; align-items: center; gap: 14px; }
+.job-logo { width: 44px; height: 44px; border-radius: 10px; flex: none; }
 .job-title { font-family: var(--display); font-size: 1.4rem; font-weight: 600; padding: 0 2px; }
 .job-co { color: var(--accent); font-family: var(--mono); font-size: .95rem; padding: 0 2px; }
 .job-meta { font-family: var(--mono); font-size: 12.5px; color: var(--ink-faint); white-space: nowrap; }

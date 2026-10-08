@@ -431,6 +431,78 @@
             </div>
           </article>
 
+          <!-- Pay Alert -->
+          <article class="job reveal">
+            <div class="job-head">
+              <div class="job-id">
+                <img class="job-logo" src="assets/pay-alert-icon.png" width="44" height="44" alt="Pay Alert" loading="lazy" />
+                <div>
+                  <div class="job-title" data-i18n="exp.pa.pos">Fundador y Full Stack Developer</div>
+                  <div class="job-co" data-i18n="exp.pa.co">Pay Alert — producto propio</div>
+                </div>
+              </div>
+              <div class="job-meta" data-i18n="exp.pa.meta">
+                May 2026 – Presente · 🌎 Remoto
+              </div>
+            </div>
+            <p class="job-desc" data-i18n="exp.pa.desc">
+              SaaS argentino que conecta la cuenta de Mercado Pago de un comercio y notifica cada cobro en tiempo real a sus empleados autorizados, sin compartir la cuenta. Diseñé y construí el sistema completo: API, worker, frontend web y panel admin interno.
+            </p>
+            <ul>
+              <li data-i18n="exp.pa.b1">
+                Backend: Fastify 5 + TypeScript + Prisma, con worker BullMQ/Redis, webhooks de Mercado Pago idempotentes frente a reintentos, suscripciones y facturación.
+              </li>
+              <li data-i18n="exp.pa.b2">
+                Tiempo real: WebSocket con token efímero, push nativo (FCM) y Web Push para Safari/iOS.
+              </li>
+              <li data-i18n="exp.pa.b3">
+                API Enterprise: API keys con rate limit por clave y webhooks salientes firmados con HMAC-SHA256, con logs de entrega.
+              </li>
+              <li data-i18n="exp.pa.b4">
+                Seguridad y operación: roles y permisos granulares, blocklist de access tokens, panel admin interno y deploy en Vercel + Render.
+              </li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Fastify</span><span class="tag">Prisma</span><span class="tag">BullMQ</span><span class="tag">Redis</span><span class="tag">Next.js</span><span class="tag">WebSocket</span>
+            </div>
+          </article>
+
+          <!-- Galpón Digital -->
+          <article class="job reveal">
+            <div class="job-head">
+              <div class="job-id">
+                <img class="job-logo" src="assets/galpon-digital-icon.png" width="44" height="44" alt="Galpón Digital" loading="lazy" />
+                <div>
+                  <div class="job-title" data-i18n="exp.gd.pos">Fundador y Full Stack Developer</div>
+                  <div class="job-co" data-i18n="exp.gd.co">Galpón Digital — producto propio</div>
+                </div>
+              </div>
+              <div class="job-meta" data-i18n="exp.gd.meta">
+                Jul 2026 – Presente · 🌎 Remoto
+              </div>
+            </div>
+            <p class="job-desc" data-i18n="exp.gd.desc">
+              SaaS de inventario y trazabilidad para ferreterías, con foco en Kardex inmutable y velocidad de búsqueda en mostrador. Monorepo de 6 aplicaciones (API, web, landing, PWA de depósito, panel de plataforma y página de estado) en producción.
+            </p>
+            <ul>
+              <li data-i18n="exp.gd.b1">
+                Kardex inmutable: los movimientos de stock son solo-inserción y el stock cacheado se actualiza en la misma transacción; multi-tenant por organización desde el día uno.
+              </li>
+              <li data-i18n="exp.gd.b2">
+                Búsqueda de mostrador con índices trigram de PostgreSQL (pg_trgm) y ranking por word_similarity; diseñado para operar sin conexión, con numeración de comprobantes por bloques.
+              </li>
+              <li data-i18n="exp.gd.b3">
+                Importación inteligente de listas de proveedores (Excel/PDF) con IA (Anthropic) y recetas de mapeo cacheadas, con vista previa antes de confirmar.
+              </li>
+              <li data-i18n="exp.gd.b4">
+                Autenticación 100% passwordless (magic link), PWAs con Web Push y deploy en Vercel + Railway, con Cloudflare y Resend.
+              </li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Next.js</span><span class="tag">Fastify</span><span class="tag">Prisma</span><span class="tag">PostgreSQL</span><span class="tag">PWA</span><span class="tag">Anthropic</span>
+            </div>
+          </article>
+
           <!-- Usados Europa -->
           <article class="job reveal">
             <div class="job-head">
