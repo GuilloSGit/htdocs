@@ -289,7 +289,7 @@ window.I18N_FR = {
 
   "exp.gd.pos": "Fondateur & développeur Full Stack",
   "exp.gd.co": "Galpón Digital — produit personnel",
-  "exp.gd.meta": "Juil. 2026 – Présent · 🌎 Remote",
+  "exp.gd.meta": "Juillet 2026 – Présent · 🌎 Remote",
   "exp.gd.desc": "SaaS de gestion de stock et de traçabilité pour quincailleries, centré sur un Kardex immuable et la rapidité de recherche au comptoir. Monorepo de 6 applications (API, web, landing, PWA d'entrepôt, panneau de plateforme et page de statut) en production.",
   "exp.gd.b1": "Kardex immuable : les mouvements de stock sont en insertion seule et le stock en cache est mis à jour dans la même transaction ; multi-tenant par organisation dès le premier jour.",
   "exp.gd.b2": "Recherche au comptoir avec index trigram PostgreSQL (pg_trgm) et classement par word_similarity ; conçu pour fonctionner hors ligne, avec une numérotation des documents par blocs.",
