@@ -89,11 +89,11 @@ i18n a mano (ES default + I18N_EN/FR/PT + dropdown de idioma). Último estado:
 
 Guardarlo **sobrescribiendo `NEXT_TASK.md`** en la raíz del repo (título `# NEXT_TASK — Prompt para la próxima sesión`, línea de "Última actualización" `YYYY-MM-DD`, prompt en bloque de código) y mostrarlo también en la respuesta final. Este repo es público y se sirve como sitio estático, así que `NEXT_TASK.md` va en `.git/info/exclude`: queda solo local, nunca se commitea.
 
-### Último estado conocido (2026-10-08, cierre)
+### Último estado conocido (2026-10-08, cierre tarde)
 
-- Copy ajustado a la oferta de Velozient en ES/EN/FR/PT; Pay Alert y Galpón Digital en Experiencia con íconos. Fecha de Pay Alert alineada a LinkedIn: Jul 2025 (commit `9736438`). Ver [[cv-velozient-2026-10]].
-- Portugués e inglés: sin cambios (decisión del usuario). Mail a Velozient enviado.
-- **Pendiente: push a master** (commits locales sin publicar desde `cd9d032`; preguntar antes de pushear).
+- Copy ajustado a la oferta de Velozient en ES/EN/FR/PT; Pay Alert (Jul 2025) y Galpón Digital en Experiencia. Inglés "Avanzado (C1–C2)" (commit `b28424f`, EF SET Quick Check). Ver [[cv-velozient-2026-10]].
+- CV EN/ES nuevos ya en Drive (mismos enlaces que `app.js`); no se sirven desde el repo.
+- **Pendiente: push a master** (`b28424f` sin publicar; preguntar antes).
 
 ### Estado anterior (2026-07-22)
 
