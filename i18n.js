@@ -12,9 +12,9 @@ window.I18N_EN = {
   "nav.contact": "Contact",
 
   /* ---- Hero ---- */
-  "hero.eyebrow": "FULL STACK · SYSTEMS ENGINEERING",
+  "hero.eyebrow": "FULL STACK · BACKEND · CLOUD",
   "hero.h1": "I build <em>real software</em>, end to end.",
-  "hero.lead": "I'm <b>Guille Andrada</b>, a Full Stack Developer and Systems Engineer. I design, build and ship complete products — backend, frontend, data, and AI when it adds real value.",
+  "hero.lead": "I'm <b>Guille Andrada</b>, a Full Stack Developer. I design, build and ship complete products — backend, frontend, data, and AI when it adds real value.",
   "hero.cta1": "View projects",
   "hero.cta2": "Let's talk",
   "hero.card1.t": "Architecture & Backend",
@@ -28,7 +28,7 @@ window.I18N_EN = {
   /* ---- About ---- */
   "about.eyebrow": "ABOUT",
   "about.title": "About me",
-  "about.p1": "I'm a Full Stack Developer and Systems Engineer with 5+ years of experience building complete web products: from the data model and backend architecture to the final interface. I've worked on healthcare SaaS handling sensitive data, and I own two products of my own end to end: Galpón Digital (inventory with an immutable Kardex for hardware stores, a 6-app monorepo) and Pay Alert (real-time Mercado Pago payment notifications, with API, worker, webhooks and subscriptions).",
+  "about.p1": "I'm a Full Stack Developer with 6+ years of experience building complete web products: from the data model and backend architecture to the final interface. I've worked on healthcare SaaS handling sensitive data, and I own two products of my own end to end: Galpón Digital (inventory with an immutable Kardex for hardware stores, a 6-app monorepo) and Pay Alert (real-time Mercado Pago payment notifications, with API, worker, webhooks and subscriptions).",
   "about.p2": "My focus is on delivering clean, efficient and scalable solutions. I'm passionate about front-end frameworks (React, Vue, Next.js), back-end with Node.js and Python/Django, event-driven architectures and relational databases. I also integrate AI (LLMs, MCPs) when it solves a concrete product problem.",
 
   /* ---- Skills ---- */
@@ -70,7 +70,7 @@ window.I18N_EN = {
   /* CaseBridge */
   "exp.cb.pos": "Full Stack Developer (Backend focus)",
   "exp.cb.co": "CaseBridge — Scylla Technologies",
-  "exp.cb.meta": "Apr 2026 – May 2026 · 🌎 Remote",
+  "exp.cb.meta": "Apr 2026 – Jun 2026 · 🌎 Remote",
   "exp.cb.desc": "Healthcare SaaS platform for clinical case management, medical documentation and referrals, handling sensitive patient data (PHI). I was one of the main backend contributors (189 commits across both repos, ~75% backend / 25% frontend) on a hexagonal architecture with CQRS, an in-process event bus and a transactional Unit of Work.",
   "exp.cb.h1": "What I did",
   "exp.cb.b1": "Built the clinical notes (SOAP) module from scratch: domain model, Prisma persistence, OpenAPI docs and test suite.",
@@ -100,7 +100,7 @@ window.I18N_EN = {
   /* Usados Europa */
   "exp.ue.pos": "Full Stack Developer",
   "exp.ue.co": "Usados Europa",
-  "exp.ue.meta": "2026 – Present · 🌎 Remote / Antwerp, Belgium",
+  "exp.ue.meta": "Jan 2026 – Jun 2026 · 🌎 Remote / Antwerp, Belgium",
   "exp.ue.sub": "Strategic Engineering & Technical Product Ownership",
   "exp.ue.desc": "I lead the full lifecycle of the Usados Europa platform, acting as the bridge between business vision and high-level technical execution, focused on product scalability and engineering efficiency.",
   "exp.ue.b1": "Technical roadmap & strategy: I turn complex business requirements into scalable technical architectures, managing the project from stakeholder agreements to production deployment.",
@@ -111,7 +111,7 @@ window.I18N_EN = {
   /* Self Employed (reencuadrado: integración, no creación) */
   "exp.se.pos": "Full Stack Developer",
   "exp.se.co": "Self-employed",
-  "exp.se.meta": "2024 – Present · 🌎 Remote",
+  "exp.se.meta": "Nov 2019 – Jun 2026 · 🌎 Remote",
   "exp.se.sub": "AI Integration & Automation",
   "exp.se.desc": "I evolved my workflow by integrating generative AI and automation, achieving a 30–40% reduction in MVP delivery times and improving architectural robustness.",
   "exp.se.b1": "AI integration & automation: I integrate Language Model APIs (OpenAI, Anthropic) into workflows for text processing, content generation and custom assistants.",
@@ -122,7 +122,7 @@ window.I18N_EN = {
   /* AIometrix */
   "exp.ax.pos": "Full Stack Developer",
   "exp.ax.co": "AIometrix — Bahr & Co",
-  "exp.ax.meta": "2024 · 🌎 Remote / USA",
+  "exp.ax.meta": "Mar 2023 – Nov 2024 · 🌎 Remote / USA",
   "exp.ax.b1": "Scalable modern architecture: architected and deployed high-performance web apps with Next.js, improving SEO and cutting load times by 30% via SSR/SSG.",
   "exp.ax.b2": "AI-driven logic: connected LLMs with business logic, enabling features like automated product queries and intelligent order processing.",
   "exp.ax.b3": "Performance at scale: optimized AI operations for high request volumes, refining APIs and caching to reduce infrastructure overhead by 20%.",
@@ -199,7 +199,7 @@ window.I18N_EN = {
   "ct.form.err": "There was an error. Please try again.",
 
   /* ---- Footer ---- */
-  "ft.role": "Full Stack Developer · Systems Engineer",
+  "ft.role": "Full Stack Developer",
   "ft.rights": "All rights reserved."
 };
 
@@ -211,9 +211,9 @@ window.I18N_FR = {
   "nav.contact": "Contact",
 
   /* ---- Hero ---- */
-  "hero.eyebrow": "FULL STACK · INGÉNIERIE SYSTÈME",
+  "hero.eyebrow": "FULL STACK · BACKEND · CLOUD",
   "hero.h1": "Je construis des <em>logiciels réels</em>, de bout en bout.",
-  "hero.lead": "Je suis <b>Guille Andrada</b>, développeur Full Stack et ingénieur en systèmes. Je conçois, construis et livre des produits complets — backend, frontend, données, et IA quand elle apporte une réelle valeur.",
+  "hero.lead": "Je suis <b>Guille Andrada</b>, développeur Full Stack. Je conçois, construis et livre des produits complets — backend, frontend, données, et IA quand elle apporte une réelle valeur.",
   "hero.cta1": "Voir les projets",
   "hero.cta2": "Discutons",
   "hero.card1.t": "Architecture & Backend",
@@ -227,7 +227,7 @@ window.I18N_FR = {
   /* ---- About ---- */
   "about.eyebrow": "À PROPOS",
   "about.title": "À propos de moi",
-  "about.p1": "Je suis développeur Full Stack et ingénieur en systèmes, avec plus de 5 ans d'expérience dans la construction de produits web complets : du modèle de données et de l'architecture backend jusqu'à l'interface finale. J'ai travaillé sur un SaaS de santé traitant des données sensibles, et je porte de bout en bout deux produits à moi : Galpón Digital (gestion de stock avec Kardex immuable pour quincailleries, monorepo de 6 applications) et Pay Alert (notifications de paiements Mercado Pago en temps réel, avec API, worker, webhooks et abonnements).",
+  "about.p1": "Je suis développeur Full Stack, avec plus de 6 ans d'expérience dans la construction de produits web complets : du modèle de données et de l'architecture backend jusqu'à l'interface finale. J'ai travaillé sur un SaaS de santé traitant des données sensibles, et je porte de bout en bout deux produits à moi : Galpón Digital (gestion de stock avec Kardex immuable pour quincailleries, monorepo de 6 applications) et Pay Alert (notifications de paiements Mercado Pago en temps réel, avec API, worker, webhooks et abonnements).",
   "about.p2": "Mon objectif est de livrer des solutions propres, efficaces et évolutives. Je suis passionné par les frameworks front-end (React, Vue, Next.js), le back-end avec Node.js et Python/Django, les architectures événementielles et les bases de données relationnelles. J'intègre aussi l'IA (LLMs, MCPs) quand elle résout un problème concret du produit.",
 
   /* ---- Skills ---- */
@@ -269,7 +269,7 @@ window.I18N_FR = {
   /* CaseBridge */
   "exp.cb.pos": "Développeur Full Stack (orienté Backend)",
   "exp.cb.co": "CaseBridge — Scylla Technologies",
-  "exp.cb.meta": "Avr. 2026 – Mai 2026 · 🌎 Remote",
+  "exp.cb.meta": "Avr. 2026 – Juin 2026 · 🌎 Remote",
   "exp.cb.desc": "Plateforme SaaS de santé pour la gestion de dossiers cliniques, la documentation médicale et les orientations, traitant des données patients sensibles (PHI). J'ai été l'un des principaux contributeurs backend (189 commits sur les deux dépôts, ~75 % backend / 25 % frontend) sur une architecture hexagonale avec CQRS, un event bus in-process et un Unit of Work transactionnel.",
   "exp.cb.h1": "Ce que j'ai fait",
   "exp.cb.b1": "Construction du module de notes cliniques (SOAP) depuis zéro : modèle de domaine, persistance Prisma, documentation OpenAPI et suite de tests.",
@@ -299,7 +299,7 @@ window.I18N_FR = {
   /* Usados Europa */
   "exp.ue.pos": "Développeur Full Stack",
   "exp.ue.co": "Usados Europa",
-  "exp.ue.meta": "2026 – Présent · 🌎 Remote / Anvers, Belgique",
+  "exp.ue.meta": "Janv. 2026 – Juin 2026 · 🌎 Remote / Anvers, Belgique",
   "exp.ue.sub": "Ingénierie stratégique & Product Ownership technique",
   "exp.ue.desc": "Je pilote l'ensemble du cycle de vie de la plateforme Usados Europa, en faisant le pont entre la vision business et l'exécution technique de haut niveau, avec un focus sur la scalabilité du produit et l'efficacité d'ingénierie.",
   "exp.ue.b1": "Feuille de route technique & stratégie : je transforme des besoins métier complexes en architectures techniques évolutives, en gérant le projet des accords avec les parties prenantes jusqu'au déploiement en production.",
@@ -310,7 +310,7 @@ window.I18N_FR = {
   /* Self Employed */
   "exp.se.pos": "Développeur Full Stack",
   "exp.se.co": "Indépendant",
-  "exp.se.meta": "2024 – Présent · 🌎 Remote",
+  "exp.se.meta": "Nov. 2019 – Juin 2026 · 🌎 Remote",
   "exp.se.sub": "Intégration IA & Automatisation",
   "exp.se.desc": "J'ai fait évoluer mon flux de travail en intégrant l'IA générative et l'automatisation, obtenant une réduction de 30 à 40 % des délais de livraison des MVP et une meilleure robustesse architecturale.",
   "exp.se.b1": "Intégration IA & automatisation : j'intègre des APIs de modèles de langage (OpenAI, Anthropic) dans des workflows de traitement de texte, de génération de contenu et d'assistants sur mesure.",
@@ -321,7 +321,7 @@ window.I18N_FR = {
   /* AIometrix */
   "exp.ax.pos": "Développeur Full Stack",
   "exp.ax.co": "AIometrix — Bahr & Co",
-  "exp.ax.meta": "2024 · 🌎 Remote / États-Unis",
+  "exp.ax.meta": "Mars 2023 – Nov. 2024 · 🌎 Remote / États-Unis",
   "exp.ax.b1": "Architecture moderne évolutive : conception et déploiement d'applications web hautes performances avec Next.js, améliorant le SEO et réduisant les temps de chargement de 30 % via SSR/SSG.",
   "exp.ax.b2": "Logique pilotée par l'IA : connexion des LLMs à la logique métier, permettant des fonctionnalités comme les requêtes produit automatisées et le traitement intelligent des commandes.",
   "exp.ax.b3": "Performance à grande échelle : optimisation des opérations d'IA pour de forts volumes de requêtes, en affinant les APIs et le cache pour réduire de 20 % la charge d'infrastructure.",
@@ -398,7 +398,7 @@ window.I18N_FR = {
   "ct.form.err": "Une erreur s'est produite. Veuillez réessayer.",
 
   /* ---- Footer ---- */
-  "ft.role": "Développeur Full Stack · Ingénieur Systèmes",
+  "ft.role": "Développeur Full Stack",
   "ft.rights": "Tous droits réservés."
 };
 
@@ -410,9 +410,9 @@ window.I18N_PT = {
   "nav.contact": "Contato",
 
   /* ---- Hero ---- */
-  "hero.eyebrow": "FULL STACK · ENGENHARIA DE SISTEMAS",
+  "hero.eyebrow": "FULL STACK · BACKEND · CLOUD",
   "hero.h1": "Eu construo <em>software real</em>, de ponta a ponta.",
-  "hero.lead": "Sou <b>Guille Andrada</b>, Desenvolvedor Full Stack e Engenheiro de Sistemas. Eu projeto, construo e entrego produtos completos — backend, frontend, dados e IA quando ela agrega valor real.",
+  "hero.lead": "Sou <b>Guille Andrada</b>, Desenvolvedor Full Stack. Eu projeto, construo e entrego produtos completos — backend, frontend, dados e IA quando ela agrega valor real.",
   "hero.cta1": "Ver projetos",
   "hero.cta2": "Vamos conversar",
   "hero.card1.t": "Arquitetura & Backend",
@@ -426,7 +426,7 @@ window.I18N_PT = {
   /* ---- Sobre ---- */
   "about.eyebrow": "SOBRE",
   "about.title": "Sobre mim",
-  "about.p1": "Sou Desenvolvedor Full Stack e Engenheiro de Sistemas, com mais de 5 anos de experiência na construção de produtos web completos: do modelo de dados e da arquitetura do backend até a interface final. Trabalhei em um SaaS de saúde com dados sensíveis e sou responsável de ponta a ponta por dois produtos próprios: Galpón Digital (estoque com Kardex imutável para ferragens, monorepo de 6 apps) e Pay Alert (notificações de pagamentos do Mercado Pago em tempo real, com API, worker, webhooks e assinaturas).",
+  "about.p1": "Sou Desenvolvedor Full Stack, com mais de 6 anos de experiência na construção de produtos web completos: do modelo de dados e da arquitetura do backend até a interface final. Trabalhei em um SaaS de saúde com dados sensíveis e sou responsável de ponta a ponta por dois produtos próprios: Galpón Digital (estoque com Kardex imutável para ferragens, monorepo de 6 apps) e Pay Alert (notificações de pagamentos do Mercado Pago em tempo real, com API, worker, webhooks e assinaturas).",
   "about.p2": "Meu foco é entregar soluções limpas, eficientes e escaláveis. Sou apaixonado por frameworks de front-end (React, Vue, Next.js), back-end com Node.js e Python/Django, arquiteturas orientadas a eventos e bancos de dados relacionais. Também integro IA (LLMs, MCPs) quando ela resolve um problema concreto do produto.",
 
   /* ---- Habilidades ---- */
@@ -468,7 +468,7 @@ window.I18N_PT = {
   /* CaseBridge */
   "exp.cb.pos": "Desenvolvedor Full Stack (foco em Backend)",
   "exp.cb.co": "CaseBridge — Scylla Technologies",
-  "exp.cb.meta": "Abr 2026 – Mai 2026 · 🌎 Remoto",
+  "exp.cb.meta": "Abr 2026 – Jun 2026 · 🌎 Remoto",
   "exp.cb.desc": "Plataforma SaaS de saúde para gestão de casos clínicos, documentação médica e encaminhamentos, lidando com dados sensíveis de pacientes (PHI). Fui um dos principais contribuidores do backend (189 commits nos dois repositórios, ~75% backend / 25% frontend) sobre uma arquitetura hexagonal com CQRS, event bus in-process e Unit of Work transacional.",
   "exp.cb.h1": "O que eu fiz",
   "exp.cb.b1": "Construí do zero o módulo de notas clínicas (SOAP): modelo de domínio, persistência com Prisma, documentação OpenAPI e suíte de testes.",
@@ -498,7 +498,7 @@ window.I18N_PT = {
   /* Usados Europa */
   "exp.ue.pos": "Desenvolvedor Full Stack",
   "exp.ue.co": "Usados Europa",
-  "exp.ue.meta": "2026 – Presente · 🌎 Remoto / Antuérpia, Bélgica",
+  "exp.ue.meta": "Jan 2026 – Jun 2026 · 🌎 Remoto / Antuérpia, Bélgica",
   "exp.ue.sub": "Engenharia Estratégica & Product Ownership Técnico",
   "exp.ue.desc": "Lidero todo o ciclo de vida da plataforma Usados Europa, atuando como ponte entre a visão de negócio e a execução técnica de alto nível, com foco em escalabilidade do produto e eficiência de engenharia.",
   "exp.ue.b1": "Roadmap e estratégia técnica: transformo requisitos de negócio complexos em arquiteturas técnicas escaláveis, gerenciando o projeto desde os acordos com stakeholders até o deploy em produção.",
@@ -509,7 +509,7 @@ window.I18N_PT = {
   /* Self Employed */
   "exp.se.pos": "Desenvolvedor Full Stack",
   "exp.se.co": "Autônomo",
-  "exp.se.meta": "2024 – Presente · 🌎 Remoto",
+  "exp.se.meta": "Nov 2019 – Jun 2026 · 🌎 Remoto",
   "exp.se.sub": "Integração de IA & Automação",
   "exp.se.desc": "Evoluí meu fluxo de trabalho integrando IA generativa e automação, alcançando uma redução de 30–40% nos prazos de entrega de MVPs e maior robustez arquitetural.",
   "exp.se.b1": "Integração de IA e automação: integro APIs de modelos de linguagem (OpenAI, Anthropic) em fluxos de trabalho para processamento de texto, geração de conteúdo e assistentes personalizados.",
@@ -520,7 +520,7 @@ window.I18N_PT = {
   /* AIometrix */
   "exp.ax.pos": "Desenvolvedor Full Stack",
   "exp.ax.co": "AIometrix — Bahr & Co",
-  "exp.ax.meta": "2024 · 🌎 Remoto / EUA",
+  "exp.ax.meta": "Mar 2023 – Nov 2024 · 🌎 Remoto / EUA",
   "exp.ax.b1": "Arquitetura moderna e escalável: arquitetei e implantei aplicações web de alta performance com Next.js, melhorando o SEO e reduzindo o tempo de carregamento em 30% via SSR/SSG.",
   "exp.ax.b2": "Lógica orientada por IA: conectei LLMs à lógica de negócio, viabilizando funcionalidades como consultas automatizadas de produtos e processamento inteligente de pedidos.",
   "exp.ax.b3": "Performance em escala: otimizei operações de IA para altos volumes de requisições, refinando APIs e cache para reduzir o overhead de infraestrutura em 20%.",
@@ -597,6 +597,6 @@ window.I18N_PT = {
   "ct.form.err": "Ocorreu um erro. Tente novamente.",
 
   /* ---- Rodapé ---- */
-  "ft.role": "Full Stack Developer · Engenheiro de Sistemas",
+  "ft.role": "Desenvolvedor Full Stack",
   "ft.rights": "Todos os direitos reservados."
 };

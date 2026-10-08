@@ -96,7 +96,7 @@ Guardarlo **sobrescribiendo `NEXT_TASK.md`** en la raíz del repo (título `# NE
 
 ### Estado anterior (2026-07-22)
 
-- Reposicionamiento a "Full Stack Developer · Ingeniero en Sistemas" + Pay Alert/Galpón Digital + FR/PT: hecho y en producción.
+- Reposicionamiento a "Full Stack Developer" (sin título de grado desde 2026-10-08) + Pay Alert/Galpón Digital + FR/PT: hecho y en producción.
 - SEO: `sitemap.xml`, `robots.txt`, verificación de Google Search Console y envío del sitemap — **todo hecho**, sin pendientes.
 - Google Business Profile: **creado**, bajo el nombre "GA · software" — ver [[seo-google-2026-07]] en memoria para el detalle (categoría, cómo se manejó la falta de local físico, qué datos se reusaron del sitio).
 - No queda ningún pendiente abierto de esta línea de trabajo (SEO/Google) a la fecha.
