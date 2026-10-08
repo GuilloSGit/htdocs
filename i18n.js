@@ -49,7 +49,7 @@ window.I18N_EN = {
   /* ---- Meta ---- */
   "meta.lang.t": "Languages",
   "meta.lang.es": "🇦🇷 Spanish (Native)",
-  "meta.lang.en": "🇺🇸 English (Professional)",
+  "meta.lang.en": "🇺🇸 English (Advanced, C1–C2)",
   "meta.lang.pt": "🇧🇷 Portuguese (Advanced)",
   "meta.method.t": "Agile methodologies",
   "meta.method.1": "Scrum · Kanban · XP",
@@ -248,7 +248,7 @@ window.I18N_FR = {
   /* ---- Meta ---- */
   "meta.lang.t": "Langues",
   "meta.lang.es": "🇦🇷 Espagnol (Natif)",
-  "meta.lang.en": "🇺🇸 Anglais (Professionnel)",
+  "meta.lang.en": "🇺🇸 Anglais (Avancé, C1–C2)",
   "meta.lang.pt": "🇧🇷 Portugais (Avancé)",
   "meta.method.t": "Méthodologies agiles",
   "meta.method.1": "Scrum · Kanban · XP",
@@ -447,7 +447,7 @@ window.I18N_PT = {
   /* ---- Meta ---- */
   "meta.lang.t": "Idiomas",
   "meta.lang.es": "🇦🇷 Espanhol (Nativo)",
-  "meta.lang.en": "🇺🇸 Inglês (Profissional)",
+  "meta.lang.en": "🇺🇸 Inglês (Avançado, C1–C2)",
   "meta.lang.pt": "🇧🇷 Português (Avançado)",
   "meta.method.t": "Metodologias ágeis",
   "meta.method.1": "Scrum · Kanban · XP",
