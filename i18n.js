@@ -280,7 +280,7 @@ window.I18N_FR = {
 
   "exp.pa.pos": "Fondateur & développeur Full Stack",
   "exp.pa.co": "Pay Alert — produit personnel",
-  "exp.pa.meta": "Juil 2025 – Présent · 🌎 Remote",
+  "exp.pa.meta": "Juillet 2025 – Présent · 🌎 Remote",
   "exp.pa.desc": "SaaS argentin qui connecte le compte Mercado Pago d'un commerce et notifie en temps réel chaque paiement à ses employés autorisés, sans partager le compte. J'ai conçu et construit tout le système : API, worker, frontend web et panneau d'administration interne.",
   "exp.pa.b1": "Backend : Fastify 5 + TypeScript + Prisma, avec un worker BullMQ/Redis, des webhooks Mercado Pago idempotents face aux relances, des abonnements et la facturation.",
   "exp.pa.b2": "Temps réel : WebSocket avec jeton éphémère, push natif (FCM) et Web Push pour Safari/iOS.",
