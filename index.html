@@ -239,7 +239,7 @@
           </div>
           <div class="about-text reveal">
             <p data-i18n="about.p1" data-html>
-              Soy Desarrollador Full Stack, con más de 6 años de experiencia construyendo productos web completos: desde el modelo de datos y la arquitectura del backend hasta la interfaz final. Trabajé en un SaaS de salud con datos sensibles y soy responsable de punta a punta de dos productos propios: Galpón Digital (inventario con Kardex inmutable para ferreterías, monorepo de 6 apps) y Pay Alert (notificaciones de pagos de Mercado Pago en tiempo real, con API, worker, webhooks y suscripciones).
+              Soy Desarrollador Full Stack con foco en backend y más de 6 años de experiencia, trabajando en remoto con equipos de EE. UU. y Europa. Diseño y opero SaaS multi-tenant en producción: notificaciones de pago en tiempo real, inventario con facturación electrónica y un SaaS de salud con datos sensibles. Soy responsable de punta a punta de dos productos propios: Galpón Digital (inventario y facturación para ferreterías, en producción con clientes reales, monorepo de 6 apps) y Pay Alert (notificaciones de pagos de Mercado Pago en tiempo real, con API, worker, webhooks y suscripciones).
             </p>
             <p data-i18n="about.p2" data-html>
               Mi enfoque está en entregar soluciones limpias, eficientes y
@@ -448,7 +448,7 @@
               </div>
             </div>
             <p class="job-desc" data-i18n="exp.pa.desc">
-              SaaS argentino que conecta la cuenta de Mercado Pago de un comercio y notifica cada cobro en tiempo real a sus empleados autorizados, sin compartir la cuenta. Diseñé y construí el sistema completo: API, worker, frontend web y panel admin interno.
+              SaaS argentino que conecta la cuenta de Mercado Pago de un comercio (OAuth) y notifica cada cobro en tiempo real a sus empleados autorizados, sin compartir la cuenta. Diseñé y construí el sistema completo: API, worker, frontend web y panel admin interno.
             </p>
             <ul>
               <li data-i18n="exp.pa.b1">
@@ -458,14 +458,17 @@
                 Tiempo real: WebSocket con token efímero, push nativo (FCM) y Web Push para Safari/iOS.
               </li>
               <li data-i18n="exp.pa.b3">
-                API Enterprise: API keys con rate limit por clave y webhooks salientes firmados con HMAC-SHA256, con logs de entrega.
+                API Enterprise: API keys con rate limit por clave y webhooks salientes firmados con HMAC-SHA256, con logs de entrega. Consumida por Galpón Digital.
               </li>
               <li data-i18n="exp.pa.b4">
                 Seguridad y operación: roles y permisos granulares, blocklist de access tokens, panel admin interno y deploy en Vercel + Render.
               </li>
+              <li data-i18n="exp.pa.b5">
+                Calidad: más de 250 tests automatizados (Vitest, unitarios y E2E); dockerizado.
+              </li>
             </ul>
             <div class="tags">
-              <span class="tag">Fastify</span><span class="tag">Prisma</span><span class="tag">BullMQ</span><span class="tag">Redis</span><span class="tag">Next.js</span><span class="tag">WebSocket</span>
+              <span class="tag">Fastify</span><span class="tag">Prisma</span><span class="tag">BullMQ</span><span class="tag">Redis</span><span class="tag">Next.js</span><span class="tag">WebSocket</span><span class="tag">Docker</span>
             </div>
           </article>
 
@@ -484,7 +487,7 @@
               </div>
             </div>
             <p class="job-desc" data-i18n="exp.gd.desc">
-              SaaS de inventario y trazabilidad para ferreterías, con foco en Kardex inmutable y velocidad de búsqueda en mostrador. Monorepo de 6 aplicaciones (API, web, landing, PWA de depósito, panel de plataforma y página de estado) en producción.
+              SaaS de inventario y trazabilidad para ferreterías, con foco en Kardex inmutable y velocidad de búsqueda en mostrador. Monorepo de 6 aplicaciones (API, web, landing, PWA de depósito, panel de plataforma y página de estado) en producción con clientes reales.
             </p>
             <ul>
               <li data-i18n="exp.gd.b1">
@@ -499,9 +502,15 @@
               <li data-i18n="exp.gd.b4">
                 Autenticación 100% passwordless (magic link), PWAs con Web Push y deploy en Vercel + Railway, con Cloudflare y Resend.
               </li>
+              <li data-i18n="exp.gd.b5">
+                Facturación electrónica con ARCA (ex-AFIP), multi-moneda (USD) con cotización congelada, cuentas corrientes de clientes y comprobantes en PDF; confirmación automática de pagos vía Pay Alert.
+              </li>
+              <li data-i18n="exp.gd.b6">
+                Calidad: más de 1.400 tests automatizados (Vitest unitarios/integración + Playwright E2E).
+              </li>
             </ul>
             <div class="tags">
-              <span class="tag">Next.js</span><span class="tag">Fastify</span><span class="tag">Prisma</span><span class="tag">PostgreSQL</span><span class="tag">PWA</span><span class="tag">Anthropic</span>
+              <span class="tag">Next.js</span><span class="tag">Fastify</span><span class="tag">Prisma</span><span class="tag">PostgreSQL</span><span class="tag">PWA</span><span class="tag">Anthropic</span><span class="tag">Playwright</span>
             </div>
           </article>
 
@@ -860,7 +869,7 @@
                 <p data-i18n="pj.gd.d">
                   Software de inventario y trazabilidad para ferreterías, con
                   foco en Kardex inmutable y velocidad de búsqueda de
-                  mostrador. Incluye facturación, remitos, control de caja y
+                  mostrador. Incluye facturación electrónica ARCA, remitos, control de caja y
                   búsqueda de catálogo asistida por IA.
                 </p>
                 <div class="proj-foot">
